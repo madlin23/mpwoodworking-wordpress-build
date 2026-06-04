@@ -17,7 +17,7 @@ export default function Home() {
         {/* Hintergrundbild mit starker Abdunkelung für extremen Kontrast */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/manus-storage/image_hero_atelier.png"
+            src="/manus-storage/hero_atelier_0f82348e.png"
             alt="Dunkle Woodworking Werkstatt"
             className="w-full h-full object-cover opacity-35 filter grayscale contrast-125"
           />
@@ -152,7 +152,7 @@ export default function Home() {
         <div className="container grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-6 aspect-[4/5] overflow-hidden bg-[#1a1a19] border border-[#2a2a28] relative">
             <img
-              src="/manus-storage/image_about_marco.png"
+              src="/manus-storage/about_marco_bb26a810.png"
               alt="Marco Paul in seiner Holzwerkstatt"
               className="w-full h-full object-cover object-center filter grayscale contrast-115"
             />

@@ -48,7 +48,7 @@ export interface WoodType {
   features: string[];
 }
 
-// Echte Produkte aus der XML-Datei
+// Echte Produkte aus der XML-Datei mit gültigen Cloud-Storage-Bildern
 export const products: Product[] = [
   {
     id: 1,
@@ -58,9 +58,9 @@ export const products: Product[] = [
     sku: "PM-ZW-01",
     shortDescription: "Handgedrechselte Pfeffermühle mit markantem Kontrast aus dunklem Walnussholz und hellem Bergahorn. Ausgestattet mit einem stufenlos verstellbaren Keramikmahlwerk.",
     description: "Diese exklusive Pfeffermühle vereint traditionelle Drechselkunst mit modernem, kontrastreichem Design. Der Korpus besteht aus edlem, dunklem Walnussholz aus Berlin-Köpenick, während Kopf und Fuß aus feinstem, hellem Bergahorn gefertigt sind. Jedes Stück ist ein Unikat mit einzigartiger Maserung. Das hochwertige Keramikmahlwerk ist langlebig, korrosionsfrei und eignet sich hervorragend für Pfeffer, Meersalz und getrocknete Kräuter.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_muehle-QeNV5SxoyhKRywS4GYFtKC.webp",
+    image: "/manus-storage/product_muehle_c3739d10.png",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_muehle-Hi5uv8EW62HzrJi5yws5pL.png"
+      "/manus-storage/product_muehle_c3739d10.png"
     ],
     categories: ["Mühlen", "Küchenhelfer"],
     woodType: "Walnuss & Ahorn",
@@ -77,9 +77,9 @@ export const products: Product[] = [
     sku: "NS-EB-04",
     shortDescription: "Atemberaubende Naturrandschale gedrechselt aus dem seltenen Holz der Eibe. Faszinierendes Farbspiel aus leuchtend orangefarbenem Kernholz und hellem Splintholz.",
     description: "Ein echtes Kunstwerk der Natur. Diese Schale wurde mit der natürlichen Rinde (Naturrand) aus einem massiven Eibenstamm gedrechselt. Eibenholz gehört zu den edelsten, härtesten und seltensten Hölzern Europas. Die Schale zeigt den charakteristischen, dramatischen Kontrast zwischen dem warmen, orange-roten Kernholz und dem hellen, cremefarbenen Splintholz. Perfekt als Solitär-Objekt oder edle Obstschale.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_schale-BTVfkebVnZkAB6HRE2DpPo.webp",
+    image: "/manus-storage/product_schale_2c1c6821.png",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_schale-8qPEvmQ6Gn67QbieAEN6ii.png"
+      "/manus-storage/product_schale_2c1c6821.png"
     ],
     categories: ["Schalen", "Wohnaccessoires"],
     woodType: "Eibe",
@@ -96,7 +96,7 @@ export const products: Product[] = [
     sku: "SM-EI-02",
     shortDescription: "Robuste Salzmühle aus märkischer Eiche mit ausdrucksstarkem Astanteil. Langlebiges dänisches CrushGrind® Mahlwerk.",
     description: "Diese klassische Salzmühle ist für Generationen gebaut. Gefertigt aus massiver märkischer Eiche, besticht sie durch ihre rustikale Maserung mit natürlichen Rissen und Astansätzen, die stabilisiert wurden. Das dänische CrushGrind® Keramikmahlwerk bietet überragende Mahlleistung und lässt sich über ein Rädchen an der Unterseite perfekt justieren.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_muehle-QeNV5SxoyhKRywS4GYFtKC.webp", // Fallback auf Mühlenbild
+    image: "/manus-storage/product_muehle_c3739d10.png",
     gallery: [],
     categories: ["Mühlen", "Küchenhelfer"],
     woodType: "Eiche",
@@ -113,7 +113,7 @@ export const products: Product[] = [
     sku: "US-ZW-03",
     shortDescription: "Elegante, flache Schale aus dem farbintensiven Holz des Zwetschgenbaums (Pflaume). Samtige Haptik.",
     description: "Zwetschgenholz (auch als Pflaumenholz bekannt) fasziniert durch seine violetten, rötlichen und tiefbraunen Farbstreifen. Diese Schale wurde besonders dünnwandig ausgedreht, wodurch sie eine feine Eleganz erhält. Sie eignet sich hervorragend zur Aufbewahrung von Schmuck, Schlüsseln oder als reines Dekorationsobjekt auf einem Sideboard.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_schale-BTVfkebVnZkAB6HRE2DpPo.webp", // Fallback
+    image: "/manus-storage/product_schale_2c1c6821.png",
     gallery: [],
     categories: ["Schalen", "Wohnaccessoires"],
     woodType: "Zwetschge (Pflaume)",
@@ -124,7 +124,7 @@ export const products: Product[] = [
   }
 ];
 
-// Echte Projekte aus der XML-Datei
+// Echte Projekte aus der XML-Datei mit gültigen Cloud-Storage-Bildern
 export const projects: Project[] = [
   {
     id: 101,
@@ -135,9 +135,9 @@ export const projects: Project[] = [
     dimensions: "Ø 26 cm, Höhe 12 cm",
     surface: "Hartwachsöl seidenmatt",
     description: "Dieses Projekt zeigt die Entstehung einer skulpturalen Schale aus einem 120 Jahre alten Eibenstamm aus Berlin-Köpenick. Die besondere Herausforderung lag im Erhalt des extrem dünnen, rissgefährdeten Splintholzes am Naturrand. Durch extrem langsame Trocknung und präzises Drechseln im nassen Zustand konnte dieses meisterhafte Unikat stabilisiert werden.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_schale-BTVfkebVnZkAB6HRE2DpPo.webp",
+    image: "/manus-storage/product_schale_2c1c6821.png",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_schale-8qPEvmQ6Gn67QbieAEN6ii.png"
+      "/manus-storage/product_schale_2c1c6821.png"
     ],
     acfFields: {
       holzart_detail: "Lokale Eibe (Berlin-Köpenick), extrem dichte Jahresringe.",
@@ -151,10 +151,10 @@ export const projects: Project[] = [
     slug: "walnuss-esstisch-koepenick",
     year: "2025",
     woodType: "Walnuss (Juglans regia)",
-    dimensions: "220 cm x 95 cm, Höhe 76 cm",
+    dimensions: "220 cm x 95 cm, Height 76 cm",
     surface: "Naturöl-Finish, wasserabweisend",
     description: "Ein massiver Esstisch aus zwei spiegelbildlich gefügten Bohlen (Bookmatch) eines Berliner Walnussbaums. Die natürlichen Baumkanten wurden geschält, gebürstet und geschliffen, um ihren organischen Charakter zu bewahren. Getragen wird die schwere Tischplatte von einem handgeschmiedeten, minimalistischen Rohstahl-Gestell.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/hero_atelier-JiiGvidLnw3FUXkzrYrUky.webp",
+    image: "/manus-storage/hero_atelier_0f82348e.png",
     gallery: [],
     acfFields: {
       holzart_detail: "Berliner Walnuss mit wildem Kern und wunderschönen Astwirbeln.",
@@ -171,9 +171,9 @@ export const projects: Project[] = [
     dimensions: "Höhe 22 cm",
     surface: "Lebensmittelechtes Walnussöl",
     description: "Die Mühlen-Serie 'Zweierlei' entstand aus dem Wunsch, haptisch und visuell kontrastierende Hölzer im Drechselhandwerk miteinander zu verbinden. Durch präzise Zapfenverbindungen werden Kopf, Korpus und Fuß aus unterschiedlichen Holzarten verleimt und anschließend in einem Stück in Form gedreht.",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_muehle-QeNV5SxoyhKRywS4GYFtKC.webp",
+    image: "/manus-storage/product_muehle_c3739d10.png",
     gallery: [
-      "https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/product_muehle-Hi5uv8EW62HzrJi5yws5pL.png"
+      "/manus-storage/product_muehle_c3739d10.png"
     ],
     acfFields: {
       holzart_detail: "Kombinationen aus märkischem Ahorn (hell) und Berliner Walnuss (dunkel).",
@@ -202,7 +202,7 @@ export const woodTypes: WoodType[] = [
     color: "Mittel- bis dunkelbraun, oft mit violettem Schimmer und dunklen Adern.",
     hardness: "Mittelschwer bis hart, sehr formstabil.",
     origin: "Regional (Berlin-Brandenburg), meist aus Privatgärten oder Alleen.",
-    description: "Walnussholz gilt als eines der edelsten heimischen Laubhölzer. Seine lebendige, oft wolkenartige Maserung und die tiefe, dunkle Farbgebung verleihen jedem Objekt eine exklusive und warme Ausstrahlung. Es lässt sich hervorragend bearbeiten und besitzt eine wunderbar glatte Oberfläche nach dem Schliff.",
+    description: "Walnussholz gilt als eines der edelsten heimischen Laubhölzer. Seine lebendige, oft wolkenartige Maserung und die tiefe, dunkle Farbgebung verleihen jedem  Objekt eine exklusive und warme Ausstrahlung. Es lässt sich hervorragend bearbeiten und besitzt eine wunderbar glatte Oberfläche nach dem Schliff.",
     features: ["Edle, dunkle Färbung", "Lebendige, wolkige Maserung", "Sehr formstabil", "Angenehmer, nussiger Duft bei der Bearbeitung"]
   },
   {
