@@ -3,7 +3,7 @@ import { useRoute, Link } from "wouter";
 import Layout from "../components/Layout";
 import { projects } from "../lib/data";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calendar, Hammer, Hourglass, Sparkles } from "lucide-react";
+import { ArrowLeft, Hammer, Hourglass, Sparkles } from "lucide-react";
 
 export default function ProjectDetail() {
   const [, params] = useRoute("/projekt/:slug");
@@ -14,10 +14,10 @@ export default function ProjectDetail() {
     return (
       <Layout>
         <div className="container py-32 text-center flex flex-col items-center justify-center space-y-4">
-          <h1 className="font-serif text-3xl font-bold">Projekt nicht gefunden</h1>
-          <p className="text-sm text-muted-foreground font-sans">Das gesuchte Projekt existiert leider nicht.</p>
+          <h1 className="font-serif text-3xl font-black uppercase text-[#f8f8f7]">Projekt nicht gefunden</h1>
+          <p className="text-xs text-[#a8a8a3] font-sans">Das gesuchte Projekt existiert leider nicht.</p>
           <Link href="/projekte">
-            <Button className="bg-foreground text-background font-sans uppercase tracking-wider text-xs py-4 px-6 rounded-none">
+            <Button className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-wider text-xs py-4 px-6 rounded-none font-bold">
               Zurück zu den Projekten
             </Button>
           </Link>
@@ -28,10 +28,10 @@ export default function ProjectDetail() {
 
   return (
     <Layout>
-      <div className="container py-8">
+      <div className="container py-8 bg-[#010101]">
         {/* Back-Link */}
         <Link href="/projekte">
-          <span className="inline-flex items-center space-x-2 text-xs tracking-wider uppercase text-muted-foreground hover:text-foreground cursor-pointer font-sans mb-12">
+          <span className="inline-flex items-center space-x-2 text-xs tracking-wider uppercase text-[#a8a8a3] hover:text-[#f8f8f7] cursor-pointer font-sans mb-12">
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu den Projekten</span>
           </span>
@@ -40,21 +40,21 @@ export default function ProjectDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           {/* Projektbilder & Galerie */}
           <div className="lg:col-span-7 flex flex-col space-y-6">
-            <div className="aspect-[16/10] w-full overflow-hidden bg-muted border border-border/20">
+            <div className="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] border border-[#2a2a28]">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500"
               />
             </div>
             {project.gallery.length > 0 && (
               <div className="grid grid-cols-2 gap-6">
                 {project.gallery.map((img, idx) => (
-                  <div key={idx} className="aspect-[16/10] overflow-hidden bg-muted border border-border/20">
+                  <div key={idx} className="aspect-[16/10] overflow-hidden bg-[#1a1a19] border border-[#2a2a28]">
                     <img
                       src={img}
                       alt={`${project.title} Entstehung ${idx + 1}`}
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-center filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
                 ))}
@@ -65,78 +65,78 @@ export default function ProjectDetail() {
           {/* Projekt-Spezifikation (ACF Fields Voransicht) */}
           <div className="lg:col-span-5 flex flex-col space-y-8">
             <div className="flex flex-col space-y-3">
-              <span className="text-xs tracking-[0.25em] text-accent uppercase font-sans font-semibold">
+              <span className="text-xs tracking-[0.25em] text-[#d40924] uppercase font-sans font-bold">
                 Projektchronik {project.year}
               </span>
-              <h1 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl font-serif font-black uppercase text-[#f8f8f7] leading-tight">
                 {project.title}
               </h1>
-              <div className="h-[1px] bg-border/40 w-full pt-2" />
+              <div className="h-[1px] bg-[#2a2a28] w-full pt-2" />
             </div>
 
             <div className="flex flex-col space-y-4">
-              <h3 className="text-xs tracking-widest uppercase font-bold font-sans text-foreground">
+              <h3 className="text-xs tracking-widest uppercase font-bold font-serif text-[#f8f8f7]">
                 Projektbeschreibung
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed font-sans">
+              <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans font-light">
                 {project.description}
               </p>
             </div>
 
             {/* ACF Meta-Box */}
-            <div className="bg-secondary/20 p-6 border border-border/20 flex flex-col space-y-6">
-              <span className="text-xs tracking-widest uppercase font-bold font-sans block text-foreground border-b border-border/20 pb-3">
+            <div className="bg-[#11110f] p-6 border border-[#2a2a28] flex flex-col space-y-6">
+              <span className="text-xs tracking-widest uppercase font-bold font-serif block text-[#f8f8f7] border-b border-[#2a2a28] pb-3">
                 Erweiterte Projekt-Details (ACF)
               </span>
 
               {/* ACF Feld 1: Holzart Detail */}
               <div className="flex items-start space-x-3">
-                <div className="p-2 bg-background border border-border/20 mt-0.5">
-                  <Sparkles className="w-4 h-4 text-accent stroke-[1.5]" />
+                <div className="p-2 bg-[#010101] border border-[#2a2a28] mt-0.5 text-[#d40924]">
+                  <Sparkles className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <span className="text-[10px] tracking-wider uppercase text-muted-foreground font-sans font-bold">Holz-Besonderheiten</span>
-                  <p className="text-xs text-foreground font-sans">{project.acfFields.holzart_detail}</p>
+                  <span className="text-[10px] tracking-wider uppercase text-[#a8a8a3] font-sans font-bold">Holz-Besonderheiten</span>
+                  <p className="text-xs text-[#f8f8f7] font-sans">{project.acfFields.holzart_detail}</p>
                 </div>
               </div>
 
               {/* ACF Feld 2: Herstellungsdauer */}
               <div className="flex items-start space-x-3">
-                <div className="p-2 bg-background border border-border/20 mt-0.5">
-                  <Hourglass className="w-4 h-4 text-accent stroke-[1.5]" />
+                <div className="p-2 bg-[#010101] border border-[#2a2a28] mt-0.5 text-[#d40924]">
+                  <Hourglass className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <span className="text-[10px] tracking-wider uppercase text-muted-foreground font-sans font-bold">Herstellungsdauer</span>
-                  <p className="text-xs text-foreground font-sans">{project.acfFields.herstellungsdauer}</p>
+                  <span className="text-[10px] tracking-wider uppercase text-[#a8a8a3] font-sans font-bold">Herstellungsdauer</span>
+                  <p className="text-xs text-[#f8f8f7] font-sans">{project.acfFields.herstellungsdauer}</p>
                 </div>
               </div>
 
               {/* ACF Feld 3: Besonderheiten */}
               <div className="flex items-start space-x-3">
-                <div className="p-2 bg-background border border-border/20 mt-0.5">
-                  <Hammer className="w-4 h-4 text-accent stroke-[1.5]" />
+                <div className="p-2 bg-[#010101] border border-[#2a2a28] mt-0.5 text-[#d40924]">
+                  <Hammer className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
-                  <span className="text-[10px] tracking-wider uppercase text-muted-foreground font-sans font-bold">Konstruktive Besonderheiten</span>
-                  <p className="text-xs text-foreground font-sans">{project.acfFields.besonderheiten}</p>
+                  <span className="text-[10px] tracking-wider uppercase text-[#a8a8a3] font-sans font-bold">Konstruktive Besonderheiten</span>
+                  <p className="text-xs text-[#f8f8f7] font-sans">{project.acfFields.besonderheiten}</p>
                 </div>
               </div>
             </div>
 
             {/* Standard Technische Daten */}
-            <div className="border-t border-border/40 pt-6">
-              <table className="w-full text-xs font-sans text-muted-foreground space-y-2">
+            <div className="border-t border-[#2a2a28] pt-6">
+              <table className="w-full text-xs font-sans text-[#a8a8a3] space-y-2">
                 <tbody>
-                  <tr className="border-b border-border/10 py-2 block">
-                    <td className="font-bold text-foreground w-1/3">Haupt-Holzart</td>
+                  <tr className="border-b border-[#2a2a28] py-2 block">
+                    <td className="font-bold text-[#f8f8f7] w-1/3">Haupt-Holzart</td>
                     <td>{project.woodType}</td>
                   </tr>
-                  <tr className="border-b border-border/10 py-2 block">
-                    <td className="font-bold text-foreground w-1/3">Abmessungen</td>
+                  <tr className="border-b border-[#2a2a28] py-2 block">
+                    <td className="font-bold text-[#f8f8f7] w-1/3">Abmessungen</td>
                     <td>{project.dimensions}</td>
                   </tr>
                   <tr className="py-2 block">
-                    <td className="font-bold text-foreground w-1/3">Oberflächenbehandlung</td>
+                    <td className="font-bold text-[#f8f8f7] w-1/3">Oberflächenbehandlung</td>
                     <td>{project.surface}</td>
                   </tr>
                 </tbody>

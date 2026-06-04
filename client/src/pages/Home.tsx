@@ -1,197 +1,194 @@
+import React from "react";
 import { Link } from "wouter";
 import Layout from "../components/Layout";
-import { products, projects } from "../lib/data";
-import { ArrowRight, Hammer, TreePine, Sparkles, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCart } from "../contexts/CartContext";
+import { products, projects, woodTypes } from "../lib/data";
+import { ArrowRight, Hammer, Flame, Star, ShieldAlert } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Home() {
-  // Wir zeigen die ersten 2 Produkte und Projekte als Teaser auf der Startseite
-  const featuredProducts = products.slice(0, 2);
-  const featuredProjects = projects.slice(0, 2);
+  const { addToCart } = useCart();
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center bg-foreground text-background overflow-hidden">
-        {/* Hintergrundbild mit feiner Abdunkelung */}
+      {/* Hero Section - Dunkel, kontraststark, plakativ */}
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-black overflow-hidden border-b border-[#2a2a28]">
+        {/* Hintergrundbild mit starker Abdunkelung für extremen Kontrast */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/hero_atelier-JiiGvidLnw3FUXkzrYrUky.webp"
-            alt="MP Woodworking Werkstatt"
-            className="w-full h-full object-cover object-center opacity-45 transform scale-105 transition-transform duration-[2000ms]"
+            src="/manus-storage/image_hero_atelier.png"
+            alt="Dunkle Woodworking Werkstatt"
+            className="w-full h-full object-cover opacity-35 filter grayscale contrast-125"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#010101] via-transparent to-transparent" />
         </div>
 
-        <div className="container relative z-10 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-8 flex flex-col space-y-6">
-            <span className="text-xs md:text-sm tracking-[0.3em] text-accent uppercase font-sans font-semibold">
-              Manufaktur für Holzobjekte
-            </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-[1.1] tracking-tight">
-              Die Seele des Holzes, <br />
-              <span className="italic font-normal text-secondary">in Form gedreht.</span>
-            </h1>
-            <p className="text-base md:text-lg text-background/80 font-sans max-w-xl leading-relaxed">
-              In meiner Werkstatt in Berlin-Köpenick entstehen aus märkischen Edelhölzern einzigartige, handgedrechselte Schalen, Gewürzmühlen und feine Möbel. Jedes Stück ist ein handgefertigtes Unikat mit Charakter.
-            </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-              <Link href="/shop">
-                <Button className="bg-background text-foreground hover:bg-secondary border border-transparent font-sans uppercase tracking-wider text-xs py-6 px-8 rounded-none cursor-pointer">
-                  Unikate entdecken
-                </Button>
-              </Link>
-              <Link href="/projekte">
-                <Button className="bg-transparent text-background hover:bg-background/10 border border-background/40 font-sans uppercase tracking-wider text-xs py-6 px-8 rounded-none cursor-pointer">
-                  Maßanfertigungen
-                </Button>
-              </Link>
-            </div>
+        <div className="container relative z-10 py-24 flex flex-col items-center text-center space-y-8 max-w-4xl">
+          <span className="text-xs tracking-[0.4em] text-[#d40924] uppercase font-black">
+            MANUFAKTUR FÜR HOLZOBJEKTE
+          </span>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-black leading-none uppercase text-[#f8f8f7]">
+            DIE SEELE DES HOLZES,<br />
+            <span className="text-[#d40924]">IN FORM GEDREHT.</span>
+          </h1>
+          <p className="text-sm md:text-base text-[#a8a8a3] leading-relaxed max-w-2xl font-sans font-light">
+            In meiner Werkstatt in Berlin-Köpenick entstehen aus märkischen Edelhölzern einzigartige, handgedrechselte Schalen, Gewürzmühlen und feine Möbel. Jedes Stück ist ein kompromissloses Unikat mit rauem, edlem Charakter.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full justify-center">
+            <Link href="/shop" className="w-full sm:w-auto">
+              <Button className="w-full sm:w-auto bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer border border-transparent font-bold">
+                Unikate entdecken
+              </Button>
+            </Link>
+            <Link href="/kontakt" className="w-full sm:w-auto">
+              <Button className="w-full sm:w-auto bg-transparent hover:bg-[#1a1a19] text-[#f8f8f7] border border-[#2a2a28] font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer font-bold">
+                Maßanfertigungen
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Marken-Werte (Atelier-Philosophie) */}
-      <section className="py-24 bg-background border-b border-border/40">
-        <div className="container grid grid-cols-1 md:grid-cols-3 gap-16">
-          {/* Wert 1 */}
-          <div className="flex flex-col space-y-4">
-            <div className="w-12 h-12 bg-secondary flex items-center justify-center">
-              <Hammer className="w-5 h-5 text-foreground stroke-[1.5]" />
+      {/* Werte / Handwerks-Prinzipien */}
+      <section className="py-20 bg-[#11110f] border-b border-[#2a2a28]">
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28]">
+            <div className="p-3 bg-[#d40924]/10 border border-[#d40924]/20 w-fit text-[#d40924]">
+              <Hammer className="w-6 h-6 stroke-[1.5]" />
             </div>
-            <h3 className="font-serif text-xl font-bold">100% Handarbeit</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed font-sans">
-              Jedes Stück wird von mir persönlich an der Drechselbank oder Werkbank in Berlin-Köpenick gefertigt. Ohne CNC-Fräsen, ohne Massenproduktion.
+            <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">100% Handarbeit</h3>
+            <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans">
+              Jedes Objekt wird von mir persönlich an der Drechselbank oder Werkbank in Berlin geformt. Keine Massenware, kein CNC. Nur reines Handwerk.
             </p>
           </div>
 
-          {/* Wert 2 */}
-          <div className="flex flex-col space-y-4">
-            <div className="w-12 h-12 bg-secondary flex items-center justify-center">
-              <TreePine className="w-5 h-5 text-foreground stroke-[1.5]" />
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28]">
+            <div className="p-3 bg-[#d40924]/10 border border-[#d40924]/20 w-fit text-[#d40924]">
+              <Flame className="w-6 h-6 stroke-[1.5]" />
             </div>
-            <h3 className="font-serif text-xl font-bold">Regionale Edelhölzer</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed font-sans">
-              Ich verwende ausschließlich nachhaltige Hölzer aus Berlin und Brandenburg – oft gerettet aus Baumpflegearbeiten, wie Eibe, Walnuss, Zwetschge oder Eiche.
+            <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">Märkische Edelhölzer</h3>
+            <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans">
+              Ich verarbeite ausschließlich lokale Hölzer wie Eibe, Nussbaum, Robinie oder gestreifte Buche aus Berlin und Brandenburg mit bekannter Herkunft.
             </p>
           </div>
 
-          {/* Wert 3 */}
-          <div className="flex flex-col space-y-4">
-            <div className="w-12 h-12 bg-secondary flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-foreground stroke-[1.5]" />
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28]">
+            <div className="p-3 bg-[#d40924]/10 border border-[#d40924]/20 w-fit text-[#d40924]">
+              <Star className="w-6 h-6 stroke-[1.5]" />
             </div>
-            <h3 className="font-serif text-xl font-bold">Natürliche Veredelung</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed font-sans">
-              Die Oberflächen werden mehrfach fein geschliffen und ausschließlich mit lebensmittelechten biologischen Ölen und Wachsen behandelt, um die Haptik zu wahren.
+            <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">Für Generationen</h3>
+            <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans">
+              Durch traditionelle Holzverbindungen und Veredelung mit natürlichen Ölen und Wachsen entstehen widerstandsfähige Erbstücke.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Featured Products (Unikat-Shop Teaser) */}
-      <section className="py-24 bg-background">
+      {/* Highlight Unikate - Plakativ, dunkle Panels */}
+      <section className="py-24 bg-[#010101] border-b border-[#2a2a28]">
         <div className="container">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
             <div className="flex flex-col space-y-3">
-              <span className="text-xs tracking-[0.25em] text-accent uppercase font-sans font-semibold">
-                Aktuell im Atelier
-              </span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold">Handgefertigte Unikate</h2>
+              <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">EXKLUSIVE EINZELSTÜCKE</span>
+              <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7]">FRISCH AUS DER WERKSTATT</h2>
             </div>
             <Link href="/shop">
-              <span className="text-sm tracking-wider uppercase font-sans font-semibold text-foreground hover:text-accent cursor-pointer flex items-center space-x-2 mt-4 md:mt-0">
-                <span>Zum gesamten Shop</span>
+              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#d40924] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#d40924]">
+                <span>Alle Unikate ansehen</span>
                 <ArrowRight className="w-4 h-4" />
               </span>
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {featuredProducts.map((product) => (
-              <div key={product.id} className="group flex flex-col space-y-4 border border-border/20 p-4 hover:border-border/60 transition-colors bg-card">
-                <div className="aspect-square w-full overflow-hidden bg-muted relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {products.slice(0, 3).map((product) => (
+              <div
+                key={product.id}
+                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#d40924] transition-colors"
+              >
+                <div className="aspect-square w-full overflow-hidden bg-[#1a1a19] relative">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-110 group-hover:grayscale-0"
                   />
-                  <span className="absolute top-4 left-4 bg-background text-foreground text-[10px] tracking-widest uppercase font-sans px-3 py-1 border border-border/20">
+                  {product.stock === 1 && (
+                    <span className="absolute top-4 left-4 bg-[#d40924] text-[#f8f8f7] text-[9px] tracking-widest uppercase px-3 py-1 font-bold">
+                      Unikat
+                    </span>
+                  )}
+                </div>
+                <div className="flex flex-col space-y-1 pt-2">
+                  <span className="text-[10px] tracking-wider uppercase text-[#a8a8a3] font-sans">
                     {product.woodType}
                   </span>
-                </div>
-                <div className="flex justify-between items-start pt-2">
-                  <div className="flex flex-col space-y-1">
-                    <h3 className="font-serif text-xl font-bold group-hover:text-accent transition-colors">
+                  <Link href={`/produkt/${product.slug}`}>
+                    <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] hover:text-[#d40924] cursor-pointer transition-colors">
                       {product.title}
                     </h3>
-                    <p className="text-xs text-muted-foreground font-sans">
-                      {product.categories.join(" / ")}
-                    </p>
-                  </div>
-                  <span className="font-serif text-lg font-bold text-foreground">
+                  </Link>
+                  <span className="font-serif text-xl font-bold text-[#d40924] pt-1">
                     {product.price.toFixed(2)} €
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground font-sans line-clamp-2 leading-relaxed">
-                  {product.shortDescription}
-                </p>
-                <div className="pt-2">
-                  <Link href={`/produkt/${product.slug}`}>
-                    <Button className="w-full bg-foreground text-background hover:bg-accent border border-transparent font-sans uppercase tracking-wider text-xs py-5 rounded-none cursor-pointer">
-                      Details ansehen
-                    </Button>
-                  </Link>
-                </div>
+                <Button
+                  onClick={() => {
+                    addToCart(product);
+                    toast.success(`${product.title} zum Warenkorb hinzugefügt.`);
+                  }}
+                  className="w-full bg-[#1a1a19] hover:bg-[#d40924] text-[#f8f8f7] border border-[#2a2a28] hover:border-transparent font-sans uppercase tracking-widest text-[10px] py-4 rounded-none cursor-pointer font-bold"
+                >
+                  In den Warenkorb
+                </Button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Über Marco Paul (Atelier-Story) */}
-      <section className="py-24 bg-secondary/30 border-t border-b border-border/20">
+      {/* Über den Drechsler - Handwerklicher Fokus */}
+      <section className="py-24 bg-[#11110f] border-b border-[#2a2a28]">
         <div className="container grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          <div className="lg:col-span-5 aspect-[4/3] w-full overflow-hidden bg-muted border border-border/20">
+          <div className="lg:col-span-6 aspect-[4/5] overflow-hidden bg-[#1a1a19] border border-[#2a2a28] relative">
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663204918233/RmVrMvhzjQZmkmxT72yXgY/about_marco-nCboYM94a8hKaHaQi5Egtu.webp"
-              alt="Marco Paul bei der Arbeit"
-              className="w-full h-full object-cover object-center"
+              src="/manus-storage/image_about_marco.png"
+              alt="Marco Paul in seiner Holzwerkstatt"
+              className="w-full h-full object-cover object-center filter grayscale contrast-115"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#11110f] via-transparent to-transparent" />
           </div>
-          <div className="lg:col-span-7 flex flex-col space-y-6">
-            <span className="text-xs tracking-[0.25em] text-accent uppercase font-sans font-semibold">
-              Der Kunsthandwerker
-            </span>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold">
-              Marco Paul & die Faszination Holz
-            </h2>
-            <p className="text-sm md:text-base text-muted-foreground font-sans leading-relaxed">
-              Seit vielen Jahren widme ich mich der Holzbearbeitung in Berlin-Köpenick. Das Drechseln ist für mich eine meditative Arbeit: Ein rotierender Holzstamm, ein scharfes Eisen und das langsame Freilegen der inneren, verborgenen Schönheit des Baumes. 
+
+          <div className="lg:col-span-6 flex flex-col space-y-6">
+            <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">DER KOPF DAHINTER</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7] leading-none">MARCO PAUL</h2>
+            <p className="text-sm text-[#a8a8a3] leading-relaxed font-sans font-light">
+              „Holz ist kein toter Werkstoff. Es arbeitet, atmet und besitzt ein Gedächtnis. Wenn ich ein Stück Eibe oder gestreifte Buche auf die Drechselbank spanne, weiß ich nie genau, was mich im Inneren erwartet. Risse, Verwachsungen und die Färbung der Jahresringe bestimmen die finale Form. Ich zwinge dem Holz kein Design auf — ich helfe ihm nur, seine innere Schönheit zu offenbaren.“
             </p>
-            <p className="text-sm md:text-base text-muted-foreground font-sans leading-relaxed">
-              Ich verarbeite keine standardisierte Importware, sondern märkische Edelhölzer mit Charakter – Risse, wilde Verwachsungen und markante Astwirbel sind für mich keine Makel, sondern die einzigartige Signatur der Natur, die ich in meinen Objekten konserviere.
+            <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans font-light">
+              In meiner Werkstatt in Berlin-Köpenick arbeite ich mit traditionellen Werkzeugen und viel Geduld. Jedes fertige Werkstück ist das Ergebnis stundenlanger Konzentration, scharfer Eisen und feinstem Schleifstaub.
             </p>
-            <div className="flex items-center space-x-3 text-xs tracking-wider text-foreground font-sans uppercase font-semibold pt-2">
-              <MapPin className="w-4 h-4 text-accent" />
-              <span>Werkstatt in Berlin-Köpenick (Besuche nach Absprache)</span>
+            <div className="pt-4">
+              <Link href="/kontakt">
+                <Button className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-5 px-8 rounded-none cursor-pointer border border-transparent font-bold">
+                  Besuchen Sie das Atelier
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Projektgalerie (Custom Post Type Teaser) */}
-      <section className="py-24 bg-background">
+      {/* Chronik / Projekte Highlight */}
+      <section className="py-24 bg-[#010101]">
         <div className="container">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
             <div className="flex flex-col space-y-3">
-              <span className="text-xs tracking-[0.25em] text-accent uppercase font-sans font-semibold">
-                Werkstatt-Chronik
-              </span>
-              <h2 className="text-3xl md:text-5xl font-serif font-bold">Besondere Projekte</h2>
+              <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">HANDWERKS-CHRONIK</span>
+              <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7]">MASSANFERTIGUNGEN & PROJEKTE</h2>
             </div>
             <Link href="/projekte">
-              <span className="text-sm tracking-wider uppercase font-sans font-semibold text-foreground hover:text-accent cursor-pointer flex items-center space-x-2 mt-4 md:mt-0">
+              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#d40924] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#d40924]">
                 <span>Alle Projekte ansehen</span>
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -199,36 +196,31 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {featuredProjects.map((project) => (
-              <div key={project.id} className="group flex flex-col space-y-4 border border-border/10 p-4 bg-card hover:border-border/40 transition-colors">
-                <div className="aspect-[16/10] w-full overflow-hidden bg-muted relative">
+            {projects.slice(0, 2).map((project) => (
+              <div
+                key={project.id}
+                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#d40924] transition-colors"
+              >
+                <div className="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700 filter grayscale contrast-110 group-hover:grayscale-0"
                   />
-                  <span className="absolute top-4 left-4 bg-background text-foreground text-[10px] tracking-widest uppercase font-sans px-3 py-1 border border-border/20">
+                  <span className="absolute top-4 left-4 bg-[#11110f] text-[#f8f8f7] text-[9px] tracking-widest uppercase px-3 py-1 border border-[#2a2a28] font-bold">
                     Projekt {project.year}
                   </span>
                 </div>
                 <div className="flex flex-col space-y-2 pt-2">
-                  <h3 className="font-serif text-2xl font-bold group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-3xl font-black uppercase text-[#f8f8f7] group-hover:text-[#d40924] transition-colors">
                     {project.title}
                   </h3>
-                  <div className="flex items-center space-x-4 text-xs text-muted-foreground font-sans">
-                    <span>Holzart: {project.woodType}</span>
-                    <span>•</span>
-                    <span>{project.dimensions}</span>
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground font-sans line-clamp-3 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="pt-2">
+                  <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans line-clamp-2">
+                    {project.description}
+                  </p>
                   <Link href={`/projekt/${project.slug}`}>
-                    <span className="text-xs tracking-wider uppercase font-sans font-semibold text-foreground group-hover:text-accent cursor-pointer flex items-center space-x-1">
-                      <span>Projektdetails & Entstehung</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
+                    <span className="text-[10px] tracking-widest uppercase font-bold text-[#f8f8f7] group-hover:text-[#d40924] transition-colors pt-2 block cursor-pointer">
+                      Entstehungsgeschichte &rarr;
                     </span>
                   </Link>
                 </div>

@@ -8,14 +8,16 @@ export default function Projects() {
   return (
     <Layout>
       {/* Projekte Header */}
-      <section className="bg-secondary/20 border-b border-border/20 py-16">
+      <section className="bg-[#11110f] border-b border-[#2a2a28] py-16">
         <div className="container">
           <div className="max-w-2xl flex flex-col space-y-4">
-            <span className="text-xs tracking-[0.25em] text-accent uppercase font-sans font-semibold">
-              Werkstatt-Chronik
+            <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">
+              WERKSTATT-CHRONIK
             </span>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold">Projekte & Maßanfertigungen</h1>
-            <p className="text-sm md:text-base text-muted-foreground font-sans leading-relaxed">
+            <h1 className="text-4xl md:text-6xl font-serif font-black uppercase text-[#f8f8f7]">
+              PROJEKTE & UNIKATE
+            </h1>
+            <p className="text-xs md:text-sm text-[#a8a8a3] leading-relaxed font-sans font-light">
               Neben meinen regelmäßigen Drechselarbeiten realisiere ich anspruchsvolle Möbelprojekte und maßgeschneiderte Unikate auf Kundenwunsch. Entdecken Sie hier die Entstehungsgeschichten und technischen Details ausgewählter Arbeiten.
             </p>
           </div>
@@ -23,36 +25,36 @@ export default function Projects() {
       </section>
 
       {/* Projekte Main */}
-      <section className="py-20">
+      <section className="py-20 bg-[#010101]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {projects.map((project) => (
-              <div key={project.id} className="group flex flex-col space-y-4 border border-border/10 p-4 bg-card hover:border-border/40 transition-colors">
-                <div className="aspect-[16/10] w-full overflow-hidden bg-muted relative">
+              <div key={project.id} className="group flex flex-col space-y-4 border border-[#2a2a28] p-4 bg-[#11110f] hover:border-[#d40924] transition-colors">
+                <div className="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700 filter grayscale contrast-110 group-hover:grayscale-0"
                   />
-                  <span className="absolute top-4 left-4 bg-background text-foreground text-[10px] tracking-widest uppercase font-sans px-3 py-1 border border-border/20">
+                  <span className="absolute top-4 left-4 bg-[#010101] text-[#f8f8f7] text-[10px] tracking-widest uppercase font-sans px-3 py-1 border border-[#2a2a28]">
                     Jahr: {project.year}
                   </span>
                 </div>
                 <div className="flex flex-col space-y-2 pt-2">
-                  <h3 className="font-serif text-xl font-bold group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] group-hover:text-[#d40924] transition-colors">
                     {project.title}
                   </h3>
-                  <div className="flex flex-col space-y-1 text-xs text-muted-foreground font-sans">
+                  <div className="flex flex-col space-y-1 text-xs text-[#a8a8a3] font-sans uppercase font-bold tracking-wider">
                     <span>Holzart: {project.woodType}</span>
                     <span>Maße: {project.dimensions}</span>
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground font-sans line-clamp-3 leading-relaxed">
+                <p className="text-xs text-[#a8a8a3] font-sans line-clamp-3 leading-relaxed font-light">
                   {project.description}
                 </p>
                 <div className="pt-2">
                   <Link href={`/projekt/${project.slug}`}>
-                    <span className="text-xs tracking-wider uppercase font-sans font-semibold text-foreground group-hover:text-accent cursor-pointer flex items-center space-x-1">
+                    <span className="text-xs tracking-wider uppercase font-sans font-bold text-[#f8f8f7] hover:text-[#d40924] cursor-pointer flex items-center space-x-1 transition-colors">
                       <span>Projektdetails & Entstehung</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </span>

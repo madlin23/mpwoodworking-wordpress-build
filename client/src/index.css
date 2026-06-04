@@ -4,10 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -27,62 +27,73 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --radius: 0px; /* Puristischer Minimalismus: Eckige Kanten für handwerkliche Struktur */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 :root {
-  /* Warm Minimalist Atelier Farbpalette */
-  --background: oklch(0.98 0.005 60); /* Warmes Off-White / Sand #FBF9F6 */
-  --foreground: oklch(0.18 0.015 45); /* Tiefes Walnuss-Schwarzbraun #1E1611 */
+  /* MP Woodworking Dunkel & Kontraststark Styleguide */
+  --primary: #d40924; /* Akzent Rot */
+  --primary-foreground: #f8f8f7;
+  --sidebar-primary: #d40924;
+  --sidebar-primary-foreground: #f8f8f7;
+  --radius: 0px; /* Kantiger, handwerklicher Look */
   
-  --card: oklch(0.99 0.003 60);
-  --card-foreground: oklch(0.18 0.015 45);
+  --background: #010101; /* Base */
+  --foreground: #f8f8f7; /* Text */
+  --card: #11110f; /* Surface */
+  --card-foreground: #f8f8f7;
+  --popover: #11110f;
+  --popover-foreground: #f8f8f7;
+  --secondary: #1a1a19; /* Surface 2 */
+  --secondary-foreground: #a8a8a3; /* Text Muted */
+  --muted: #1a1a19;
+  --muted-foreground: #a8a8a3;
+  --accent: #d40924; /* Signalrot */
+  --accent-foreground: #f8f8f7;
+  --destructive: #d40924;
+  --destructive-foreground: #f8f8f7;
+  --border: #2a2a28; /* Border */
+  --input: #1a1a19;
+  --ring: #d40924;
   
-  --popover: oklch(0.99 0.003 60);
-  --popover-foreground: oklch(0.18 0.015 45);
-  
-  --primary: oklch(0.18 0.015 45); /* Walnuss-Schwarzbraun als Primärfarbe */
-  --primary-foreground: oklch(0.98 0.005 60);
-  
-  --secondary: oklch(0.91 0.012 65); /* Eichen-Beige #D4C5B9 */
-  --secondary-foreground: oklch(0.18 0.015 45);
-  
-  --muted: oklch(0.94 0.008 60);
-  --muted-foreground: oklch(0.45 0.012 50);
-  
-  --accent: oklch(0.42 0.02 125); /* Gedämpftes Werkstatt-Moosgrün #4A5343 */
-  --accent-foreground: oklch(0.98 0.005 60);
-  
-  --destructive: oklch(0.45 0.12 25);
-  --destructive-foreground: oklch(0.98 0.005 60);
-  
-  --border: oklch(0.85 0.015 65); /* Zarte Eichenfugen */
-  --input: oklch(0.85 0.015 65);
-  --ring: oklch(0.42 0.02 125);
+  --sidebar: #11110f;
+  --sidebar-foreground: #f8f8f7;
+  --sidebar-accent: #1a1a19;
+  --sidebar-accent-foreground: #d40924;
+  --sidebar-border: #2a2a28;
+  --sidebar-ring: #d40924;
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    @apply border-border outline-ring/50 rounded-none!;
   }
   body {
-    @apply bg-background text-foreground selection:bg-accent/20 selection:text-foreground;
-    -webkit-font-smoothing: antialiased;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "lnum"; /* Lining figures for numbers */
   }
-  h1, h2, h3, h4, .font-serif {
-    font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: -0.01em;
-  }
-  
-  /* Elegante Übergänge standardmäßig für interaktive Elemente */
-  button, a, input, select, textarea {
-    transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  
-  /* Puristischer handwerklicher Button-Active-Effekt */
-  button:active, a:active {
-    transform: scale(0.98);
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
   }
 }
 
@@ -91,8 +102,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .flex {
@@ -102,24 +113,16 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      max-width: 1440px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
     }
-  }
-  
-  /* Spezifische Manufaktur-Designklassen */
-  .fuge-horizontal {
-    @apply h-[1px] bg-border/40 w-full;
-  }
-  .fuge-vertical {
-    @apply w-[1px] bg-border/40 h-full;
   }
 }
