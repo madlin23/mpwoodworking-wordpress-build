@@ -597,3 +597,28 @@ function mpwoodworking_force_woocommerce_email_colors() {
     }
 }
 add_action( 'init', 'mpwoodworking_force_woocommerce_email_colors' );
+
+/**
+ * WooCommerce PDF Invoices & Packing Slips: Custom Template im Theme registrieren
+ */
+function mpwoodworking_register_custom_pdf_template_path( $templates ) {
+    // Unser Custom-Template-Pfad im Theme registrieren
+    $theme_dir = get_template_directory() . '/woocommerce/pdf/mpwoodworking-invoice';
+    if ( is_dir( $theme_dir ) ) {
+        $templates['mpwoodworking-invoice'] = $theme_dir;
+    }
+    return $templates;
+}
+add_filter( 'wpo_wcpdf_templates', 'mpwoodworking_register_custom_pdf_template_path', 99 );
+
+/**
+ * Standard-PDF-Template auf unser Custom-Template setzen
+ */
+function mpwoodworking_set_default_pdf_template() {
+    if ( class_exists( 'WPO_WCPDF' ) ) {
+        $settings = get_option( 'wpo_wcpdf_settings_general', array() );
+        $settings['template_path'] = 'mpwoodworking-invoice';
+        update_option( 'wpo_wcpdf_settings_general', $settings );
+    }
+}
+add_action( 'init', 'mpwoodworking_set_default_pdf_template' );

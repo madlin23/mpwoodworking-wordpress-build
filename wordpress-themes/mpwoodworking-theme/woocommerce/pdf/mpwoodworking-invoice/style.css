@@ -1,0 +1,245 @@
+/* 
+ * MP Woodworking Custom PDF Invoice Stylesheet
+ * Handwerklicher, dunkel-kontraststarker Stil mit roten und lime-grünen Akzenten
+ */
+
+@page {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1.5cm;
+    margin-right: 1.5cm;
+}
+
+body {
+    background: #010101;
+    color: #f8f8f7;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+a {
+    color: #a3e635;
+    text-decoration: none;
+}
+
+/* Header & Logo */
+table.head {
+    width: 100%;
+    margin-bottom: 1.5cm;
+    border-bottom: 3px solid #d40924; /* Rote Akzentlinie */
+    padding-bottom: 15px;
+}
+
+td.logo {
+    vertical-align: middle;
+}
+
+td.logo h1 {
+    color: #f8f8f7;
+    font-size: 24pt;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+td.logo h1 span.accent {
+    color: #a3e635; /* Lime-Grüner Punkt */
+}
+
+td.logo p.tagline {
+    color: #a8a8a3;
+    font-size: 8pt;
+    margin: 3px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td.shop-info {
+    text-align: right;
+    color: #a8a8a3;
+    font-size: 8pt;
+    line-height: 1.4;
+}
+
+/* Dokumenten-Titel & Meta */
+table.document-type-header {
+    width: 100%;
+    margin-bottom: 1cm;
+}
+
+td.document-type-label {
+    color: #f8f8f7;
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td.document-meta {
+    text-align: right;
+    color: #a8a8a3;
+    font-size: 9pt;
+}
+
+td.document-meta strong {
+    color: #f8f8f7;
+}
+
+/* Adressblöcke */
+table.addresses {
+    width: 100%;
+    margin-bottom: 1.2cm;
+}
+
+td.address {
+    width: 50%;
+    vertical-align: top;
+}
+
+td.address h3 {
+    color: #f8f8f7;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-left: 2px solid #a3e635; /* Lime-Grüne Seitenlinie */
+    padding-left: 6px;
+}
+
+td.address address {
+    font-style: normal;
+    color: #a8a8a3;
+    line-height: 1.5;
+}
+
+/* Produkttabelle */
+table.order-details {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1cm;
+    background: #11110f; /* Dunkle Surface-Farbe */
+}
+
+table.order-details th {
+    background: #1a1a19;
+    color: #f8f8f7;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 8pt;
+    letter-spacing: 1px;
+    padding: 10px;
+    border: 1px solid #2a2a28;
+    text-align: left;
+}
+
+table.order-details td {
+    padding: 10px;
+    border: 1px solid #2a2a28;
+    color: #a8a8a3;
+    vertical-align: middle;
+}
+
+table.order-details tr.product-row td.product {
+    color: #f8f8f7;
+    font-weight: bold;
+}
+
+table.order-details tr.product-row td.price,
+table.order-details tr.product-row td.qty {
+    text-align: center;
+}
+
+/* Zusammenfassung / Totals */
+table.totals-table {
+    width: 100%;
+}
+
+td.totals-spacer {
+    width: 55%;
+}
+
+td.totals-wrapper {
+    width: 45%;
+}
+
+table.totals {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.totals tr td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #2a2a28;
+}
+
+table.totals tr.total-row-label {
+    color: #a8a8a3;
+    text-align: left;
+}
+
+table.totals tr.total-row-value {
+    color: #f8f8f7;
+    font-weight: bold;
+    text-align: right;
+}
+
+table.totals tr.grand-total td {
+    border-top: 2px solid #2a2a28;
+    border-bottom: 2px solid #2a2a28;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+table.totals tr.grand-total td.total-row-label {
+    color: #f8f8f7;
+    font-size: 11pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table.totals tr.grand-total td.total-row-value {
+    color: #d40924; /* Roter Preis */
+    font-size: 13pt;
+}
+
+/* Zahlungs- & Zusatzhinweise */
+table.notes-and-payment {
+    width: 100%;
+    margin-top: 1cm;
+}
+
+td.notes-and-payment-cell {
+    border: 1px solid #2a2a28;
+    background: #11110f;
+    padding: 15px;
+    color: #a8a8a3;
+    font-size: 8pt;
+    line-height: 1.5;
+}
+
+td.notes-and-payment-cell h4 {
+    color: #f8f8f7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+/* Footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1cm;
+    border-top: 1px solid #2a2a28;
+    padding-top: 10px;
+    text-align: center;
+    color: #a8a8a3;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
