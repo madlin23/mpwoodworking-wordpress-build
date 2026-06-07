@@ -166,6 +166,98 @@ function mpwoodworking_register_block_patterns() {
 <!-- /wp:group -->',
         )
     );
+
+    // Pattern 3: Märkische Edelhölzer Vorstellung (Grid & edle Textblöcke mit Lime-Grün-Details)
+    register_block_pattern(
+        'mpwoodworking/maerkische-holzarten',
+        array(
+            'title'       => __( 'Vorstellung märkischer Edelhölzer', 'mpwoodworking' ),
+            'description' => _x( 'Ein interaktives Grid-Layout mit feinen grünen Akzenten zur edlen Präsentation märkischer Hölzer.', 'Block pattern description', 'mpwoodworking' ),
+            'categories'  => array( 'mpwoodworking' ),
+            'content'     => '<!-- wp:group {"style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"2rem","right":"2rem"}}},"backgroundColor":"black","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-black-background-color has-background" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem;padding-left:2rem;border:1px solid #2a2a28;position:relative">
+    
+    <!-- Grüner Akzentpunkt oben links -->
+    <div style="position:absolute;top:20px;left:20px;width:8px;height:8px;background-color:#a3e635;border-radius:50%;box-shadow:0 0 8px #a3e635;"></div>
+
+    <!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"900"}},"textColor":"text","fontSize":"xx-large"} -->
+    <h2 class="wp-block-heading has-text-color has-xx-large-font-size" style="font-weight:900;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.5rem">UNSERE MÄRKISCHEN EDELHÖLZER</h2>
+    <!-- /wp:heading -->
+
+    <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"text-muted"} -->
+    <p class="has-text-muted-color has-text-color" style="line-height:1.6;color:#a8a8a3;font-family:\'Roboto Slab\',serif;margin-bottom:3rem;max-w:700px">Die Seele unserer Unikate liegt in ihrer Herkunft. Wir verarbeiten ausschließlich handverlesene Hölzer aus Berlin und Brandenburg. Jede Holzart hat ihren eigenen, unverkennbaren Charakter.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"2rem","left":"2rem"}}}} -->
+    <div class="wp-block-columns" style="margin-bottom:2rem">
+        <!-- Spalte 1: Eibe -->
+        <!-- wp:column {"style":{"border":{"width":"1px","style":"solid","color":"#2a2a28"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}}},"backgroundColor":"surface"} -->
+        <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
+            
+            <!-- Vertikale grüne Akzentlinie links -->
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+
+            <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
+            <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">DIE SELTENE EIBE</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"textColor":"accent","fontSize":"small"} -->
+            <p class="has-accent-color has-text-color has-small-font-size" style="color:#d40924;font-family:\'Roboto Slab\',serif;font-weight:bold;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1rem;font-size:11px">Taxus baccata • Extrem hart & zäh</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"text-muted","fontSize":"small"} -->
+            <p class="has-text-muted-color has-text-color has-small-font-size" style="line-height:1.6;color:#a8a8a3;font-family:\'Roboto Slab\',serif">Eibenholz fasziniert durch seinen leuchtend orange-violetten Kern und den hellen Splint. Es hat extrem dichte Jahresringe und lässt sich auf Hochglanz drechseln. Ein wahres Juwel märkischer Wälder.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:column -->
+
+        <!-- Spalte 2: Walnuss -->
+        <!-- wp:column {"style":{"border":{"width":"1px","style":"solid","color":"#2a2a28"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}}},"backgroundColor":"surface"} -->
+        <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
+            
+            <!-- Vertikale grüne Akzentlinie links -->
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+
+            <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
+            <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">EDLER WALNUSSBAUM</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"textColor":"accent","fontSize":"small"} -->
+            <p class="has-accent-color has-text-color has-small-font-size" style="color:#d40924;font-family:\'Roboto Slab\',serif;font-weight:bold;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1rem;font-size:11px">Juglans regia • Lebendige Maserung</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"text-muted","fontSize":"small"} -->
+            <p class="has-text-muted-color has-text-color has-small-font-size" style="line-height:1.6;color:#a8a8a3;font-family:\'Roboto Slab\',serif">Walnussholz besticht durch seine dunkelbraune, fast mystische Färbung und seine lebhafte, wolkenartige Maserung. Es verströmt pure Eleganz und ist perfekt für repräsentative Solitär-Möbel und Schalen.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:column -->
+
+        <!-- Spalte 3: Robinie -->
+        <!-- wp:column {"style":{"border":{"width":"1px","style":"solid","color":"#2a2a28"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}}},"backgroundColor":"surface"} -->
+        <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
+            
+            <!-- Vertikale grüne Akzentlinie links -->
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+
+            <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
+            <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">DIE WILDE ROBINIE</h3>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"textColor":"accent","fontSize":"small"} -->
+            <p class="has-accent-color has-text-color has-small-font-size" style="color:#d40924;font-family:\'Roboto Slab\',serif;font-weight:bold;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:1rem;font-size:11px">Robinia pseudoacacia • Unverwüstlich</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.6"}},"textColor":"text-muted","fontSize":"small"} -->
+            <p class="has-text-muted-color has-text-color has-small-font-size" style="line-height:1.6;color:#a8a8a3;font-family:\'Roboto Slab\',serif">Robinie ist das härteste und widerstandsfähigste Holz Europas. Seine grünlich-goldene Färbung und die markanten Porenstrukturen verleihen jedem Werkstück eine urwüchsige, fast archaische Kraft.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
+</div>
+<!-- /wp:group -->',
+        )
+    );
 }
 add_action( 'init', 'mpwoodworking_register_block_patterns' );
 
