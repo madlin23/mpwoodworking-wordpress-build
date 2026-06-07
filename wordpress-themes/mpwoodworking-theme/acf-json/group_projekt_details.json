@@ -1,0 +1,81 @@
+{
+    "key": "group_projekt_details",
+    "title": "Projekt-Details (Handwerk)",
+    "fields": [
+        {
+            "key": "field_holzart_detail",
+            "label": "Holz-Besonderheiten",
+            "name": "holzart_detail",
+            "type": "text",
+            "instructions": "Genaue botanische Bezeichnung oder Details zum Fundort des Holzes (z.B. Eibe aus Berlin-Köpenick, 120 Jahre alt).",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "z.B. Lokale Eibe (Berlin-Köpenick), extrem dichte Jahresringe.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_herstellungsdauer",
+            "label": "Herstellungsdauer",
+            "name": "herstellungsdauer",
+            "type": "text",
+            "instructions": "Wie viel reine Arbeitszeit wurde für dieses Werkstück benötigt?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "z.B. ca. 14 Stunden reine Drechsel- und Schleifarbeit.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_besonderheiten",
+            "label": "Konstruktive Besonderheiten",
+            "name": "besonderheiten",
+            "type": "textarea",
+            "instructions": "Besondere handwerkliche Kniffe, Werkzeuge oder Stabilisierungsmaßnahmen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "z.B. Erhalt der natürlichen Baumrinde am oberen Schalenrand, Risse mit Walnuss-Inlays stabilisiert.",
+            "new_lines": "",
+            "maxlength": "",
+            "rows": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "projekt"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Erweiterte Metadaten für das MP Woodworking Projekt-Portfolio",
+    "modified": 1780605169
+}
