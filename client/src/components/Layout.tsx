@@ -47,11 +47,19 @@ export default function Layout({ children }: LayoutProps) {
               return (
                 <Link key={item.path} href={item.path}>
                   <span
-                    className={`font-sans text-xs tracking-widest uppercase font-bold cursor-pointer relative py-1 transition-colors hover:text-[#d40924] ${
+                    className={`font-sans text-xs tracking-widest uppercase font-bold cursor-pointer relative py-1 transition-colors hover:text-[#a3e635] ${
                       isActive ? "text-[#d40924]" : "text-[#a8a8a3]"
                     }`}
                   >
                     {item.name}
+                    {/* Grüner feiner Unterstrich bei Hover und Rot bei Active */}
+                    <span
+                      className={`absolute bottom-0 left-0 w-full h-[1px] transition-transform origin-left duration-200 ${
+                        isActive
+                          ? "bg-[#d40924] scale-x-100"
+                          : "bg-[#a3e635] scale-x-0 hover:scale-x-100"
+                      }`}
+                    />
                   </span>
                 </Link>
               );
@@ -61,8 +69,8 @@ export default function Layout({ children }: LayoutProps) {
           {/* Warenkorb & Mobile Toggle */}
           <div className="flex items-center space-x-4">
             <Link href="/warenkorb">
-              <div className="relative cursor-pointer p-2 hover:bg-[#1a1a19] border border-transparent hover:border-[#2a2a28] transition-colors">
-                <ShoppingBag className="w-5 h-5 text-[#f8f8f7] stroke-[1.5]" />
+              <div className="relative cursor-pointer p-2 hover:bg-[#1a1a19] border border-transparent hover:border-[#2a2a28] transition-colors group">
+                <ShoppingBag className="w-5 h-5 text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors stroke-[1.5]" />
                 {cartCount > 0 && (
                   <span className="absolute -top-0.5 -right-0.5 bg-[#d40924] text-[#f8f8f7] font-sans text-[10px] font-bold w-4 h-4 flex items-center justify-center">
                     {cartCount}
@@ -73,7 +81,7 @@ export default function Layout({ children }: LayoutProps) {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 hover:bg-[#1a1a19] border border-transparent hover:border-[#2a2a28] transition-colors text-[#f8f8f7]"
+              className="md:hidden p-2 hover:bg-[#1a1a19] border border-transparent hover:border-[#2a2a28] transition-colors text-[#f8f8f7] hover:text-[#a3e635]"
               aria-label="Menü öffnen"
             >
               {isMobileMenuOpen ? (
@@ -95,7 +103,7 @@ export default function Layout({ children }: LayoutProps) {
                   <Link key={item.path} href={item.path}>
                     <span
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`font-sans text-sm tracking-widest uppercase cursor-pointer py-2 block border-b border-[#2a2a28] ${
+                      className={`font-sans text-sm tracking-widest uppercase cursor-pointer py-2 block border-b border-[#2a2a28] transition-colors hover:text-[#a3e635] ${
                         isActive ? "text-[#d40924] font-bold" : "text-[#a8a8a3]"
                       }`}
                     >
@@ -137,7 +145,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="flex flex-col space-y-2 font-sans text-xs">
               {navItems.map((item) => (
                 <Link key={item.path} href={item.path}>
-                  <span className="text-[#a8a8a3] hover:text-[#d40924] transition-colors cursor-pointer uppercase tracking-wider font-bold">
+                  <span className="text-[#a8a8a3] hover:text-[#a3e635] transition-colors cursor-pointer uppercase tracking-wider font-bold">
                     {item.name}
                   </span>
                 </Link>
@@ -154,7 +162,7 @@ export default function Layout({ children }: LayoutProps) {
               Atelier & Werkstatt Köpenick<br />
               Besuche ausschließlich nach Vereinbarung.<br />
               <strong className="text-[#f8f8f7]">Marco Paul</strong><br />
-              E-Mail: <span className="text-[#d40924] hover:underline cursor-pointer">info@mpwoodworking.de</span>
+              E-Mail: <span className="text-[#d40924] hover:text-[#a3e635] transition-colors hover:underline cursor-pointer">info@mpwoodworking.de</span>
             </p>
           </div>
 
@@ -164,10 +172,10 @@ export default function Layout({ children }: LayoutProps) {
               Rechtliches
             </span>
             <div className="flex flex-col space-y-2 font-sans text-xs text-[#a8a8a3]">
-              <span className="hover:text-[#f8f8f7] cursor-pointer transition-colors uppercase tracking-wider">Impressum</span>
-              <span className="hover:text-[#f8f8f7] cursor-pointer transition-colors uppercase tracking-wider">Datenschutzerklärung</span>
-              <span className="hover:text-[#f8f8f7] cursor-pointer transition-colors uppercase tracking-wider">Widerrufsbelehrung</span>
-              <span className="hover:text-[#f8f8f7] cursor-pointer transition-colors uppercase tracking-wider">AGB</span>
+              <span className="hover:text-[#a3e635] cursor-pointer transition-colors uppercase tracking-wider">Impressum</span>
+              <span className="hover:text-[#a3e635] cursor-pointer transition-colors uppercase tracking-wider">Datenschutzerklärung</span>
+              <span className="hover:text-[#a3e635] cursor-pointer transition-colors uppercase tracking-wider">Widerrufsbelehrung</span>
+              <span className="hover:text-[#a3e635] cursor-pointer transition-colors uppercase tracking-wider">AGB</span>
             </div>
           </div>
         </div>
