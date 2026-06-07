@@ -267,3 +267,241 @@ acf_add_local_field_group(array(
 ));
 
 endif;
+
+/**
+ * WooCommerce Transaktions-E-Mails an das dunkel-kontraststarke Handwerks-Design anpassen.
+ * Integriert die neuen leuchtend Lime-Grünen Akzente (#a3e635) und das klassische Rot (#d40924).
+ */
+function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
+    // Dunkel-kontraststarke Farben definieren
+    $bg_color     = '#010101'; // Base
+    $surface_color = '#11110f'; // Surface
+    $text_color    = '#f8f8f7'; // Text
+    $muted_color   = '#a8a8a3'; // Text Muted
+    $accent_red    = '#d40924'; // Accent Rot
+    $accent_lime   = '#a3e635'; // Accent Lime-Grün
+    $border_color  = '#2a2a28'; // Border
+
+    $custom_css = "
+        body, #wrapper {
+            background-color: {$bg_color} !important;
+            color: {$text_color} !important;
+            font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !important;
+        }
+        #template_container {
+            background-color: {$surface_color} !important;
+            border: 1px solid {$border_color} !important;
+            border-top: 4px solid {$accent_red} !important;
+            box-shadow: 0 0 15px rgba(163, 230, 53, 0.05) !important;
+            border-radius: 0px !important;
+        }
+        #template_header {
+            background-color: {$bg_color} !important;
+            border-bottom: 1px solid {$border_color} !important;
+            border-radius: 0px !important;
+            padding: 36px 48px !important;
+        }
+        #template_header h1 {
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !important;
+            font-size: 32px !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            line-height: 120% !important;
+            margin: 0 !important;
+            text-shadow: 0 0 8px rgba(163, 230, 53, 0.1) !important;
+        }
+        #template_header h1::after {
+            content: ' •';
+            color: {$accent_lime} !important;
+            text-shadow: 0 0 4px {$accent_lime} !important;
+        }
+        #template_body {
+            background-color: {$surface_color} !important;
+            border-radius: 0px !important;
+        }
+        #body_content {
+            background-color: {$surface_color} !important;
+            padding: 48px !important;
+        }
+        #body_content_inner {
+            color: {$muted_color} !important;
+            font-size: 13px !important;
+            line-height: 160% !important;
+        }
+        #body_content_inner strong {
+            color: {$text_color} !important;
+            font-weight: bold !important;
+        }
+        #body_content_inner h2 {
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', sans-serif !important;
+            font-size: 20px !important;
+            font-weight: bold !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            border-bottom: 1px solid {$border_color} !important;
+            padding-bottom: 8px !important;
+            margin-top: 36px !important;
+            margin-bottom: 16px !important;
+        }
+        #body_content_inner h3 {
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', sans-serif !important;
+            font-size: 16px !important;
+            font-weight: bold !important;
+            text-transform: uppercase !important;
+            margin-top: 24px !important;
+            margin-bottom: 12px !important;
+        }
+        
+        /* Tabellen für Produkte & Preise */
+        table.td {
+            border: 1px solid {$border_color} !important;
+            background-color: {$bg_color} !important;
+        }
+        table.td th {
+            border: 1px solid {$border_color} !important;
+            background-color: {$surface_color} !important;
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', sans-serif !important;
+            font-size: 12px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            padding: 12px !important;
+        }
+        table.td td {
+            border: 1px solid {$border_color} !important;
+            color: {$muted_color} !important;
+            padding: 12px !important;
+            font-size: 12px !important;
+        }
+        table.td td.td-product-title {
+            color: {$text_color} !important;
+            font-weight: bold !important;
+        }
+        
+        /* Preis-Zeilen */
+        #body_content_inner table.td tr.order_item td,
+        #body_content_inner table.td tr td {
+            border-bottom: 1px solid {$border_color} !important;
+        }
+        
+        /* Totals / Zusammenfassung */
+        #body_content_inner table.td tfoot tr th {
+            text-align: left !important;
+            border-top: 1px solid {$border_color} !important;
+            background-color: {$surface_color} !important;
+            color: {$muted_color} !important;
+            font-family: 'Roboto Slab', serif !important;
+            font-size: 11px !important;
+            text-transform: none !important;
+            font-weight: normal !important;
+        }
+        #body_content_inner table.td tfoot tr td {
+            border-top: 1px solid {$border_color} !important;
+            color: {$text_color} !important;
+            font-weight: bold !important;
+            text-align: right !important;
+        }
+        #body_content_inner table.td tfoot tr:last-child th {
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', sans-serif !important;
+            font-size: 16px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            font-weight: bold !important;
+        }
+        #body_content_inner table.td tfoot tr:last-child td {
+            color: {$accent_red} !important;
+            font-size: 18px !important;
+        }
+        
+        /* Adressen */
+        #addresses {
+            margin-top: 24px !important;
+        }
+        #addresses td {
+            padding: 16px !important;
+            border: 1px solid {$border_color} !important;
+            background-color: {$bg_color} !important;
+            color: {$muted_color} !important;
+            font-size: 12px !important;
+        }
+        #addresses h3 {
+            color: {$text_color} !important;
+            font-family: 'Bebas Neue', sans-serif !important;
+            font-size: 16px !important;
+            text-transform: uppercase !important;
+            margin-bottom: 8px !important;
+        }
+        
+        /* Buttons in E-Mails */
+        a.link, .link, a.button, .button {
+            color: {$accent_lime} !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+        }
+        a.button {
+            display: inline-block !important;
+            background-color: {$accent_red} !important;
+            color: {$text_color} !important;
+            font-family: 'Roboto Slab', serif !important;
+            font-size: 12px !important;
+            font-weight: bold !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            padding: 12px 24px !important;
+            border-radius: 0px !important;
+            border: 1px solid transparent !important;
+            margin-top: 16px !important;
+            transition: all 0.3s ease !important;
+        }
+        a.button:hover {
+            background-color: #ef1a35 !important;
+            box-shadow: 0 0 10px rgba(163, 230, 53, 0.3) !important;
+            border-color: rgba(163, 230, 53, 0.3) !important;
+        }
+        
+        /* Footer */
+        #template_footer {
+            background-color: {$bg_color} !important;
+            border-top: 1px solid {$border_color} !important;
+            padding: 36px 48px !important;
+            border-radius: 0px !important;
+        }
+        #template_footer td {
+            padding: 0 !important;
+        }
+        #credit {
+            color: {$muted_color} !important;
+            font-size: 10px !important;
+            line-height: 150% !important;
+            text-align: center !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
+            font-weight: bold !important;
+        }
+        #credit a {
+            color: {$accent_lime} !important;
+            text-decoration: none !important;
+        }
+    ";
+
+    return $css . $custom_css;
+}
+add_filter( 'woocommerce_email_styles', 'mpwoodworking_custom_woocommerce_email_styles', 99, 2 );
+
+/**
+ * WooCommerce E-Mail-Einstellungen direkt im Code überschreiben, um den Stil zu erzwingen
+ */
+function mpwoodworking_force_woocommerce_email_colors() {
+    if ( class_exists( 'WooCommerce' ) ) {
+        update_option( 'woocommerce_email_background_color', '#010101' );
+        update_option( 'woocommerce_email_body_background_color', '#11110f' );
+        update_option( 'woocommerce_email_base_color', '#d40924' ); // Hauptfarbe Rot
+        update_option( 'woocommerce_email_text_color', '#a8a8a3' );
+    }
+}
+add_action( 'init', 'mpwoodworking_force_woocommerce_email_colors' );
