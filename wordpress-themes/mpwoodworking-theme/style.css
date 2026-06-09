@@ -10,3 +10,231 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mpwoodworking
 Tags: custom-menu, featured-images, flexible-header, translation-ready, woocommerce, portfolio
 */
+
+/* ==========================================================================
+   WooCommerce Checkout & Zahlungsdienstleister (Payment Gateways) Styles
+   ========================================================================== */
+
+/* Checkout Container & Layout */
+.woocommerce-checkout {
+    background-color: #010101;
+    color: #f8f8f7;
+}
+
+.woocommerce-checkout form.checkout {
+    border: 1px solid #2a2a28;
+    background-color: #11110f;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Eingabefelder im Checkout */
+.woocommerce-checkout .form-row input.input-text,
+.woocommerce-checkout .form-row textarea,
+.woocommerce-checkout .form-row select {
+    background-color: #010101 !important;
+    border: 1px solid #2a2a28 !important;
+    color: #f8f8f7 !important;
+    border-radius: 0px !important;
+    padding: 12px !important;
+    transition: all 0.3s ease;
+}
+
+.woocommerce-checkout .form-row input.input-text:focus,
+.woocommerce-checkout .form-row textarea:focus,
+.woocommerce-checkout .form-row select:focus {
+    border-color: #a3e635 !important; /* Lime-Grüner Fokus-Rahmen */
+    box-shadow: 0 0 8px rgba(163, 230, 53, 0.2) !important;
+    outline: none;
+}
+
+/* Zahlungsbereich (Payment Methods Box) */
+#order_review #payment {
+    background: #010101 !important;
+    border: 1px solid #2a2a28 !important;
+    padding: 20px !important;
+    margin-top: 30px;
+}
+
+/* Zahlungsdienstleister Liste */
+#order_review #payment ul.payment_methods {
+    border-bottom: 1px solid #2a2a28 !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+#order_review #payment ul.payment_methods li {
+    color: #a8a8a3 !important;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Radio Buttons für Zahlungsarten */
+#order_review #payment ul.payment_methods li input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #11110f;
+    border: 2px solid #2a2a28;
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#order_review #payment ul.payment_methods li input[type="radio"]:checked {
+    border-color: #a3e635; /* Lime-Grüner aktiver Rahmen */
+    background-color: #010101;
+}
+
+#order_review #payment ul.payment_methods li input[type="radio"]:checked::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #a3e635; /* Lime-Grüner Punkt im Radio-Button */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px #a3e635;
+}
+
+/* Label der Zahlungsart */
+#order_review #payment ul.payment_methods li label {
+    color: #f8f8f7 !important;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Zahlungsdienstleister Logos (PayPal, Stripe Kreditkarten etc.) */
+#order_review #payment ul.payment_methods li img {
+    max-height: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+    filter: grayscale(100%) contrast(150%) brightness(90%); /* Passt bunte Logos an das dunkle Design an */
+    transition: all 0.3s ease;
+}
+
+#order_review #payment ul.payment_methods li input[type="radio"]:checked + label + img,
+#order_review #payment ul.payment_methods li input[type="radio"]:checked + label img {
+    filter: none; /* Zeigt das Logo farbig/normal, wenn ausgewählt */
+}
+
+/* Beschreibungstext der Zahlungsart (Payment Box/Bubble) */
+#order_review #payment div.payment_box {
+    background-color: #11110f !important;
+    border: 1px solid #2a2a28 !important;
+    color: #a8a8a3 !important;
+    font-size: 9.5pt;
+    border-radius: 0px !important;
+    padding: 15px !important;
+    margin: 10px 0 15px 0 !important;
+    position: relative;
+}
+
+/* Kleiner Pfeil nach oben bei der Zahlungsbeschreibung */
+#order_review #payment div.payment_box::before {
+    border-bottom-color: #2a2a28 !important;
+    top: -1em !important;
+}
+
+/* Stripe Kreditkarten-Formular-Felder (Stripe Elements / CC Inputs) */
+.wc-stripe-elements-field,
+#stripe-card-element,
+.stripe-credit-card-brand {
+    background-color: #010101 !important;
+    border: 1px solid #2a2a28 !important;
+    padding: 12px !important;
+    border-radius: 0px !important;
+    color: #f8f8f7 !important;
+}
+
+.wc-stripe-elements-field.focused,
+#stripe-card-element.focused {
+    border-color: #a3e635 !important;
+    box-shadow: 0 0 8px rgba(163, 230, 53, 0.2) !important;
+}
+
+/* PayPal Smart Buttons Container */
+#paypal-button-container {
+    margin-top: 15px;
+    border: 1px solid #2a2a28;
+    padding: 10px;
+    background-color: #11110f;
+}
+
+/* Bestellen Button (Place Order Button) */
+#order_review #payment #place_order {
+    background-color: #d40924 !important; /* Roter Button */
+    color: #f8f8f7 !important;
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    border-radius: 0px !important;
+    border: 1px solid transparent !important;
+    padding: 15px 30px !important;
+    font-size: 11pt !important;
+    width: 100% !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+#order_review #payment #place_order:hover {
+    background-color: #ef1a35 !important;
+    box-shadow: 0 0 15px rgba(163, 230, 53, 0.3) !important; /* Lime-Grüner Glow-Effekt bei Hover */
+    border-color: rgba(163, 230, 53, 0.3) !important;
+}
+
+/* Nutzungsbedingungen / AGB Checkbox */
+.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper {
+    margin-bottom: 20px;
+    color: #a8a8a3;
+    font-size: 9pt;
+}
+
+.woocommerce-checkout .woocommerce-form__label-for-checkbox {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.woocommerce-checkout input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #010101;
+    border: 1px solid #2a2a28;
+    padding: 7px;
+    border-radius: 0px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.woocommerce-checkout input[type="checkbox"]:checked {
+    border-color: #a3e635;
+    background-color: #11110f;
+}
+
+.woocommerce-checkout input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Haken-Symbol */
+    font-size: 10px;
+    color: #a3e635;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-shadow: 0 0 4px #a3e635;
+}
