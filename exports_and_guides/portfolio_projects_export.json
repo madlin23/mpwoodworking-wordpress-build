@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Eibenholz-Schale 'Naturrand'",
+        "year": "2026",
+        "wood_type": "Eibe (Taxus baccata)",
+        "dimensions": "Ø 26 cm, Höhe 12 cm",
+        "surface": "Hartwachsöl seidenmatt",
+        "description": "Dieses Projekt zeigt die Entstehung einer skulpturalen Schale aus einem 120 Jahre alten Eibenstamm aus Berlin-Köpenick. Die besondere Herausforderung lag im Erhalt des extrem dünnen, rissgefährdeten Splintholzes am Naturrand. Durch extrem langsame Trocknung und präzises Drechseln im nassen Zustand konnte dieses meisterhafte Unikat stabilisiert werden.",
+        "image_url": "https://mpwoodwork-rmvrmvhz.manus.space/manus-storage/product_schale_2c1c6821.png",
+        "acf_holzart_detail": "Lokale Eibe (Berlin-Köpenick), extrem dichte Jahresringe.",
+        "acf_herstellungsdauer": "ca. 14 Stunden reine Drechsel- und Schleifarbeit (ohne Trocknungszeit).",
+        "acf_besonderheiten": "Erhalt der natürlichen Baumrinde am oberen Schalenrand."
+    },
+    {
+        "title": "Walnuss-Esstisch 'Köpenick'",
+        "year": "2025",
+        "wood_type": "Walnuss (Juglans regia)",
+        "dimensions": "220 cm x 95 cm, Height 76 cm",
+        "surface": "Naturöl-Finish, wasserabweisend",
+        "description": "Ein massiver Esstisch aus zwei spiegelbildlich gefügten Bohlen (Bookmatch) eines Berliner Walnussbaums. Die natürlichen Baumkanten wurden geschält, gebürstet und geschliffen, um ihren organischen Charakter zu bewahren. Getragen wird die schwere Tischplatte von einem handgeschmiedeten, minimalistischen Rohstahl-Gestell.",
+        "image_url": "https://mpwoodwork-rmvrmvhz.manus.space/manus-storage/hero_atelier_0f82348e.png",
+        "acf_holzart_detail": "Berliner Walnuss mit wildem Kern und wunderschönen Astwirbeln.",
+        "acf_herstellungsdauer": "ca. 45 Arbeitsstunden über einen Zeitraum von 3 Monaten.",
+        "acf_besonderheiten": "Baumkanten im Originalzustand, Astlöcher mit transparentem Epoxidharz stabilisiert."
+    },
+    {
+        "title": "Serie 'Zweierlei' Pfeffermühlen",
+        "year": "2026",
+        "wood_type": "Walnuss, Ahorn, Kirsche, Zwetschge",
+        "dimensions": "Höhe 22 cm",
+        "surface": "Lebensmittelechtes Walnussöl",
+        "description": "Die Mühlen-Serie 'Zweierlei' entstand aus dem Wunsch, haptisch und visuell kontrastierende Hölzer im Drechselhandwerk miteinander zu verbinden. Durch präzise Zapfenverbindungen werden Kopf, Korpus und Fuß aus unterschiedlichen Holzarten verleimt und anschließend in einem Stück in Form gedreht.",
+        "image_url": "https://mpwoodwork-rmvrmvhz.manus.space/manus-storage/product_muehle_c3739d10.png",
+        "acf_holzart_detail": "Kombinationen aus märkischem Ahorn (hell) und Berliner Walnuss (dunkel).",
+        "acf_herstellungsdauer": "ca. 4 Stunden pro Mühle.",
+        "acf_besonderheiten": "Nahtlose Übergänge zwischen den Holzsegmenten, dänisches Qualitätsmahlwerk."
+    }
+]
