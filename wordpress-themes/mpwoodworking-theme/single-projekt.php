@@ -128,6 +128,49 @@
             </div>
         </div>
     <?php endwhile; ?>
+
+    <?php
+    // Verknüpfte Produkte anzeigen (ACF Relationship Field)
+    if ( function_exists('get_field') ) :
+        $verknuepfte_produkte = get_field('verknuepfte_produkte');
+        if ( $verknuepfte_produkte ) : ?>
+        <!-- Verknüpfte Produkte Sektion -->
+        <section class="py-16 bg-[#010101] border-t border-[#2a2a28]">
+            <div class="container max-w-6xl mx-auto px-4">
+                <div class="flex flex-col space-y-3 mb-10 relative pl-4">
+                    <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]"></div>
+                    <span class="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black font-sans">AUS DEMSELBEN HOLZ</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-black uppercase text-[#f8f8f7]">VERWANDTE UNIKATE</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <?php foreach ( $verknuepfte_produkte as $produkt ) : ?>
+                        <a href="<?php echo get_permalink( $produkt->ID ); ?>" class="group flex flex-col space-y-3 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#a3e635]/40 transition-colors no-underline">
+                            <?php if ( has_post_thumbnail( $produkt->ID ) ) : ?>
+                                <div class="aspect-square w-full overflow-hidden bg-[#1a1a19]">
+                                    <?php echo get_the_post_thumbnail( $produkt->ID, 'medium', array('class' => 'w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-110 group-hover:grayscale-0') ); ?>
+                                </div>
+                            <?php endif; ?>
+                            <div class="flex flex-col space-y-1">
+                                <h3 class="font-serif text-lg font-black uppercase text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors">
+                                    <?php echo get_the_title( $produkt->ID ); ?>
+                                </h3>
+                                <?php
+                                $product_obj = wc_get_product( $produkt->ID );
+                                if ( $product_obj ) : ?>
+                                    <span class="font-serif text-base font-bold text-[#d40924] flex items-center gap-1.5">
+                                        <?php echo $product_obj->get_price_html(); ?>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block" style="box-shadow: 0 0 6px #a3e635;"></span>
+                                    </span>
+                                <?php endif; ?>
+                            </div>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+        <?php endif; ?>
+    <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>

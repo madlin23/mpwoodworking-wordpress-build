@@ -8,6 +8,7 @@ import { ArrowRight, Hammer, Flame, Star, ShieldAlert } from "lucide-react";
 import { toast } from "sonner";
 
 export default function Home() {
+
   const { addToCart } = useCart();
 
   return (

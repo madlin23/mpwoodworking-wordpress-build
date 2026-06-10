@@ -358,6 +358,89 @@ acf_add_local_field_group(array(
     'description' => 'Erweiterte Metadaten für das MP Woodworking Projekt-Portfolio',
 ));
 
+/**
+ * ACF-Beziehungsfelder: Verknüpfung zwischen WooCommerce-Produkten und Portfolio-Projekten.
+ * Ermöglicht bidirektionale Verknüpfung: Produkte zeigen verwandte Projekte, Projekte zeigen verwandte Produkte.
+ */
+
+// Feldgruppe 1: Auf Projekten → Verknüpfte WooCommerce-Produkte anzeigen
+acf_add_local_field_group(array(
+    'key' => 'group_projekt_produkt_relation',
+    'title' => 'Verknüpfte Produkte (Shop)',
+    'fields' => array(
+        array(
+            'key' => 'field_verknuepfte_produkte',
+            'label' => 'Verknüpfte Produkte',
+            'name' => 'verknuepfte_produkte',
+            'type' => 'relationship',
+            'instructions' => 'Wählen Sie die WooCommerce-Produkte aus, die mit diesem Projekt in Verbindung stehen (z.B. Produkte aus demselben Holz oder derselben Technik).',
+            'required' => 0,
+            'post_type' => array('product'),
+            'taxonomy' => '',
+            'filters' => array('search', 'taxonomy'),
+            'elements' => array('featured_image'),
+            'min' => 0,
+            'max' => 10,
+            'return_format' => 'object',
+        ),
+    ),
+    'location' => array(
+        array(
+            array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'projekt',
+            ),
+        ),
+    ),
+    'menu_order' => 1,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'active' => true,
+    'description' => 'Verknüpft Portfolio-Projekte mit WooCommerce-Produkten für Cross-Selling und Storytelling.',
+));
+
+// Feldgruppe 2: Auf WooCommerce-Produkten → Verknüpfte Projekte anzeigen
+acf_add_local_field_group(array(
+    'key' => 'group_produkt_projekt_relation',
+    'title' => 'Verknüpfte Projekte (Portfolio)',
+    'fields' => array(
+        array(
+            'key' => 'field_verknuepfte_projekte',
+            'label' => 'Verknüpfte Projekte',
+            'name' => 'verknuepfte_projekte',
+            'type' => 'relationship',
+            'instructions' => 'Wählen Sie die Portfolio-Projekte aus, die mit diesem Produkt in Verbindung stehen (z.B. Maßanfertigungen aus demselben Holz).',
+            'required' => 0,
+            'post_type' => array('projekt'),
+            'taxonomy' => '',
+            'filters' => array('search'),
+            'elements' => array('featured_image'),
+            'min' => 0,
+            'max' => 10,
+            'return_format' => 'object',
+        ),
+    ),
+    'location' => array(
+        array(
+            array(
+                'param' => 'post_type',
+                'operator' => '==',
+                'value' => 'product',
+            ),
+        ),
+    ),
+    'menu_order' => 50,
+    'position' => 'normal',
+    'style' => 'default',
+    'label_placement' => 'top',
+    'instruction_placement' => 'label',
+    'active' => true,
+    'description' => 'Verknüpft WooCommerce-Produkte mit Portfolio-Projekten für authentisches Storytelling.',
+));
+
 endif;
 
 /**

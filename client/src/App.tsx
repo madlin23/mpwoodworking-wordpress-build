@@ -13,8 +13,8 @@ import WoodTypes from "./pages/WoodTypes";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path="/" component={Home} />
