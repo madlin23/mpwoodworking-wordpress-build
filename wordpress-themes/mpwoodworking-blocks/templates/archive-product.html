@@ -1,0 +1,50 @@
+<!-- wp:template-part {"slug":"header","theme":"mpwoodworking-blocks","tagName":"header"} /-->
+
+<!-- wp:main {"className":"mp-site-main mp-shop-main"} -->
+<main class="wp-block-group mp-site-main mp-shop-main"><!-- wp:group {"align":"full","className":"mp-page-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-page-hero"><!-- wp:group {"align":"wide","className":"is-style-mp-section-heading","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide is-style-mp-section-heading"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Einzelstücke aus dem Atelier</p><!-- /wp:paragraph -->
+<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"mp-page-title"} /-->
+<!-- wp:paragraph {"className":"mp-lead"} --><p class="mp-lead">Unikate aus regionalen Hölzern. Jedes verfügbare Stück wird über WooCommerce sicher verkauft und ist nur einmal erhältlich.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"mp-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-section"><!-- wp:woocommerce/breadcrumbs {"align":"wide"} /-->
+<!-- wp:group {"align":"wide","className":"mp-shop-toolbar","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide mp-shop-toolbar"><!-- wp:woocommerce/product-results-count /-->
+<!-- wp:woocommerce/catalog-sorting /--></div>
+<!-- /wp:group -->
+
+<!-- wp:mpwoodworking/shop-filters {"align":"wide"} /-->
+
+<!-- wp:woocommerce/product-collection {"queryId":61,"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"queryContextIncludes":["collection"],"align":"wide","className":"mp-product-grid"} -->
+<div class="wp-block-woocommerce-product-collection alignwide mp-product-grid"><!-- wp:woocommerce/product-template -->
+<!-- wp:group {"className":"mp-product-card","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-product-card"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","isDescendentOfQueryLoop":true,"className":"mp-product-card__image"} /-->
+<!-- wp:group {"className":"mp-product-card__body","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-product-card__body"><!-- wp:post-title {"textAlign":"left","level":2,"isLink":true,"fontSize":"x-large","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+<!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"fontSize":"large"} /-->
+<!-- wp:woocommerce/product-button {"isDescendentOfQueryLoop":true} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:woocommerce/product-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:woocommerce/product-collection-no-results -->
+<!-- wp:group {"className":"is-style-mp-panel","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-mp-panel"><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Derzeit keine Unikate verfügbar</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color has-text-color">Neue Einzelstücke werden nach Fertigstellung veröffentlicht. Für Maßanfertigungen kannst du direkt Kontakt aufnehmen.</p><!-- /wp:paragraph -->
+<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Maßanfertigung anfragen</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div>
+<!-- /wp:group -->
+<!-- /wp:woocommerce/product-collection-no-results --></div>
+<!-- /wp:woocommerce/product-collection --></div>
+<!-- /wp:group --></main>
+<!-- /wp:main -->
+
+<!-- wp:template-part {"slug":"footer","theme":"mpwoodworking-blocks","tagName":"footer"} /-->

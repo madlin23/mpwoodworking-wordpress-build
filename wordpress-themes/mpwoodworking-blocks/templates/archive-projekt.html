@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","theme":"mpwoodworking-blocks","tagName":"header"} /-->
+
+<!-- wp:main {"className":"mp-site-main"} -->
+<main class="wp-block-group mp-site-main"><!-- wp:group {"align":"full","className":"mp-page-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-page-hero"><!-- wp:group {"align":"wide","className":"is-style-mp-section-heading","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide is-style-mp-section-heading"><!-- wp:paragraph {"className":"mp-kicker"} -->
+<p class="mp-kicker">Handwerks-Chronik</p>
+<!-- /wp:paragraph -->
+<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"mp-page-title"} /-->
+<!-- wp:paragraph {"className":"mp-lead"} -->
+<p class="mp-lead">Vom Rohholz bis zum fertigen Unikat: ausgewählte Maßanfertigungen und die Geschichten ihrer Entstehung.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"mp-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-section"><!-- wp:query {"queryId":51,"query":{"perPage":8,"pages":0,"offset":0,"postType":"projekt","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","className":"mp-project-grid"} -->
+<div class="wp-block-query alignwide mp-project-grid"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+<!-- wp:group {"className":"mp-project-card","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-project-card"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/10","align":"wide"} /-->
+<!-- wp:group {"className":"mp-project-card__body","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-project-card__body"><!-- wp:post-terms {"term":"holzart","textColor":"lime","fontSize":"small"} /-->
+<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+<!-- wp:post-excerpt {"moreText":"Entstehungsgeschichte →","showMoreOnNewLine":true,"excerptLength":24,"textColor":"muted","fontSize":"small"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color has-text-color">Noch keine Projekte veröffentlicht.</p><!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:pattern {"slug":"mpwoodworking/premium-cta"} /--></main>
+<!-- /wp:main -->
+
+<!-- wp:template-part {"slug":"footer","theme":"mpwoodworking-blocks","tagName":"footer"} /-->

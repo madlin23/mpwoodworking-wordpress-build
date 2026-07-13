@@ -1,0 +1,17 @@
+/*
+Theme Name: MP Woodworking Blocks
+Theme URI: https://mp-woodworking.de/
+Author: MP Woodworking
+Author URI: https://mp-woodworking.de/
+Description: Maßgeschneidertes Blank-Block-Theme für MP Woodworking mit WooCommerce-Unterstützung, wiederverwendbaren Patterns und einem kontrastreichen Werkstatt-Design.
+Requires at least: 6.6
+Tested up to: 6.8
+Requires PHP: 8.1
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mpwoodworking-blocks
+Tags: block-patterns, full-site-editing, e-commerce, portfolio, accessibility-ready
+*/
+
+/* Die Hauptgestaltung wird über theme.json und assets/css/theme.css geladen. */

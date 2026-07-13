@@ -1,0 +1,32 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"mp-site-main mp-section","layout":{"type":"constrained"}} -->
+<main class="wp-block-group mp-site-main mp-section"><!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","className":"mp-section-title"} /-->
+
+<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"mp-project-card","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-project-card"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","align":"wide"} /-->
+
+<!-- wp:group {"className":"mp-project-card__body","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-project-card__body"><!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
+<!-- wp:post-excerpt {"moreText":"Weiterlesen","showMoreOnNewLine":true,"excerptLength":22,"textColor":"muted"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"textColor":"muted"} -->
+<p class="has-muted-color has-text-color">Zurzeit sind keine Beiträge vorhanden.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous {"label":"Zurück"} /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next {"label":"Weiter"} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
