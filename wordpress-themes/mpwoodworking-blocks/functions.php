@@ -41,6 +41,21 @@ function mpwoodworking_blocks_enqueue_assets(): void {
 		array(),
 		(string) $theme->get( 'Version' )
 	);
+
+	wp_enqueue_style(
+		'mpwoodworking-source-match',
+		get_theme_file_uri( 'assets/css/source-match.css' ),
+		array( 'mpwoodworking-blocks' ),
+		(string) $theme->get( 'Version' )
+	);
+
+	wp_enqueue_script(
+		'mpwoodworking-source-match',
+		get_theme_file_uri( 'assets/js/source-match.js' ),
+		array(),
+		(string) $theme->get( 'Version' ),
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'mpwoodworking_blocks_enqueue_assets' );
 

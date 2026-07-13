@@ -1,0 +1,69 @@
+(() => {
+	"use strict";
+
+	const menuButton = document.querySelector(".mpw-source-menu-toggle");
+	const menu = document.querySelector(".mpw-source-nav");
+
+	if (menuButton && menu) {
+		const closeMenu = () => {
+			menuButton.setAttribute("aria-expanded", "false");
+			menu.classList.remove("is-open");
+			const label = menuButton.querySelector(".screen-reader-text");
+			if (label) {
+				label.textContent = "Menü öffnen";
+			}
+		};
+
+		menuButton.addEventListener("click", () => {
+			const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+			menuButton.setAttribute("aria-expanded", String(!isOpen));
+			menu.classList.toggle("is-open", !isOpen);
+			const label = menuButton.querySelector(".screen-reader-text");
+			if (label) {
+				label.textContent = isOpen ? "Menü öffnen" : "Menü schließen";
+			}
+		});
+
+		menu.addEventListener("click", (event) => {
+			if (event.target.closest("a")) {
+				closeMenu();
+			}
+		});
+
+		document.addEventListener("keydown", (event) => {
+			if (event.key === "Escape") {
+				closeMenu();
+			}
+		});
+
+		window.addEventListener("resize", () => {
+			if (window.innerWidth > 900) {
+				closeMenu();
+			}
+		});
+	}
+
+	const mailForm = document.querySelector("[data-mpw-mail-form]");
+
+	if (mailForm) {
+		mailForm.addEventListener("submit", (event) => {
+			event.preventDefault();
+
+			if (!mailForm.reportValidity()) {
+				return;
+			}
+
+			const data = new FormData(mailForm);
+			const subject = String(data.get("subject") || "Anfrage über die Website").trim();
+			const lines = [
+				`Name: ${String(data.get("name") || "").trim()}`,
+				`E-Mail: ${String(data.get("email") || "").trim()}`,
+				`Telefon: ${String(data.get("phone") || "").trim() || "–"}`,
+				"",
+				String(data.get("message") || "").trim(),
+			];
+			const mailto = `mailto:woodworking.mp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+			window.location.href = mailto;
+		});
+	}
+})();
