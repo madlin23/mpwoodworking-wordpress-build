@@ -5,6 +5,31 @@
 	const menu = document.querySelector(".mpw-source-nav");
 
 	if (menuButton && menu) {
+		const normalizePath = (path) => {
+			const normalized = path.replace(/\/{2,}/g, "/").replace(/\/$/, "");
+			return normalized || "/";
+		};
+		const currentPath = normalizePath(window.location.pathname);
+
+		menu.querySelectorAll("a[href]").forEach((link) => {
+			const linkPath = normalizePath(new URL(link.href, window.location.origin).pathname);
+			const isProjectDetail = linkPath === "/galerie" && currentPath.startsWith("/projekt/");
+			const isShopDetail = linkPath === "/shop" && (
+				currentPath.startsWith("/produkt/") ||
+				currentPath.startsWith("/product/") ||
+				currentPath.startsWith("/produkt-kategorie/") ||
+				currentPath.startsWith("/product-category/")
+			);
+			const isActive = currentPath === linkPath || isProjectDetail || isShopDetail;
+
+			link.classList.toggle("is-active", isActive);
+			if (isActive) {
+				link.setAttribute("aria-current", "page");
+			} else {
+				link.removeAttribute("aria-current");
+			}
+		});
+
 		const closeMenu = () => {
 			menuButton.setAttribute("aria-expanded", "false");
 			menu.classList.remove("is-open");
