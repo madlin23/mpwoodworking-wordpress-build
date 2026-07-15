@@ -1,0 +1,474 @@
+{
+  "site": "https://springgreen-chough-629931.hostingersite.com",
+  "desktop": {
+    "Über mich": {
+      "title": "Über mich – MP Woodworking",
+      "path": "/ueber-mich/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/ueber-mich/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Über mich"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 2437,
+      "imageCount": 3,
+      "brokenImages": [],
+      "portrait": {
+        "src": "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/marco-paul-about-portrait.webp",
+        "alt": "Marco Paul, Gründer von MP Woodworking, hält eine gedrechselte Holzschale in seiner Werkstatt in Berlin-Köpenick",
+        "naturalWidth": 1200,
+        "naturalHeight": 1500,
+        "displayWidth": 246,
+        "displayHeight": 308
+      },
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "portraitExpected": true,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Ihr Holz. Ihre Idee. Ein Unikat.",
+      "ok": true
+    },
+    "Produkte": {
+      "title": "Produkte – MP Woodworking",
+      "path": "/produkte/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/produkte/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Produkte"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 2064,
+      "imageCount": 5,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Handwerkliche Produktlinien",
+      "ok": true
+    },
+    "Galerie": {
+      "title": "Galerie – MP Woodworking",
+      "path": "/galerie/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/galerie/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Galerie"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 1700,
+      "imageCount": 7,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/0963E57E-93E1-4F6E-A96E-D569CA657EE6-1536x864.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/2057e31e-76ee-4825-8d15-60db2b12949e.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/595B304B-3268-4E45-93DA-E8CE5F4D7387-1536x864.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/385D7B3E-9B5A-4ED0-A198-569F471AE059-1-600x338.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/285E016A-BFCE-4932-AA14-65C5AB560037-600x450.jpg"
+      ],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": true,
+      "galleryOk": true,
+      "markerExpected": "Haben Sie eine Idee?",
+      "ok": true
+    },
+    "Videos": {
+      "title": "Videos – MP Woodworking",
+      "path": "/videos/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/videos/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Videos"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 1653,
+      "imageCount": 2,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Direkt aus der Werkstatt",
+      "ok": true
+    },
+    "Kontakt": {
+      "title": "Kontakt – MP Woodworking",
+      "path": "/kontakt/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/kontakt/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Kontakt"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 2251,
+      "imageCount": 2,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Lassen Sie uns über Holz sprechen.",
+      "ok": true
+    }
+  },
+  "mobile": {
+    "Über mich": {
+      "title": "Über mich – MP Woodworking",
+      "path": "/ueber-mich/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/ueber-mich/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Über mich"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 2326,
+      "imageCount": 3,
+      "brokenImages": [],
+      "portrait": {
+        "src": "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/marco-paul-about-portrait.webp",
+        "alt": "Marco Paul, Gründer von MP Woodworking, hält eine gedrechselte Holzschale in seiner Werkstatt in Berlin-Köpenick",
+        "naturalWidth": 1200,
+        "naturalHeight": 1500,
+        "displayWidth": 326,
+        "displayHeight": 408
+      },
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "portraitExpected": true,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Ihr Holz. Ihre Idee. Ein Unikat.",
+      "ok": true
+    },
+    "Produkte": {
+      "title": "Produkte – MP Woodworking",
+      "path": "/produkte/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/produkte/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Produkte"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 1953,
+      "imageCount": 5,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Handwerkliche Produktlinien",
+      "ok": true
+    },
+    "Galerie": {
+      "title": "Galerie – MP Woodworking",
+      "path": "/galerie/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/galerie/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Galerie"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 1589,
+      "imageCount": 7,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/0963E57E-93E1-4F6E-A96E-D569CA657EE6-600x338.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/2057e31e-76ee-4825-8d15-60db2b12949e-576x1024.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/595B304B-3268-4E45-93DA-E8CE5F4D7387-600x338.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/385D7B3E-9B5A-4ED0-A198-569F471AE059-1-scaled.jpg",
+        "https://springgreen-chough-629931.hostingersite.com/wp-content/uploads/2026/07/285E016A-BFCE-4932-AA14-65C5AB560037-scaled.jpg"
+      ],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": true,
+      "galleryOk": true,
+      "markerExpected": "Haben Sie eine Idee?",
+      "ok": true
+    },
+    "Videos": {
+      "title": "Videos – MP Woodworking",
+      "path": "/videos/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/videos/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Videos"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 1542,
+      "imageCount": 2,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Direkt aus der Werkstatt",
+      "ok": true
+    },
+    "Kontakt": {
+      "title": "Kontakt – MP Woodworking",
+      "path": "/kontakt/",
+      "header": true,
+      "footer": true,
+      "brand": true,
+      "menuToggle": true,
+      "navPaths": [
+        "/",
+        "/ueber-mich/",
+        "/produkte/",
+        "/galerie/",
+        "/shop/",
+        "/videos/",
+        "/kontakt/"
+      ],
+      "activePaths": [
+        "/kontakt/"
+      ],
+      "ariaCurrentCount": 1,
+      "h1": [
+        "Kontakt"
+      ],
+      "markerFound": true,
+      "bodyCharacterCount": 2140,
+      "imageCount": 2,
+      "brokenImages": [],
+      "portrait": null,
+      "galleryMedia": [],
+      "helloWorldFound": false,
+      "captcha": false,
+      "horizontalOverflow": false,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "portraitExpected": false,
+      "portraitOk": true,
+      "galleryExpected": false,
+      "galleryOk": true,
+      "markerExpected": "Lassen Sie uns über Holz sprechen.",
+      "ok": true
+    }
+  },
+  "ok": true
+}
