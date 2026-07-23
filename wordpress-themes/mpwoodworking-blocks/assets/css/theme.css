@@ -71,6 +71,14 @@
 	padding-block: clamp(4rem, 8vw, 7.5rem);
 }
 
+/* Vollständig gegliederte Seiten bringen ihr Abschnittspadding selbst mit.
+ * Der zweite Selektor erfasst bestehende, im Site-Editor gespeicherte Templates. */
+.mp-page-content:has(> .alignfull.mp-section),
+.wp-block-post-content.mp-section:has(> .alignfull.mp-section) {
+	margin-block-start: 0;
+	padding-block: 0;
+}
+
 .mp-section--compact {
 	padding-block: clamp(2.75rem, 5vw, 4.5rem);
 }
