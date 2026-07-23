@@ -85,9 +85,11 @@
 	padding-block: clamp(1.25rem, 2vw, 2rem);
 }
 
-/* Auf der Seite „Über mich“ wird der redundante Seitentitel vollständig
- * ausgeblendet; Navigation und redaktioneller Seiteninhalt bleiben erhalten. */
-body.page-id-23 .mp-site-main > .alignfull.mp-section.mp-section--bordered:has(.wp-block-post-title) {
+/* Redundante Titelbänder werden auf statischen Seiten und Übersichtsarchiven
+ * ausgeblendet. Projekt-Detailtitel und Überschriften innerhalb der Inhalte
+ * bleiben erhalten, weil ausschließlich direkte Kinder des Hauptbereichs greifen. */
+body:not(.home) .mp-site-main > .alignfull.mp-section.mp-section--bordered:has(.wp-block-post-title),
+body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 	display: none;
 }
 
