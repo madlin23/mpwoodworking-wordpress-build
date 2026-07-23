@@ -85,6 +85,12 @@
 	padding-block: clamp(1.25rem, 2vw, 2rem);
 }
 
+/* Auf der Seite „Über mich“ wird der redundante Seitentitel vollständig
+ * ausgeblendet; Navigation und redaktioneller Seiteninhalt bleiben erhalten. */
+body.page-id-23 .mp-site-main > .alignfull.mp-section.mp-section--bordered:has(.wp-block-post-title) {
+	display: none;
+}
+
 .mp-section--compact {
 	padding-block: clamp(2.75rem, 5vw, 4.5rem);
 }
