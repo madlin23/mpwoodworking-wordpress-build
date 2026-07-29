@@ -477,6 +477,7 @@ header.wp-block-template-part {
 }
 
 .mpw-source-hero h1,
+.mpw-contact-page h1,
 .mpw-source-section h2,
 .mpw-source-section h3,
 .mpw-source-values h2,
@@ -745,6 +746,7 @@ header.wp-block-template-part {
 }
 
 .mpw-source-about__content h2,
+.mpw-source-section-heading h1,
 .mpw-source-section-heading h2 {
 	color: #fff;
 	font-size: clamp(40px, 4vw, 58px);
@@ -1234,15 +1236,28 @@ header.wp-block-template-part {
 }
 
 .mpw-source-form-note {
-	color: #777;
+	color: #8a8a8a;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 1.55;
 	margin: -3px 0 18px;
 }
 
 .mpw-source-form-note a {
-	color: #aaa;
+	color: #c2c2c2;
 	text-decoration: underline;
+}
+
+.mpw-source-form-status {
+	color: #cfcfcf;
+	font-size: 13px;
+	line-height: 1.5;
+	margin: -6px 0 16px;
+	min-height: 1.5em;
+}
+
+.mpw-source-form-status:empty {
+	margin: 0;
+	min-height: 0;
 }
 
 .mpw-source-contact-form button {
@@ -1262,6 +1277,7 @@ header.wp-block-template-part {
 	border-bottom: 0;
 }
 
+.mpw-source-contact-details h2,
 .mpw-source-contact-details h3 {
 	color: #fff;
 	font-size: 19px;
@@ -1271,13 +1287,16 @@ header.wp-block-template-part {
 }
 
 .mpw-source-contact-details p,
+.mpw-source-contact-details address,
 .mpw-source-contact-details a {
 	color: #929292;
 	font-size: 15px;
 	line-height: 1.8;
 }
 
-.mpw-source-contact-details p {
+.mpw-source-contact-details p,
+.mpw-source-contact-details address {
+	font-style: normal;
 	margin: 0;
 }
 
@@ -1293,6 +1312,7 @@ header.wp-block-template-part {
 	padding: 24px !important;
 }
 
+.mpw-source-contact-callout h2,
 .mpw-source-contact-callout h3 {
 	font-size: 17px;
 }
@@ -1696,6 +1716,7 @@ header.wp-block-template-part {
 	}
 
 	.mpw-source-about__content h2,
+	.mpw-source-section-heading h1,
 	.mpw-source-section-heading h2 {
 		font-size: 39px;
 	}

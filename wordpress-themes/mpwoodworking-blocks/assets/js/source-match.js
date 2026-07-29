@@ -68,18 +68,30 @@
 		});
 	}
 
-	const mailForm = document.querySelector("[data-mpw-mail-form]");
+	const mailForms = document.querySelectorAll("[data-mpw-mail-form]");
 
-	if (mailForm) {
+	mailForms.forEach((mailForm) => {
+		const status = mailForm.querySelector(".mpw-source-form-status");
+		const setStatus = (message) => {
+			if (status) {
+				status.textContent = message;
+			}
+		};
+
 		mailForm.addEventListener("submit", (event) => {
 			event.preventDefault();
+			setStatus("");
 
 			if (!mailForm.reportValidity()) {
+				setStatus("Bitte füllen Sie die markierten Pflichtfelder vollständig aus.");
 				return;
 			}
 
 			const data = new FormData(mailForm);
-			const subject = String(data.get("subject") || "Anfrage über die Website").trim();
+			const recipient = String(mailForm.dataset.recipient || "woodworking.mp@gmail.com")
+				.trim()
+				.replace(/[\r\n]/g, "");
+			const subject = String(data.get("subject") || "").trim() || "Anfrage über die Website";
 			const lines = [
 				`Name: ${String(data.get("name") || "").trim()}`,
 				`E-Mail: ${String(data.get("email") || "").trim()}`,
@@ -87,8 +99,10 @@
 				"",
 				String(data.get("message") || "").trim(),
 			];
-			const mailto = `mailto:woodworking.mp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+			const mailto = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+
+			setStatus("Ihr E-Mail-Programm wird geöffnet. Senden Sie die Nachricht dort bitte noch ab.");
 			window.location.href = mailto;
 		});
-	}
+	});
 })();
