@@ -1,49 +1,82 @@
 <!-- wp:template-part {"slug":"header","theme":"mpwoodworking-blocks","tagName":"header"} /-->
 
 <!-- wp:main {"className":"mp-site-main mp-shop-main"} -->
-<main class="wp-block-group mp-site-main mp-shop-main"><!-- wp:group {"align":"full","className":"mp-page-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull mp-page-hero"><!-- wp:group {"align":"wide","className":"is-style-mp-section-heading","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide is-style-mp-section-heading"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Einzelstücke aus dem Atelier</p><!-- /wp:paragraph -->
-<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"mp-page-title"} /-->
-<!-- wp:paragraph {"className":"mp-lead"} --><p class="mp-lead">Unikate aus regionalen Hölzern. Jedes verfügbare Stück wird über WooCommerce sicher verkauft und ist nur einmal erhältlich.</p><!-- /wp:paragraph --></div>
+<main class="wp-block-group mp-site-main mp-shop-main"><!-- wp:group {"align":"full","className":"mp-shop-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-shop-hero"><!-- wp:group {"align":"wide","className":"mp-shop-hero__inner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mp-shop-hero__inner"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Handgefertigt in Berlin</p><!-- /wp:paragraph -->
+<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"mp-shop-hero__title"} /-->
+<!-- wp:paragraph {"className":"mp-shop-hero__lead"} --><p class="mp-shop-hero__lead">Entdecken Sie handgefertigte Einzelstücke aus ausgewählten Hölzern – mit eigener Maserung, sorgfältiger Oberfläche und nur einmal verfügbar.</p><!-- /wp:paragraph -->
+<!-- wp:group {"className":"mp-shop-hero__facts","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group mp-shop-hero__facts"><!-- wp:paragraph {"className":"mp-shop-fact"} --><p class="mp-shop-fact">Handarbeit aus Berlin</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"mp-shop-fact"} --><p class="mp-shop-fact">Jedes Stück ein Unikat</p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"mp-shop-fact"} --><p class="mp-shop-fact">Sorgfältig verpackt</p><!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"mp-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull mp-section"><!-- wp:woocommerce/breadcrumbs {"align":"wide"} /-->
-<!-- wp:group {"align":"wide","className":"mp-shop-toolbar","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide mp-shop-toolbar"><!-- wp:woocommerce/product-results-count /-->
+<!-- wp:group {"align":"full","className":"mp-shop-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-shop-section"><!-- wp:woocommerce/breadcrumbs {"align":"wide","className":"mp-shop-breadcrumbs"} /-->
+<!-- wp:group {"align":"wide","className":"mp-shop-toolbar","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+<div class="wp-block-group alignwide mp-shop-toolbar"><!-- wp:group {"className":"mp-shop-toolbar__intro","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-shop-toolbar__intro"><!-- wp:heading {"level":2,"className":"mp-shop-toolbar__title"} --><h2 class="wp-block-heading mp-shop-toolbar__title">Verfügbare Einzelstücke</h2><!-- /wp:heading -->
+<!-- wp:woocommerce/product-results-count /--></div>
+<!-- /wp:group -->
 <!-- wp:woocommerce/catalog-sorting /--></div>
 <!-- /wp:group -->
 
-<!-- wp:mpwoodworking/shop-filters {"align":"wide"} /-->
+<!-- wp:group {"align":"wide","className":"mp-shop-layout","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide mp-shop-layout"><!-- wp:group {"className":"mp-shop-sidebar","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-shop-sidebar"><!-- wp:group {"className":"mp-shop-sidebar__heading","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-shop-sidebar__heading"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Auswahl</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2,"className":"mp-shop-sidebar__title"} --><h2 class="wp-block-heading mp-shop-sidebar__title">Produkte filtern</h2><!-- /wp:heading -->
+<!-- wp:paragraph {"className":"mp-shop-sidebar__copy"} --><p class="mp-shop-sidebar__copy">Grenzen Sie die Auswahl nach Kategorie, Holzart, Preis oder Verfügbarkeit ein.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:mpwoodworking/shop-filters /--></div>
+<!-- /wp:group -->
 
-<!-- wp:woocommerce/product-collection {"queryId":61,"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"queryContextIncludes":["collection"],"align":"wide","className":"mp-product-grid"} -->
-<div class="wp-block-woocommerce-product-collection alignwide mp-product-grid"><!-- wp:woocommerce/product-template -->
+<!-- wp:woocommerce/product-collection {"queryId":61,"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"menu_order","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true},"tagName":"div","displayLayout":{"type":"flex","columns":2,"shrinkColumns":true},"queryContextIncludes":["collection"],"className":"mp-product-grid"} -->
+<div class="wp-block-woocommerce-product-collection mp-product-grid"><!-- wp:woocommerce/product-template -->
 <!-- wp:group {"className":"mp-product-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group mp-product-card"><!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","isDescendentOfQueryLoop":true,"className":"mp-product-card__image"} /-->
 <!-- wp:group {"className":"mp-product-card__body","layout":{"type":"constrained"}} -->
-<div class="wp-block-group mp-product-card__body"><!-- wp:post-title {"textAlign":"left","level":2,"isLink":true,"fontSize":"x-large","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
+<div class="wp-block-group mp-product-card__body"><!-- wp:mpwoodworking/unique-badge /-->
+<!-- wp:post-terms {"term":"product_cat","className":"mp-product-card__categories"} /-->
+<!-- wp:post-title {"textAlign":"left","level":3,"isLink":true,"fontSize":"x-large","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
 <!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true,"fontSize":"large"} /-->
+<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"excerptLength":18,"className":"mp-product-card__excerpt"} /-->
 <!-- wp:woocommerce/product-button {"isDescendentOfQueryLoop":true} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 <!-- /wp:woocommerce/product-template -->
 
-<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"},"className":"mp-shop-pagination"} -->
 <!-- wp:query-pagination-previous /-->
 <!-- wp:query-pagination-numbers /-->
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination -->
 
 <!-- wp:woocommerce/product-collection-no-results -->
-<!-- wp:group {"className":"is-style-mp-panel","layout":{"type":"constrained"}} -->
-<div class="wp-block-group is-style-mp-panel"><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Derzeit keine Unikate verfügbar</h3><!-- /wp:heading -->
-<!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color has-text-color">Neue Einzelstücke werden nach Fertigstellung veröffentlicht. Für Maßanfertigungen kannst du direkt Kontakt aufnehmen.</p><!-- /wp:paragraph -->
+<!-- wp:group {"className":"is-style-mp-panel mp-shop-empty","layout":{"type":"constrained"}} -->
+<div class="wp-block-group is-style-mp-panel mp-shop-empty"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Werkstattbestand</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Derzeit keine passenden Unikate verfügbar</h3><!-- /wp:heading -->
+<!-- wp:paragraph {"textColor":"muted"} --><p class="has-muted-color has-text-color">Entfernen Sie einzelne Filter oder fragen Sie eine individuelle Anfertigung direkt bei uns an.</p><!-- /wp:paragraph -->
 <!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Maßanfertigung anfragen</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div>
 <!-- /wp:group -->
 <!-- /wp:woocommerce/product-collection-no-results --></div>
 <!-- /wp:woocommerce/product-collection --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"mp-shop-commission-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-shop-commission-section"><!-- wp:group {"align":"wide","className":"mp-shop-commission","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide mp-shop-commission"><!-- wp:group {"className":"mp-shop-commission__content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-shop-commission__content"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Ihr Wunschstück</p><!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Noch nicht das Richtige dabei?</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Holzart, Form und Nutzung können den Ausgangspunkt für ein persönliches Einzelstück bilden. Beschreiben Sie uns Ihre Idee – wir melden uns mit einer ehrlichen Einschätzung.</p><!-- /wp:paragraph -->
+<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/kontakt/">Projekt anfragen</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"mp-shop-commission__visual","layout":{"type":"default"}} --><div class="wp-block-group mp-shop-commission__visual"></div><!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></main>
 <!-- /wp:main -->
 

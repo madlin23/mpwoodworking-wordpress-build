@@ -191,3 +191,19 @@ function mpwoodworking_blocks_guard_product_button( string $block_content ): str
 	);
 }
 add_filter( 'render_block_woocommerce/product-button', 'mpwoodworking_blocks_guard_product_button' );
+
+/**
+ * Give the main WooCommerce shop archive a descriptive title while preserving
+ * dynamic titles on product-category and attribute archives.
+ *
+ * @param string $title Current archive title.
+ * @return string
+ */
+function mpwoodworking_blocks_shop_archive_title( string $title ): string {
+	if ( function_exists( 'is_shop' ) && is_shop() ) {
+		return __( 'Der Unikat-Shop', 'mpwoodworking-blocks' );
+	}
+
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'mpwoodworking_blocks_shop_archive_title' );

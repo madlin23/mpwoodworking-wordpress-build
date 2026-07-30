@@ -1,12 +1,39 @@
 # MP Woodworking – Qualitätsbericht
 
+## Aktueller Qualitätsstatus – Shop-Redesign
+
+**Prüfstand:** 30. Juli 2026
+
+**Zielinstallation:** [springgreen-chough-629931.hostingersite.com][1]
+
+**Aktiver Theme-Stand:** `mpwoodworking-blocks` 1.1.12
+
+Das freigegebene WooCommerce-Oberflächenredesign wurde bitgenau live geschaltet und nach jedem Versionsschritt durch einen LiteSpeed-Cache-Purge aktualisiert. Die abschließende Prüfung verwendete ein isoliertes Chromium-Gastprofil ohne WordPress-Administrationscookies und ohne Browsercache. Shoparchiv, eine repräsentative Produktdetailseite und der leere Warenkorb bestanden jeweils auf Desktop und Mobil; insgesamt wurden **sechs von sechs** Seiten-/Viewportkombinationen erfolgreich abgenommen.
+
+| Live-Prüfbereich | Desktop 1440 × 900 | Mobil 390 × 844 | Kernergebnis |
+|---|---|---|---|
+| Shoparchiv | Bestanden | Bestanden | Werkstatt-Hero, Filter, sieben reale Produktkarten, 2/1 visuelle Spalten, kein Seitenüberlauf |
+| Produktdetail | Bestanden | Bestanden | Galerie, Kaufbereich, Vertrauenselemente, Rückfragepfad und mobile Touch-Ziele |
+| Warenkorb-Leerzustand | Bestanden | Bestanden | Vier Empfehlungen mit korrekten Karten- und Buttonbreiten sowie drei Vertrauenselementen |
+| Asset- und Bildintegrität | Bestanden | Bestanden | Theme-, Source-CSS- und Source-JS-Version 1.1.12; keine defekten Bilder oder fehlenden relevanten Alt-Texte |
+
+Die Live-QA identifizierte zunächst eine höher spezifische WooCommerce-Regel im Desktop-Produktgrid und anschließend Legacy-Breiten im Desktop-Warenkorb. Beide Konflikte wurden in den Theme-Versionen 1.1.10 bis 1.1.12 geschlossen und in der finalen Messung sowie Screenshotkontrolle bestätigt.
+
+> Die bestandene Oberflächenabnahme hat keine Produkte in den Warenkorb gelegt und keinen Checkout, keine Zahlung, keine Versand- oder Steuerberechnung, keine Bestellung und keine Transaktions-E-Mail ausgelöst. Diese Betriebsstrecken benötigen weiterhin einen separaten End-to-End-Test im vorgesehenen Testmodus.
+
+Der vollständige aktuelle Nachweis steht in `docs/SHOP-ABNAHME-2026-07-30.md`; Pflegestellen und Rollen sind in `docs/SHOP-PFLEGEMATRIX.md` und `docs/SHOP-REDAKTIONSHANDBUCH.md` dokumentiert. Maschinenbericht und sechs Screenshots liegen unter `docs/qa-live-2026-07-30-shop/`.
+
+---
+
+## Historischer Prüfstand – Inhalts- und Fotoseiten
+
 **Prüfstand:** 15. Juli 2026
 
 **Zielinstallation:** [springgreen-chough-629931.hostingersite.com][1]
 
 **Aktiver Theme-Stand:** `mpwoodworking-blocks` 1.1.2
 
-## Gesamtergebnis
+## Ergebnis des historischen Prüfstands
 
 Die öffentliche WordPress-Website wurde inhaltlich und visuell überarbeitet. Das bisher ungeeignete Foto auf **Über mich** ist durch ein professionell zugeschnittenes, farblich optimiertes und für das Web komprimiertes Porträt von Marco Paul ersetzt. Die Hauptmenü-Seiten **Über mich**, **Produkte**, **Galerie**, **Videos** und **Kontakt** besitzen nun jeweils eigenständige, markengerechte Inhalte mit klarer Abschnittshierarchie, aussagekräftigen Handlungsaufforderungen und konsistentem Responsive Design.[1]
 

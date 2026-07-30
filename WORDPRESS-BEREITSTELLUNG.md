@@ -2,11 +2,11 @@
 
 ## Ziel und aktueller Stand
 
-Diese Anleitung gilt für die WordPress-Installation unter [springgreen-chough-629931.hostingersite.com][1]. Die MP-Woodworking-Komponenten sind dort bereits installiert, aktiv und technisch geprüft. Der Shop bleibt bewusst im WooCommerce-Modus **„Coming soon“**, bis Originalmedien, vollständige Rechtstexte und die betriebliche Shopkonfiguration vorliegen.
+Diese Anleitung gilt für die WordPress-Installation unter [springgreen-chough-629931.hostingersite.com][1]. Die MP-Woodworking-Komponenten sind dort installiert und aktiv. Die öffentliche Shopoberfläche wurde am 30. Juli 2026 mit Theme-Version **1.1.12** abgenommen. Diese Oberflächenfreigabe ersetzt keine separate betriebliche Freigabe von Checkout, Zahlung, Versand, Steuern, Transaktions-E-Mails oder Rechtstexten.
 
 | Komponente | Live-Version | Zweck |
 |---|---:|---|
-| `mpwoodworking-blocks` | 1.0.2 | Blank-Block-Theme mit Designsystem, Templates, Patterns und öffentlicher Coming-soon-Kaufsperre |
+| `mpwoodworking-blocks` | 1.1.12 | Block-Theme mit Designsystem sowie live geprüftem Shoparchiv, Produktdetail und Warenkorb-Leerzustand |
 | `mpwoodworking-core` | 1.0.1 | Projekte, Holzarten, REST-fähige Metadaten, dynamische Blöcke und WooCommerce-Unikatlogik |
 
 Das Core-Plugin ist bewusst vom Theme getrennt. Projektdaten, Produktbeziehungen und Geschäftslogik bleiben dadurch auch bei einem späteren Theme-Wechsel erhalten. Das vorherige Hostinger-Theme und die WordPress-Standardthemes bleiben als Rückfalloption installiert.
@@ -17,13 +17,13 @@ Die Website verwendet den Titel **„MP Woodworking“**, den Untertitel **„Ho
 
 | Inhalt | Verifizierter Bestand |
 |---|---:|
-| WooCommerce-Produkte | 4 |
+| WooCommerce-Produkte im geprüften Shoparchiv | 7 |
 | Projekte | 3 |
 | Holzarten | 4 |
 | Projekt-Produkt-Beziehungen | 2 |
 | Shopwährung | EUR, deutsches Zahlenformat |
 | WooCommerce-Basisland | Deutschland |
-| Shop-Sichtbarkeit | Coming soon, nicht öffentlich kaufbar |
+| Shop-Sichtbarkeit | Öffentlich erreichbar; vollständiger Kaufweg in dieser Abnahme nicht erneut getestet |
 
 Die Kontaktseite verwendet eine direkte, datensparsame E-Mail-Anfrage an `hallo@mp-woodworking.de` mit vorbelegtem Betreff und Datenschutzhinweis. Vor Veröffentlichung ist zu bestätigen, dass dieses Postfach aktiv ist und zuverlässig empfangen wird.
 
@@ -37,15 +37,15 @@ Vor jeder Aktualisierung ist über Hostinger ein vollständiges Backup von Datei
 4. Führen Sie **„Installiertes durch Hochgeladenes ersetzen“** nur nach dieser Prüfung aus.
 5. Verifizieren Sie anschließend die aktive Versionsnummer in der Plugin- oder Theme-Verwaltung.
 6. Leeren Sie ausschließlich den normalen LiteSpeed-Seitencache über **LiteSpeed Cache → Toolbox → Purge All**. Datenbank-, Opcode- und vollständige Server-Cache-Funktionen sind dafür nicht erforderlich.
-7. Prüfen Sie Startseite, Shop, ein Produkt, Projekte, Kontakt und die öffentliche Coming-soon-Sperre erneut.
+7. Prüfen Sie Startseite, Shop, eine repräsentative Produktdetailseite, Warenkorb, Projekte und Kontakt erneut. Bei betriebsrelevanten Änderungen zusätzlich den vollständigen Kaufweg im vorgesehenen Testmodus prüfen.
 
 Ein Theme-Update darf die aktive Shop-Sichtbarkeit nicht verändern. Plugin-Updates dürfen keine vorhandenen Projekt- oder Produktdaten löschen.
 
 ## Noch erforderliche redaktionelle und betriebliche Pflege
 
-> **Die Shop-Sichtbarkeit darf erst nach Abschluss und Abnahme aller kritischen Punkte auf öffentlich gestellt werden.**
+> **Die öffentliche Shopoberfläche ist technisch abgenommen. Der vollständige Verkaufsbetrieb darf daraus nicht ohne separate Prüfung von Checkout, Zahlung, Versand, Steuern, E-Mail und Rechtstexten abgeleitet werden.**
 
-| Bereich | Erforderliche Pflege vor Launch |
+| Bereich | Offene redaktionelle oder betriebliche Prüfung |
 |---|---|
 | Originalmedien | Werkstatt-, Hero-, Atelier-, Produkt- und Projektfotos hochladen; Alt-Texte, Zuschnitt und responsive Darstellung prüfen |
 | Produkte | Bilder, finale Beschreibungen, Preise, Maße, Gewicht, Kategorien, Bestand und Lieferinformationen durch den Betreiber bestätigen |
@@ -63,7 +63,7 @@ Ein Theme-Update darf die aktive Shop-Sichtbarkeit nicht verändern. Plugin-Upda
 
 Rechtliche, steuerliche, kaufmännische oder personenbezogene Angaben dürfen nicht aus Platzhaltern abgeleitet oder erfunden werden. Der detaillierte Status steht in `docs/QA-BERICHT.md`.
 
-## Launch-Reihenfolge
+## Betriebsfreigabe des vollständigen Kaufwegs
 
 | Schritt | Freigabekriterium |
 |---:|---|
@@ -74,8 +74,8 @@ Rechtliche, steuerliche, kaufmännische oder personenbezogene Angaben dürfen ni
 | 5 | Transaktions-E-Mails mit realem Postfach erfolgreich getestet |
 | 6 | Vollständige Testbestellung einschließlich Steuer, Versand, Zahlung und Bestell-E-Mail erfolgreich |
 | 7 | Desktop- und Mobilprüfung von Startseite, Shop, Produkt, Warenkorb, Kasse, Kontakt und Rechtstexten bestanden |
-| 8 | Betreiber erteilt ausdrückliche Freigabe für die öffentliche Shop-Sichtbarkeit |
-| 9 | WooCommerce-Sichtbarkeit auf öffentlich stellen, LiteSpeed-Seitencache leeren und öffentlichen Kaufweg erneut prüfen |
+| 8 | Betreiber erteilt ausdrückliche Freigabe für den vollständigen Verkaufsbetrieb |
+| 9 | Konfiguration freigeben, LiteSpeed-Seitencache leeren und den vollständigen öffentlichen Kaufweg erneut prüfen |
 
 ## Rollback
 
@@ -85,7 +85,7 @@ Wenn der Administrationsbereich nicht erreichbar ist oder Daten beschädigt ersc
 
 ## Qualitätsstatus
 
-Theme und Plugin wurden statisch, in einer frischen WordPress-/WooCommerce-Laufzeitumgebung und anschließend auf der Zielinstallation geprüft. Abgedeckt wurden Aktivierung und Updates, Startseite, Navigation, Shoparchiv, Produktdetail, Projektarchiv, Projektdetail, Projekt-Produkt-Beziehungen, Warenkorb, Checkout, Unikatbegrenzung, Kontakt, Cache, EUR-Ausgabe, mobile Darstellung sowie die öffentliche Coming-soon-Kaufsperre. Die technischen Ergebnisse und Launchblocker sind in `docs/QA-BERICHT.md` dokumentiert.
+Das Shop-Redesign wurde als Theme-Version **1.1.12** bitgenau auf die Zielinstallation übertragen und nach jedem Versionsschritt per LiteSpeed-Cache-Purge aktualisiert. Ein isoliertes Gastprofil prüfte Shoparchiv, repräsentative Produktdetailseite und leeren Warenkorb jeweils bei 1440 × 900 und 390 × 844 Pixeln. Alle sechs Fälle bestanden; sieben reale Produktkarten, Bildintegrität, relevante Alt-Texte, Touch-Zielhöhen und das Fehlen horizontaler Überläufe wurden bestätigt. Warenkorbänderung, Checkout, Zahlung, Versand, Bestellung und E-Mail waren ausdrücklich nicht Bestandteil dieses Gasttests. Details stehen in `docs/SHOP-ABNAHME-2026-07-30.md`.
 
 ## Referenzen
 

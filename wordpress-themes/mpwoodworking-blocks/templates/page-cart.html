@@ -1,10 +1,36 @@
 <!-- wp:template-part {"slug":"header","theme":"mpwoodworking-blocks","tagName":"header"} /-->
 
 <!-- wp:woocommerce/page-content-wrapper {"page":"cart"} -->
-<!-- wp:group {"tagName":"main","className":"mp-site-main mp-commerce-page","layout":{"type":"constrained"}} -->
-<main class="wp-block-group mp-site-main mp-commerce-page"><!-- wp:woocommerce/store-notices /-->
-<!-- wp:post-title {"align":"wide","level":1,"className":"mp-page-title"} /-->
-<!-- wp:post-content {"align":"wide"} /--></main>
+<!-- wp:group {"tagName":"main","className":"mp-site-main mp-commerce-page mp-cart-page","layout":{"type":"constrained"}} -->
+<main class="wp-block-group mp-site-main mp-commerce-page mp-cart-page"><!-- wp:group {"align":"full","className":"mp-commerce-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-commerce-hero"><!-- wp:group {"align":"wide","className":"mp-commerce-hero__inner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mp-commerce-hero__inner"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Ihre Auswahl</p><!-- /wp:paragraph -->
+<!-- wp:post-title {"level":1,"className":"mp-commerce-hero__title"} /-->
+<!-- wp:paragraph {"className":"mp-commerce-hero__lead"} --><p class="mp-commerce-hero__lead">Prüfen Sie Ihre ausgewählten Einzelstücke, bevor Sie sicher zur Kasse weitergehen.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"mp-commerce-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-commerce-section"><!-- wp:woocommerce/store-notices /-->
+<!-- wp:group {"align":"wide","className":"mp-cart-shell","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mp-cart-shell"><!-- wp:post-content /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","className":"mp-cart-assurances","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"16rem"}} -->
+<div class="wp-block-group alignwide mp-cart-assurances"><!-- wp:group {"className":"mp-cart-assurance","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-cart-assurance"><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Einzelstücke</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Jedes verfügbare Werkstück ist nur einmal vorhanden.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"mp-cart-assurance","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-cart-assurance"><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Sorgfältig verpackt</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Ihre Bestellung wird passend zum Werkstück geschützt versendet.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"mp-cart-assurance","layout":{"type":"constrained"}} -->
+<div class="wp-block-group mp-cart-assurance"><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Direkter Kontakt</h2><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Fragen zur Bestellung beantworten wir persönlich über die Kontaktseite.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 <!-- /wp:woocommerce/page-content-wrapper -->
 

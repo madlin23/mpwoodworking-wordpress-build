@@ -1,4 +1,20 @@
-# Web App Template (tRPC + Manus Auth + Database)
+# MP Woodworking – Build Repository
+
+## Aktueller WordPress-Produktivstand
+
+Das aktive Block-Theme **`mpwoodworking-blocks` 1.1.12** enthält das am 30. Juli 2026 live abgenommene WooCommerce-Redesign für Shoparchiv, Produktdetailseite und Warenkorb-Leerzustand. Die finale isolierte Gastmodusprüfung bestand für alle drei Seitentypen auf Desktop und Mobil. Checkout, Zahlung, Versand, Steuern, Bestellung und Transaktions-E-Mail waren nicht Bestandteil dieser Oberflächenabnahme.
+
+| Dokument | Zweck |
+|---|---|
+| [`docs/SHOP-ABNAHME-2026-07-30.md`](docs/SHOP-ABNAHME-2026-07-30.md) | Vollständiger Live-Abnahmebericht und Restrisiken |
+| [`docs/SHOP-PFLEGEMATRIX.md`](docs/SHOP-PFLEGEMATRIX.md) | Datenquellen, Backend-Pfade, Rollen und Layoutschutz |
+| [`docs/SHOP-REDAKTIONSHANDBUCH.md`](docs/SHOP-REDAKTIONSHANDBUCH.md) | Sichere Produkt-, Medien- und Bestellpflege |
+| [`WORDPRESS-BEREITSTELLUNG.md`](WORDPRESS-BEREITSTELLUNG.md) | Backup, Deployment, Cache, Betriebsfreigabe und Rollback |
+| [`docs/qa-live-2026-07-30-shop/`](docs/qa-live-2026-07-30-shop/) | Maschinenbericht und sechs unveränderte Live-Screenshots |
+
+---
+
+## Web App Template (tRPC + Manus Auth + Database)
 
 This template gives you a React 19 + Tailwind 4 + Express 4 + tRPC 11 stack with Manus OAuth already wired. Procedures are your contracts, types flow end to end, and authentication "just works".
 

@@ -1,0 +1,911 @@
+{
+  "scope": "Live-Gastmodus-Abnahme WooCommerce-Shop",
+  "baseUrl": "https://springgreen-chough-629931.hostingersite.com",
+  "themeVersion": "1.1.12",
+  "isolatedGuestProfile": true,
+  "results": {
+    "desktop": {
+      "shop": {
+        "page": "shop",
+        "href": "https://springgreen-chough-629931.hostingersite.com/shop/?qa=desktop-shop-1785415231968",
+        "title": "Shop - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Der Unikat-Shop",
+        "h1Rect": {
+          "x": 377,
+          "y": 336,
+          "width": 672,
+          "height": 235,
+          "right": 1049,
+          "bottom": 571
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [
+          {
+            "tag": "div",
+            "className": "wp-interactivity-router-loading-bar",
+            "x": 0,
+            "width": 1440,
+            "right": 1440,
+            "scrollWidth": 1440
+          }
+        ],
+        "heroVisible": true,
+        "heroFacts": 3,
+        "layoutColumns": 2,
+        "productGridColumns": 2,
+        "productCardCount": 7,
+        "productTitles": [
+          "Unikat-Schale aus Zwetschge",
+          "Klassische Gewürzmühle in Eiche rustikal",
+          "Naturrandschale aus Eibe (Eibe-Maser)",
+          "Pfeffermühle ‚Zweierlei‘ (Walnuss & Ahorn)",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Esche gestockt",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Lärche",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Pflaumenholz"
+        ],
+        "sidebarRect": {
+          "x": 73,
+          "y": 1089,
+          "width": 288,
+          "height": 899,
+          "right": 361,
+          "bottom": 1988
+        },
+        "catalogRect": {
+          "x": 411,
+          "y": 1089,
+          "width": 942,
+          "height": 3013,
+          "right": 1353,
+          "bottom": 4103
+        },
+        "productActionRects": [
+          {
+            "x": 455,
+            "y": 1727,
+            "width": 366,
+            "height": 48,
+            "right": 822,
+            "bottom": 1775
+          },
+          {
+            "x": 942,
+            "y": 1727,
+            "width": 366,
+            "height": 48,
+            "right": 1308,
+            "bottom": 1775
+          },
+          {
+            "x": 455,
+            "y": 2490,
+            "width": 366,
+            "height": 48,
+            "right": 822,
+            "bottom": 2538
+          },
+          {
+            "x": 942,
+            "y": 2490,
+            "width": 366,
+            "height": 48,
+            "right": 1308,
+            "bottom": 2538
+          },
+          {
+            "x": 455,
+            "y": 3260,
+            "width": 366,
+            "height": 48,
+            "right": 822,
+            "bottom": 3308
+          },
+          {
+            "x": 942,
+            "y": 3260,
+            "width": 366,
+            "height": 48,
+            "right": 1308,
+            "bottom": 3308
+          },
+          {
+            "x": 455,
+            "y": 4030,
+            "width": 366,
+            "height": 48,
+            "right": 822,
+            "bottom": 4078
+          }
+        ],
+        "filterBlockPresent": true,
+        "commissionVisible": true,
+        "ok": true
+      },
+      "product": {
+        "page": "product",
+        "href": "https://springgreen-chough-629931.hostingersite.com/shop/accessoires/unikat-schale-zwetschge/?qa=desktop-product-1785415242802",
+        "title": "Unikat-Schale aus Zwetschge - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Unikat-Schale aus Zwetschge",
+        "h1Rect": {
+          "x": 749,
+          "y": 356,
+          "width": 604,
+          "height": 124,
+          "right": 1353,
+          "bottom": 480
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__wrapper",
+            "x": 74,
+            "width": 4080,
+            "right": 4154,
+            "scrollWidth": 4080
+          },
+          {
+            "tag": "img",
+            "className": "zoomImg",
+            "x": 74,
+            "width": 1600,
+            "right": 1674,
+            "scrollWidth": 1600
+          },
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__image",
+            "x": 1094,
+            "width": 510,
+            "right": 1604,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "x": 1094,
+            "width": 510,
+            "right": 1604,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "x": 1094,
+            "width": 510,
+            "right": 1604,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__image",
+            "x": 1604,
+            "width": 510,
+            "right": 2114,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "x": 1604,
+            "width": 510,
+            "right": 2114,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "x": 1604,
+            "width": 510,
+            "right": 2114,
+            "scrollWidth": 510
+          },
+          {
+            "tag": "div",
+            "className": "wp-interactivity-router-loading-bar",
+            "x": 0,
+            "width": 1440,
+            "right": 1440,
+            "scrollWidth": 1440
+          }
+        ],
+        "galleryRect": {
+          "x": 73,
+          "y": 336,
+          "width": 604,
+          "height": 721,
+          "right": 677,
+          "bottom": 1057
+        },
+        "summaryRect": {
+          "x": 749,
+          "y": 336,
+          "width": 604,
+          "height": 721,
+          "right": 1353,
+          "bottom": 1057
+        },
+        "productImage": {
+          "loaded": true,
+          "naturalWidth": 600,
+          "naturalHeight": 450,
+          "alt": "Unikat-Schale aus Zwetschge",
+          "rect": {
+            "x": 74,
+            "y": 337,
+            "width": 510,
+            "height": 383,
+            "right": 584,
+            "bottom": 720
+          }
+        },
+        "buyButtonRect": {
+          "x": 940,
+          "y": 666,
+          "width": 208,
+          "height": 52,
+          "right": 1148,
+          "bottom": 718
+        },
+        "buyButtonText": "In den Warenkorb",
+        "uniqueBadgeCount": 0,
+        "trustItems": 2,
+        "questionHref": "https://springgreen-chough-629931.hostingersite.com/kontakt/",
+        "descriptionVisible": true,
+        "productMetaVisible": true,
+        "ok": true
+      },
+      "cart": {
+        "page": "cart",
+        "href": "https://springgreen-chough-629931.hostingersite.com/warenkorb/?qa=desktop-cart-1785415250369",
+        "title": "Warenkorb - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Warenkorb",
+        "h1Rect": {
+          "x": 213,
+          "y": 320,
+          "width": 1000,
+          "height": 109,
+          "right": 1213,
+          "bottom": 429
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 1425,
+        "clientWidth": 1425,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [],
+        "heroVisible": true,
+        "emptyHeadingVisible": true,
+        "emptyHeadingText": "Dein Warenkorb ist gerade leer!",
+        "recommendationCount": 4,
+        "recommendationGridRect": {
+          "x": 398,
+          "y": 1541,
+          "width": 630,
+          "height": 531,
+          "right": 1028,
+          "bottom": 2071
+        },
+        "recommendationCardRects": [
+          {
+            "x": 398,
+            "y": 1541,
+            "width": 140,
+            "height": 531,
+            "right": 537,
+            "bottom": 2071
+          },
+          {
+            "x": 561,
+            "y": 1541,
+            "width": 140,
+            "height": 531,
+            "right": 701,
+            "bottom": 2071
+          },
+          {
+            "x": 725,
+            "y": 1541,
+            "width": 140,
+            "height": 531,
+            "right": 864,
+            "bottom": 2071
+          },
+          {
+            "x": 888,
+            "y": 1541,
+            "width": 140,
+            "height": 531,
+            "right": 1028,
+            "bottom": 2071
+          }
+        ],
+        "recommendationColumns": 4,
+        "recommendationVisualColumns": 4,
+        "recommendationActionRects": [
+          {
+            "x": 415,
+            "y": 1954,
+            "width": 106,
+            "height": 89,
+            "right": 520,
+            "bottom": 2042
+          },
+          {
+            "x": 578,
+            "y": 1954,
+            "width": 106,
+            "height": 89,
+            "right": 684,
+            "bottom": 2042
+          },
+          {
+            "x": 742,
+            "y": 1954,
+            "width": 106,
+            "height": 89,
+            "right": 847,
+            "bottom": 2042
+          },
+          {
+            "x": 905,
+            "y": 1954,
+            "width": 106,
+            "height": 89,
+            "right": 1011,
+            "bottom": 2042
+          }
+        ],
+        "assuranceCount": 3,
+        "cartShellVisible": true,
+        "filledCartVisible": false,
+        "ok": true
+      }
+    },
+    "mobile": {
+      "shop": {
+        "page": "shop",
+        "href": "https://springgreen-chough-629931.hostingersite.com/shop/?qa=mobile-shop-1785415258706",
+        "title": "Shop - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Der Unikat-Shop",
+        "h1Rect": {
+          "x": 17,
+          "y": 226,
+          "width": 356,
+          "height": 124,
+          "right": 373,
+          "bottom": 351
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [
+          {
+            "tag": "div",
+            "className": "wc-block-product-filter-price-slider__range",
+            "x": 16,
+            "width": 454,
+            "right": 470,
+            "scrollWidth": 456
+          },
+          {
+            "tag": "div",
+            "className": "range-bar",
+            "x": 16,
+            "width": 454,
+            "right": 470,
+            "scrollWidth": 454
+          },
+          {
+            "tag": "input",
+            "className": "min",
+            "x": 16,
+            "width": 454,
+            "right": 470,
+            "scrollWidth": 454
+          },
+          {
+            "tag": "input",
+            "className": "max",
+            "x": 16,
+            "width": 454,
+            "right": 470,
+            "scrollWidth": 456
+          },
+          {
+            "tag": "div",
+            "className": "wc-block-product-filter-price-slider__right text",
+            "x": 255,
+            "width": 215,
+            "right": 470,
+            "scrollWidth": 215
+          },
+          {
+            "tag": "input",
+            "className": "max",
+            "x": 255,
+            "width": 215,
+            "right": 470,
+            "scrollWidth": 213
+          }
+        ],
+        "heroVisible": true,
+        "heroFacts": 3,
+        "layoutColumns": 1,
+        "productGridColumns": 1,
+        "productCardCount": 7,
+        "productTitles": [
+          "Unikat-Schale aus Zwetschge",
+          "Klassische Gewürzmühle in Eiche rustikal",
+          "Naturrandschale aus Eibe (Eibe-Maser)",
+          "Pfeffermühle ‚Zweierlei‘ (Walnuss & Ahorn)",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Esche gestockt",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Lärche",
+          "Flaschenöffner aus einer M20 Edelstahl Mutter Griff aus Pflaumenholz"
+        ],
+        "sidebarRect": {
+          "x": 16,
+          "y": 919,
+          "width": 358,
+          "height": 48,
+          "right": 374,
+          "bottom": 967
+        },
+        "catalogRect": {
+          "x": 16,
+          "y": 991,
+          "width": 358,
+          "height": 4481,
+          "right": 374,
+          "bottom": 5472
+        },
+        "productActionRects": [
+          {
+            "x": 55,
+            "y": 1500,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 1548
+          },
+          {
+            "x": 55,
+            "y": 2140,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 2188
+          },
+          {
+            "x": 55,
+            "y": 2800,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 2848
+          },
+          {
+            "x": 55,
+            "y": 3460,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 3508
+          },
+          {
+            "x": 55,
+            "y": 4122,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 4170
+          },
+          {
+            "x": 55,
+            "y": 4764,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 4812
+          },
+          {
+            "x": 55,
+            "y": 5405,
+            "width": 281,
+            "height": 48,
+            "right": 335,
+            "bottom": 5453
+          }
+        ],
+        "filterBlockPresent": true,
+        "commissionVisible": true,
+        "ok": true
+      },
+      "product": {
+        "page": "product",
+        "href": "https://springgreen-chough-629931.hostingersite.com/shop/accessoires/unikat-schale-zwetschge/?qa=mobile-product-1785415266200",
+        "title": "Unikat-Schale aus Zwetschge - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Unikat-Schale aus Zwetschge",
+        "h1Rect": {
+          "x": 16,
+          "y": 672,
+          "width": 358,
+          "height": 91,
+          "right": 374,
+          "bottom": 763
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__wrapper",
+            "x": 17,
+            "width": 2848,
+            "right": 2865,
+            "scrollWidth": 2848
+          },
+          {
+            "tag": "img",
+            "className": "zoomImg",
+            "x": 17,
+            "width": 1600,
+            "right": 1617,
+            "scrollWidth": 1600
+          },
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__image",
+            "x": 373,
+            "width": 356,
+            "right": 729,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "x": 373,
+            "width": 356,
+            "right": 729,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "x": 373,
+            "width": 356,
+            "right": 729,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__image",
+            "x": 729,
+            "width": 356,
+            "right": 1085,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "x": 729,
+            "width": 356,
+            "right": 1085,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "x": 729,
+            "width": 356,
+            "right": 1085,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "div",
+            "className": "woocommerce-product-gallery__image",
+            "x": 1085,
+            "width": 356,
+            "right": 1441,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "a",
+            "className": "",
+            "x": 1085,
+            "width": 356,
+            "right": 1441,
+            "scrollWidth": 356
+          },
+          {
+            "tag": "img",
+            "className": "",
+            "x": 1085,
+            "width": 356,
+            "right": 1441,
+            "scrollWidth": 356
+          }
+        ],
+        "galleryRect": {
+          "x": 16,
+          "y": 233,
+          "width": 358,
+          "height": 386,
+          "right": 374,
+          "bottom": 619
+        },
+        "summaryRect": {
+          "x": 16,
+          "y": 655,
+          "width": 358,
+          "height": 859,
+          "right": 374,
+          "bottom": 1515
+        },
+        "productImage": {
+          "loaded": true,
+          "naturalWidth": 390,
+          "naturalHeight": 292,
+          "alt": "Unikat-Schale aus Zwetschge",
+          "rect": {
+            "x": 17,
+            "y": 234,
+            "width": 356,
+            "height": 267,
+            "right": 373,
+            "bottom": 501
+          }
+        },
+        "buyButtonRect": {
+          "x": 20,
+          "y": 1077,
+          "width": 350,
+          "height": 52,
+          "right": 370,
+          "bottom": 1129
+        },
+        "buyButtonText": "In den Warenkorb",
+        "uniqueBadgeCount": 0,
+        "trustItems": 2,
+        "questionHref": "https://springgreen-chough-629931.hostingersite.com/kontakt/",
+        "descriptionVisible": true,
+        "productMetaVisible": true,
+        "ok": true
+      },
+      "cart": {
+        "page": "cart",
+        "href": "https://springgreen-chough-629931.hostingersite.com/warenkorb/?qa=mobile-cart-1785415272852",
+        "title": "Warenkorb - MP Woodworking",
+        "readyState": "complete",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1
+        },
+        "guestMode": true,
+        "h1Count": 1,
+        "h1Text": "Warenkorb",
+        "h1Rect": {
+          "x": 16,
+          "y": 217,
+          "width": 358,
+          "height": 46,
+          "right": 374,
+          "bottom": 263
+        },
+        "horizontalOverflow": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "skipLink": true,
+        "brokenImages": [],
+        "mainImagesMissingAlt": [],
+        "themeCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/theme.css?ver=1.1.12"
+        ],
+        "sourceCss": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/css/source-match.css?ver=1.1.12"
+        ],
+        "sourceJs": [
+          "https://springgreen-chough-629931.hostingersite.com/wp-content/themes/mpwoodworking-blocks/assets/js/source-match.js?ver=1.1.12"
+        ],
+        "assetVersionCorrect": true,
+        "overflowElements": [],
+        "heroVisible": true,
+        "emptyHeadingVisible": true,
+        "emptyHeadingText": "Dein Warenkorb ist gerade leer!",
+        "recommendationCount": 4,
+        "recommendationGridRect": {
+          "x": 41,
+          "y": 938,
+          "width": 308,
+          "height": 2151,
+          "right": 349,
+          "bottom": 3089
+        },
+        "recommendationCardRects": [
+          {
+            "x": 41,
+            "y": 938,
+            "width": 308,
+            "height": 536,
+            "right": 349,
+            "bottom": 1474
+          },
+          {
+            "x": 41,
+            "y": 1474,
+            "width": 308,
+            "height": 536,
+            "right": 349,
+            "bottom": 2010
+          },
+          {
+            "x": 41,
+            "y": 2010,
+            "width": 308,
+            "height": 536,
+            "right": 349,
+            "bottom": 2547
+          },
+          {
+            "x": 41,
+            "y": 2547,
+            "width": 308,
+            "height": 542,
+            "right": 349,
+            "bottom": 3089
+          }
+        ],
+        "recommendationColumns": 2,
+        "recommendationVisualColumns": 1,
+        "recommendationActionRects": [
+          {
+            "x": 58,
+            "y": 1414,
+            "width": 274,
+            "height": 47,
+            "right": 332,
+            "bottom": 1461
+          },
+          {
+            "x": 58,
+            "y": 1951,
+            "width": 274,
+            "height": 47,
+            "right": 332,
+            "bottom": 1997
+          },
+          {
+            "x": 58,
+            "y": 2487,
+            "width": 274,
+            "height": 47,
+            "right": 332,
+            "bottom": 2534
+          },
+          {
+            "x": 58,
+            "y": 3029,
+            "width": 274,
+            "height": 47,
+            "right": 332,
+            "bottom": 3076
+          }
+        ],
+        "assuranceCount": 3,
+        "cartShellVisible": true,
+        "filledCartVisible": false,
+        "ok": true
+      }
+    }
+  },
+  "ok": true
+}
