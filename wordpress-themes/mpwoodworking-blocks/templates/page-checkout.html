@@ -2,7 +2,20 @@
 
 <!-- wp:woocommerce/page-content-wrapper {"page":"checkout"} -->
 <!-- wp:group {"tagName":"main","className":"mp-site-main mp-commerce-page mp-checkout-page","layout":{"type":"constrained"}} -->
-<main class="wp-block-group mp-site-main mp-commerce-page mp-checkout-page"><!-- wp:woocommerce/store-notices /-->
-<!-- wp:post-content {"align":"wide"} /--></main>
+<main class="wp-block-group mp-site-main mp-commerce-page mp-checkout-page"><!-- wp:group {"align":"full","className":"mp-commerce-hero mp-checkout-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-commerce-hero mp-checkout-hero"><!-- wp:group {"align":"wide","className":"mp-commerce-hero__inner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mp-commerce-hero__inner"><!-- wp:paragraph {"className":"mp-kicker"} --><p class="mp-kicker">Sicherer Bestellprozess</p><!-- /wp:paragraph -->
+<!-- wp:post-title {"level":1,"className":"mp-commerce-hero__title"} /-->
+<!-- wp:paragraph {"className":"mp-commerce-hero__lead"} --><p class="mp-commerce-hero__lead">Schließen Sie Ihre Bestellung ab – Ihre Angaben werden sicher übertragen.</p><!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"full","className":"mp-commerce-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull mp-commerce-section"><!-- wp:woocommerce/store-notices /-->
+<!-- wp:group {"align":"wide","className":"mp-checkout-shell","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide mp-checkout-shell"><!-- wp:post-content {"align":"wide"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
 <!-- /wp:group -->
 <!-- /wp:woocommerce/page-content-wrapper -->
+
+<!-- wp:template-part {"slug":"footer","theme":"mpwoodworking-blocks","tagName":"footer"} /-->
