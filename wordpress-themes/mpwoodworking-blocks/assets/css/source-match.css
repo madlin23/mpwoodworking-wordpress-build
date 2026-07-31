@@ -1345,11 +1345,41 @@ header.wp-block-template-part {
 	margin: 0 0 19px;
 }
 
-.mpw-source-footer__brand img {
-	height: 72px;
+.mpw-source-footer__logo-lockup {
+	align-items: center;
+	display: flex;
+	gap: 12px;
+}
+
+.mpw-source-footer__logo-lockup img {
+	height: 48px;
 	object-fit: contain;
-	object-position: left center;
-	width: 130px;
+	width: 48px;
+}
+
+.mpw-source-footer__logo-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	line-height: 1.15;
+}
+
+.mpw-source-footer__logo-text strong {
+	color: #fff;
+	font-family: var(--mpw-source-display);
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+}
+
+.mpw-source-footer__logo-text small {
+	color: var(--mpw-source-red);
+	font-family: var(--mpw-source-display);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: .08em;
+	text-transform: uppercase;
 }
 
 .mpw-source-footer__brand > p {
@@ -1389,30 +1419,18 @@ header.wp-block-template-part {
 	margin: 0 0 10px;
 }
 
-.mpw-source-footer__hours {
-	border-top: 1px solid #222;
-	margin-top: 20px !important;
-	padding-top: 18px;
-}
-
-.mpw-source-footer__hours strong {
-	color: #aaa;
-	font-weight: 600;
-}
-
-.mpw-source-socials {
+.mpw-source-footer__contact-item {
+	align-items: flex-start;
 	display: flex;
-	gap: 16px;
-	margin-top: 18px;
+	gap: 12px;
 }
 
-.mpw-source-socials a {
-	color: #777;
-}
-
-.mpw-source-socials svg {
+.mpw-source-footer__contact-item svg {
+	color: var(--mpw-source-green-light);
 	fill: none;
+	flex-shrink: 0;
 	height: 18px;
+	margin-top: 2px;
 	stroke: currentColor;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -1420,8 +1438,41 @@ header.wp-block-template-part {
 	width: 18px;
 }
 
+.mpw-source-footer__contact-address span {
+	line-height: 1.65;
+}
+
+.mpw-source-socials {
+	display: flex;
+	gap: 14px;
+	margin-top: 20px;
+}
+
+.mpw-source-socials a {
+	align-items: center;
+	border: 1px solid #555;
+	border-radius: 50%;
+	color: #999;
+	display: flex;
+	height: 36px;
+	justify-content: center;
+	transition: border-color .2s ease, color .2s ease;
+	width: 36px;
+}
+
+.mpw-source-socials svg {
+	fill: none;
+	height: 16px;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 1.8;
+	width: 16px;
+}
+
 .mpw-source-socials a:hover,
 .mpw-source-socials a:focus-visible {
+	border-color: #fff;
 	color: #fff;
 }
 
@@ -1444,7 +1495,8 @@ header.wp-block-template-part {
 
 .mpw-source-footer__legal nav {
 	display: flex;
-	gap: 25px;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .mpw-source-footer__legal nav a {
