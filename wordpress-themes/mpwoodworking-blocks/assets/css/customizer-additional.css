@@ -289,3 +289,11 @@ main h2 span,
 .mpw-source-section-heading h2 span {
   color: rgb(212, 9, 36) !important;
 }
+
+/* Header brand colors: MP WOODWORKING green, SELFMADE HANDMADE red */
+.mpw-source-brand__text strong {
+  color: #1db31d !important;
+}
+.mpw-source-brand__text small {
+  color: rgb(212, 9, 36) !important;
+}
