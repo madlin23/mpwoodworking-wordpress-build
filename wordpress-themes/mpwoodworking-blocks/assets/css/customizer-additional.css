@@ -15,7 +15,7 @@
 .woocommerce-checkout .select2-container--default .select2-selection--single {
   background: #1a1a18 !important;
   border: 1px solid #05aa00 !important;
-  color: #f8f8f7 !important;
+  color: #05aa00 !important;
   border-radius: 4px !important;
   padding: 12px 14px !important;
   font-size: 0.95rem !important;
@@ -28,7 +28,7 @@
   outline: none !important;
 }
 .woocommerce-checkout .form-row label {
-  color: #f8f8f7 !important;
+  color: #05aa00 !important;
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-size: 0.8rem !important;
   letter-spacing: 0.08em !important;
@@ -47,7 +47,7 @@
 }
 .woocommerce-checkout-review-order-table th,
 .woocommerce-checkout-review-order-table td {
-  color: #f8f8f7 !important;
+  color: #05aa00 !important;
   border-color: rgba(255,255,255,0.08) !important;
 }
 
@@ -267,7 +267,7 @@ main h2 {
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
-  color: #f8f8f7 !important;
+  color: #05aa00 !important;
   text-transform: uppercase !important;
   margin: 0 0 0.6rem !important;
   line-height: 1.2 !important;
