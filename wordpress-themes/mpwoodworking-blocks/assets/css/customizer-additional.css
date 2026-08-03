@@ -204,6 +204,21 @@ main h2 {
 .mpw-source-category-card--v2:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+  border-color: #1db31d !important;
+}
+.mpw-source-category-card.mpw-source-category-card--v2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 4px !important;
+  background: #1db31d !important;
+  transform: scaleX(0) !important;
+  transition: transform 0.3s ease !important;
+}
+.mpw-source-category-card.mpw-source-category-card--v2:hover::after {
+  transform: scaleX(1) !important;
 }
 .mpw-source-category-card--v2 img {
   position: static !important;
