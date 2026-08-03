@@ -404,3 +404,27 @@ p,
   font-weight: 600 !important;
   letter-spacing: 2.8px !important;
 }
+
+/* Category Cards - Style matching source site */
+.mpw-source-products {
+  background: rgba(12, 8, 6, 0.3) !important;
+}
+.mpw-source-category-card {
+  background: #0c0806 !important;
+  border: 1px solid #27201a !important;
+  border-radius: 0 !important;
+}
+.mpw-source-category-card__body h3 {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.2px !important;
+  color: #e8e4dd !important;
+}
+.mpw-source-category-card__body p {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #978e82 !important;
+  line-height: 20px !important;
+}
