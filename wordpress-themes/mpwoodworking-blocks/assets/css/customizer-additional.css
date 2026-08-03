@@ -313,3 +313,94 @@ main h2 span,
 .mpw-source-brand__text small {
   color: rgb(233, 0, 0) !important;
 }
+
+/* ============================================================
+   6. Font Alignment to Source (Bebas Neue + Roboto Slab)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+/* Hero H1 */
+#mpw-source-hero-title {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 96px !important;
+  font-weight: 400 !important;
+  letter-spacing: 4.8px !important;
+  text-transform: none !important;
+}
+
+/* Section Headings H1/H2 */
+#mpw-source-about-title,
+#mpw-source-products-title,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2 {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2.4px !important;
+  text-transform: none !important;
+}
+
+/* Category Card H3 */
+.mpw-source-category-card__body h3 {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: none !important;
+}
+
+/* Contact/Footer H3 */
+.mpw-source-contact__info h3,
+.mpw-source-footer__contact h3 {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Body text */
+body,
+p,
+.mpw-source-about__content p,
+.mpw-source-hero__inner p,
+.mpw-source-category-card__body p {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 1.625 !important;
+}
+
+/* Navigation */
+#mpw-source-nav a,
+.mpw-source-nav a {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+}
+
+/* Brand name */
+.mpw-source-brand__name {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+
+/* Buttons */
+.mpw-source-btn,
+.mpw-source-btn--primary,
+.mpw-source-btn--outline {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+/* Section labels (Über mich, Produktkategorien, etc.) */
+.mpw-source-section-heading span,
+.mpw-source-hero__inner > span {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2.8px !important;
+}
