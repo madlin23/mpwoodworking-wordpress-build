@@ -14,7 +14,7 @@
 .woocommerce-checkout .form-row select,
 .woocommerce-checkout .select2-container--default .select2-selection--single {
   background: #1a1a18 !important;
-  border: 1px solid #1db31d !important;
+  border: 1px solid #05aa00 !important;
   color: #f8f8f7 !important;
   border-radius: 4px !important;
   padding: 12px 14px !important;
@@ -93,7 +93,7 @@
 .mp-project-card-v2__year {
   display: inline-block;
   background: rgba(29,179,29,0.12);
-  color: #1db31d;
+  color: #05aa00;
   font-family: Oswald, sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
@@ -124,7 +124,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #1db31d;
+  background: #05aa00;
   flex-shrink: 0;
 }
 .mp-project-card-v2__desc {
@@ -141,7 +141,7 @@
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.06em;
-  color: #1db31d;
+  color: #05aa00;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s;
@@ -158,7 +158,7 @@
 .mpw-source-section-heading h2,
 main h1,
 main h2 {
-  color: #1db31d !important;
+  color: #05aa00 !important;
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-weight: 700 !important;
   font-size: 3.2rem !important;
@@ -204,7 +204,7 @@ main h2 {
 .mpw-source-category-card--v2:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
-  border-color: #1db31d !important;
+  border-color: #05aa00 !important;
 }
 .mpw-source-category-card.mpw-source-category-card--v2::after {
   content: '' !important;
@@ -213,7 +213,7 @@ main h2 {
   left: 0 !important;
   width: 100% !important;
   height: 4px !important;
-  background: #1db31d !important;
+  background: #05aa00 !important;
   transform: scaleX(0) !important;
   transform-origin: left !important;
   transition: transform 0.3s ease !important;
@@ -246,7 +246,7 @@ main h2 {
   position: absolute !important;
   top: 12px !important;
   right: 12px !important;
-  background: #1db31d !important;
+  background: #05aa00 !important;
   color: #fff !important;
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-size: 0.72rem !important;
@@ -288,12 +288,12 @@ main h2 {
   font-size: 0.82rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.04em !important;
-  color: #e02020 !important;
+  color: #e90000 !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
 }
 .mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
-  color: #ff3333 !important;
+  color: #ff1a1a !important;
 }
 
 /* Red accent text in headings */
@@ -303,13 +303,13 @@ main h2 span,
 .mpw-source-about__content h1 span,
 .mpw-source-section-heading h1 span,
 .mpw-source-section-heading h2 span {
-  color: rgb(212, 9, 36) !important;
+  color: rgb(233, 0, 0) !important;
 }
 
 /* Header brand colors: MP WOODWORKING green, SELFMADE HANDMADE red */
 .mpw-source-brand__text strong {
-  color: #1db31d !important;
+  color: #05aa00 !important;
 }
 .mpw-source-brand__text small {
-  color: rgb(212, 9, 36) !important;
+  color: rgb(233, 0, 0) !important;
 }
