@@ -171,3 +171,111 @@ main h2 {
   font-size: 4rem !important;
   line-height: 0.95 !important;
 }
+
+/* ============================================================
+   5. Category Cards v2 - Override old card styles for new layout
+   ============================================================ */
+.mpw-source-category-grid--v2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 900px) {
+  .mpw-source-category-grid--v2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .mpw-source-category-grid--v2 {
+    grid-template-columns: 1fr;
+  }
+}
+.mpw-source-category-card.mpw-source-category-card--v2 {
+  height: auto !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background: #1a1a18;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mpw-source-category-card--v2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+}
+.mpw-source-category-card--v2 img {
+  position: static !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 4/3 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__shade {
+  display: none !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__content {
+  position: static !important;
+  padding: 0 !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__media {
+  position: relative !important;
+  overflow: hidden !important;
+  display: block !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__badge {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  background: #1db31d !important;
+  color: #fff !important;
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+  padding: 4px 10px !important;
+  border-radius: 3px !important;
+  text-transform: uppercase !important;
+  z-index: 2 !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body {
+  padding: 1.25rem 1.5rem 1.5rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body h3 {
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #f8f8f7 !important;
+  text-transform: uppercase !important;
+  margin: 0 0 0.6rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.02em !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body p {
+  font-size: 0.88rem !important;
+  color: rgba(248,248,247,0.7) !important;
+  line-height: 1.55 !important;
+  margin: 0 0 1rem !important;
+  flex: 1 !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.3rem !important;
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  color: #1db31d !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
+  color: #25d625 !important;
+}
