@@ -1,0 +1,173 @@
+/*
+ * MP Woodworking - Additional CSS (deployed via WordPress Customizer)
+ * This file documents the CSS that is deployed through the WordPress Customizer
+ * "Additional CSS" section on mp-woodworking.de.
+ * It is NOT enqueued by the theme directly - it serves as version control reference.
+ * Last updated: 2026-08-03
+ */
+
+/* ============================================================
+   1. Checkout Input Fix (WooCommerce dark inputs)
+   ============================================================ */
+.woocommerce-checkout .form-row input.input-text,
+.woocommerce-checkout .form-row textarea,
+.woocommerce-checkout .form-row select,
+.woocommerce-checkout .select2-container--default .select2-selection--single {
+  background: #1a1a18 !important;
+  border: 1px solid #1db31d !important;
+  color: #f8f8f7 !important;
+  border-radius: 4px !important;
+  padding: 12px 14px !important;
+  font-size: 0.95rem !important;
+}
+.woocommerce-checkout .form-row input.input-text:focus,
+.woocommerce-checkout .form-row textarea:focus,
+.woocommerce-checkout .form-row select:focus {
+  border-color: #25d625 !important;
+  box-shadow: 0 0 0 2px rgba(29, 179, 29, 0.15) !important;
+  outline: none !important;
+}
+.woocommerce-checkout .form-row label {
+  color: #f8f8f7 !important;
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* ============================================================
+   2. Order Summary Fix (Germanized inline CSS override)
+   ============================================================ */
+.woocommerce-checkout-review-order-table,
+.woocommerce-checkout-review-order {
+  background: #1a1a18 !important;
+  border: 1px solid rgba(29, 179, 29, 0.3) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+.woocommerce-checkout-review-order-table th,
+.woocommerce-checkout-review-order-table td {
+  color: #f8f8f7 !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* ============================================================
+   3. Project Cards v2 CSS
+   ============================================================ */
+.mp-project-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+@media (max-width: 900px) {
+  .mp-project-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .mp-project-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.mp-project-card-v2 {
+  background: #1a1a18;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mp-project-card-v2:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+}
+.mp-project-card-v2__image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+.mp-project-card-v2__body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.mp-project-card-v2__year {
+  display: inline-block;
+  background: rgba(29,179,29,0.12);
+  color: #1db31d;
+  font-family: Oswald, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+.mp-project-card-v2__title {
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8f8f7;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+.mp-project-card-v2__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(248,248,247,0.6);
+  margin-bottom: 0.75rem;
+}
+.mp-project-card-v2__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1db31d;
+  flex-shrink: 0;
+}
+.mp-project-card-v2__desc {
+  font-size: 0.88rem;
+  color: rgba(248,248,247,0.7);
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+.mp-project-card-v2__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: Oswald, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #1db31d;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mp-project-card-v2__link:hover {
+  color: #25d625;
+}
+
+/* ============================================================
+   4. Unified Headings - All main headings in green with Oswald font
+   ============================================================ */
+.mpw-source-about__content h1,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+main h1,
+main h2 {
+  color: #1db31d !important;
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 3.2rem !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.02em !important;
+  text-transform: uppercase !important;
+}
+/* Hero H1 stays larger */
+.mpw-source-hero__inner h1 {
+  font-size: 4rem !important;
+  line-height: 0.95 !important;
+}
