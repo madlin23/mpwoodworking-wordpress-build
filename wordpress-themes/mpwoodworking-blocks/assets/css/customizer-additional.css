@@ -272,10 +272,10 @@ main h2 {
   font-size: 0.82rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.04em !important;
-  color: #1db31d !important;
+  color: #e02020 !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
 }
 .mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
-  color: #25d625 !important;
+  color: #ff3333 !important;
 }
