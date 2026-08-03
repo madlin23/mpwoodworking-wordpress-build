@@ -25,6 +25,7 @@ function mpwoodworking_blocks_setup(): void {
 	add_theme_support( 'wc-product-gallery-slider' );
 
 	add_editor_style( 'assets/css/theme.css' );
+	add_editor_style( 'assets/css/source-match.css' );
 }
 add_action( 'after_setup_theme', 'mpwoodworking_blocks_setup' );
 
