@@ -2,7 +2,7 @@
 /**
  * Plugin Name: MP Woodworking Core
  * Description: Dauerhafte Geschäftslogik für Projekte, Holzarten, Unikat-Produkte und dynamische Projektblöcke.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: MP Woodworking
  * Text Domain: mpwoodworking-core
  * Requires at least: 6.6
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'MPW_CORE_VERSION', '1.0.1' );
+define( 'MPW_CORE_VERSION', '1.0.2' );
 define( 'MPW_CORE_FILE', __FILE__ );
 define( 'MPW_CORE_DIR', plugin_dir_path( __FILE__ ) );
 

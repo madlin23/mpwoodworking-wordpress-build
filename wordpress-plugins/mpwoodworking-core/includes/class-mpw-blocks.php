@@ -17,6 +17,20 @@ final class MPW_Blocks {
 	 */
 	public static function init(): void {
 		add_action( 'init', array( self::class, 'register_blocks' ), 20 );
+		add_action( 'enqueue_block_editor_assets', array( self::class, 'enqueue_editor_assets' ) );
+	}
+
+	/**
+	 * Lädt das Editor-Script, das die Blöcke clientseitig registriert.
+	 */
+	public static function enqueue_editor_assets(): void {
+		wp_enqueue_script(
+			'mpw-editor-blocks',
+			plugins_url( 'assets/js/editor-blocks.js', MPW_CORE_FILE ),
+			array( 'wp-blocks', 'wp-element', 'wp-block-editor' ),
+			MPW_CORE_VERSION,
+			true
+		);
 	}
 
 	/**
