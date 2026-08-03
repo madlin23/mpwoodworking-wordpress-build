@@ -279,3 +279,13 @@ main h2 {
 .mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
   color: #ff3333 !important;
 }
+
+/* Red accent text in headings */
+main h1 span,
+main h2 span,
+.mpw-source-hero__inner h1 span,
+.mpw-source-about__content h1 span,
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span {
+  color: rgb(212, 9, 36) !important;
+}
