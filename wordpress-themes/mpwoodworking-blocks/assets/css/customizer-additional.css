@@ -215,6 +215,7 @@ main h2 {
   height: 4px !important;
   background: #1db31d !important;
   transform: scaleX(0) !important;
+  transform-origin: left !important;
   transition: transform 0.3s ease !important;
 }
 .mpw-source-category-card.mpw-source-category-card--v2:hover::after {
