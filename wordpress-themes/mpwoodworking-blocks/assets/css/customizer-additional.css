@@ -1,164 +1,297 @@
-/*
- * MP Woodworking - Additional CSS (deployed via WordPress Customizer)
- * This file documents the CSS that is deployed through the WordPress Customizer
- * "Additional CSS" section on mp-woodworking.de.
- * It is NOT enqueued by the theme directly - it serves as version control reference.
- * Last updated: 2026-08-03
- */
-
-/* ============================================================
-   1. Checkout Input Fix (WooCommerce dark inputs)
-   ============================================================ */
-.woocommerce-checkout .form-row input.input-text,
-.woocommerce-checkout .form-row textarea,
-.woocommerce-checkout .form-row select,
-.woocommerce-checkout .select2-container--default .select2-selection--single {
-  background: #1a1a18 !important;
+/* Checkout Input Fix - Override WooCommerce checkout.css */
+.mp-checkout-page .wc-block-components-text-input input,
+.mp-checkout-page .wc-block-components-text-input input[type="email"],
+.mp-checkout-page .wc-block-components-text-input input[type="text"],
+.mp-checkout-page .wc-block-components-text-input input[type="tel"],
+.mp-checkout-page .wc-block-components-combobox .wc-block-components-combobox-control input,
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input,
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="email"],
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="text"],
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="tel"],
+.mp-checkout-page select,
+.mp-checkout-page textarea {
   border: 1px solid #05aa00 !important;
-  color: #05aa00 !important;
-  border-radius: 4px !important;
-  padding: 12px 14px !important;
-  font-size: 0.95rem !important;
+  border-radius: 0 !important;
+  background: #11110f !important;
+  color: #f8f8f7 !important;
 }
-.woocommerce-checkout .form-row input.input-text:focus,
-.woocommerce-checkout .form-row textarea:focus,
-.woocommerce-checkout .form-row select:focus {
-  border-color: #25d625 !important;
-  box-shadow: 0 0 0 2px rgba(29, 179, 29, 0.15) !important;
-  outline: none !important;
+.mp-checkout-page .wc-block-components-text-input.is-active input,
+.mp-checkout-page .wc-block-components-text-input input:focus,
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input:focus,
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="email"]:focus,
+.mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="text"]:focus,
+.mp-checkout-page .wc-block-components-combobox.is-active input,
+.mp-checkout-page .wc-block-components-combobox input:focus {
+  background: #1a1a19 !important;
+  color: #f8f8f7 !important;
+  box-shadow: 0 0 0 1px #05aa00 !important;
 }
-.woocommerce-checkout .form-row label {
-  color: #05aa00 !important;
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
-  font-size: 0.8rem !important;
-  letter-spacing: 0.08em !important;
+/* Order Summary Fix - Override Germanized inline CSS */
+.wc-gzd-checkout .wc-block-components-order-summary,
+.wc-gzd-checkout .wc-block-components-order-summary.is-large,
+.mp-checkout-page .wc-block-components-order-summary.is-large,
+.mp-checkout-page .wc-block-components-order-summary {
+  background: transparent !important;
+  color: #f8f8f7 !important;
+}
+
+/* ===== Footer Source-Match Overrides ===== */
+.mpw-source-footer__logo-lockup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-bottom: 16px !important;
+  text-decoration: none !important;
+}
+.mpw-source-footer__logo-lockup img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+}
+.mpw-source-footer__logo-text {
+  display: flex !important;
+  flex-direction: column !important;
+  line-height: 1.2 !important;
+}
+.mpw-source-footer__logo-text strong {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
   text-transform: uppercase !important;
+  color: #008b1d !important;
+}
+.mpw-source-footer__logo-text span {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: #c0392b !important;
+}
+.mpw-source-footer .mpw-source-socials a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+  border-radius: 50% !important;
+  margin-right: 8px !important;
+  transition: border-color 0.3s ease !important;
+}
+.mpw-source-footer .mpw-source-socials a:hover {
+  border-color: #05aa00 !important;
+}
+.mpw-source-footer .mpw-source-socials a svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #f8f8f7 !important;
+}
+.mpw-source-footer__contact-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+  color: #ccc !important;
+  font-size: 14px !important;
+}
+.mpw-source-footer__contact-item svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #05aa00 !important;
+  flex-shrink: 0 !important;
+  margin-top: 3px !important;
+}
+.mpw-source-footer__contact-item a {
+  color: #ccc !important;
+  text-decoration: none !important;
+}
+.mpw-source-footer__contact-item a:hover {
+  color: #008b1d !important;
+}
+.mpw-source-footer__contact-address {
+  color: #ccc !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+.mpw-source-footer__nav ul li + li {
+  margin-top: 10px !important;
+}
+/* Fix: Preis-Schieberegler Überlauf in der Sidebar */
+.mp-shop-filter-shell .wc-block-product-filter-price-slider__content,
+.mp-shop-sidebar .wc-block-product-filter-price-slider__content {
+    grid-template-columns: 1fr 0 1fr;
 }
 
-/* ============================================================
-   2. Order Summary Fix (Germanized inline CSS override)
-   ============================================================ */
-.woocommerce-checkout-review-order-table,
-.woocommerce-checkout-review-order {
-  background: #1a1a18 !important;
-  border: 1px solid rgba(29, 179, 29, 0.3) !important;
-  border-radius: 8px !important;
-  padding: 20px !important;
-}
-.woocommerce-checkout-review-order-table th,
-.woocommerce-checkout-review-order-table td {
-  color: #05aa00 !important;
-  border-color: rgba(255,255,255,0.08) !important;
+.mp-shop-filter-shell .wc-block-product-filter-price-slider__left,
+.mp-shop-filter-shell .wc-block-product-filter-price-slider__right,
+.mp-shop-sidebar .wc-block-product-filter-price-slider__left,
+.mp-shop-sidebar .wc-block-product-filter-price-slider__right {
+    min-width: 0;
+    overflow: hidden;
 }
 
-/* ============================================================
-   3. Project Cards v2 CSS
-   ============================================================ */
-.mp-project-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem 0;
+.mp-shop-filter-shell .wc-block-product-filter-price-slider__range,
+.mp-shop-sidebar .wc-block-product-filter-price-slider__range {
+    max-width: 100%;
 }
-@media (max-width: 900px) {
-  .mp-project-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+.mp-shop-filter-shell .wc-block-product-filter-price-slider .text input[type="text"],
+.mp-shop-sidebar .wc-block-product-filter-price-slider .text input[type="text"] {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.82rem;
 }
-@media (max-width: 600px) {
-  .mp-project-cards-grid {
-    grid-template-columns: 1fr;
-  }
+
+/* Project Cards v2 - 3-column layout with year badge */
+.mp-project-grid--v2 .wp-block-post-template {
+  gap: clamp(1rem, 2.5vw, 2rem);
 }
-.mp-project-card-v2 {
-  background: #1a1a18;
-  border-radius: 12px;
+
+.mp-project-card--v2 {
+  position: relative;
+  height: 100%;
+  border: 1px solid var(--wp--preset--color--border, #2a2a28);
+  background: var(--wp--preset--color--surface, #11110f);
+}
+
+.mp-project-card--v2:hover {
+  border-color: rgba(5, 170, 0, 0.5);
+}
+
+.mp-project-card__image-wrap {
+  position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.mp-project-card-v2:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+
+.mp-project-card--v2 .wp-block-post-featured-image {
+  margin: 0;
+  overflow: hidden;
 }
-.mp-project-card-v2__image {
+
+.mp-project-card--v2 .wp-block-post-featured-image img {
   width: 100%;
-  aspect-ratio: 4/3;
+  height: 100%;
   object-fit: cover;
-  display: block;
+  transition: transform 400ms ease, filter 400ms ease;
 }
-.mp-project-card-v2__body {
-  padding: 1.25rem 1.5rem 1.5rem;
+
+.mp-project-card--v2:hover .wp-block-post-featured-image img {
+  transform: scale(1.025);
 }
-.mp-project-card-v2__year {
+
+.mp-project-card__badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  z-index: 2;
   display: inline-block;
-  background: rgba(29,179,29,0.12);
-  color: #05aa00;
-  font-family: Oswald, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  padding: 3px 10px;
-  border-radius: 4px;
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-}
-.mp-project-card-v2__title {
-  font-family: Oswald, "Arial Narrow", sans-serif;
-  font-size: 1.25rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--wp--preset--color--border, #05aa00);
+  background: rgba(17, 17, 15, 0.85);
+  color: #a3e635;
+  font-family: var(--wp--preset--font-family--body);
+  font-size: 0.65rem;
   font-weight: 700;
-  color: #f8f8f7;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 0 0 0.5rem;
-  line-height: 1.2;
 }
-.mp-project-card-v2__meta {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  color: rgba(248,248,247,0.6);
-  margin-bottom: 0.75rem;
+
+.mp-project-card__badge::before {
+  content: "Jahr: ";
 }
-.mp-project-card-v2__dot {
+
+.mp-project-card--v2 .mp-project-card__body {
+  padding: clamp(1.2rem, 2vw, 1.8rem);
+}
+
+.mp-project-card--v2 .mp-project-card__body .wp-block-post-title {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+}
+
+.mp-project-card--v2 .mp-project-card__body .wp-block-post-title a {
+  color: #008b1d ;
+  text-decoration: none;
+}
+
+.mp-project-card__holzart {
+  font-size: 0.7rem !important;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a0a09c;
+  margin-bottom: 0.5rem;
+}
+
+.mp-project-card__holzart::before {
+  content: "Holzart: ";
+}
+
+.mp-project-card__holzart a {
+  color: #a0a09c !important;
+  text-decoration: none;
+}
+
+.mp-project-card--v2 .wp-block-post-excerpt {
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.mp-project-card--v2 .wp-block-post-excerpt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #05aa00;
-  flex-shrink: 0;
-}
-.mp-project-card-v2__desc {
-  font-size: 0.88rem;
-  color: rgba(248,248,247,0.7);
-  line-height: 1.55;
-  margin-bottom: 1rem;
-}
-.mp-project-card-v2__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: Oswald, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: #05aa00;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.mp-project-card-v2__link:hover {
-  color: #25d625;
 }
 
-/* ============================================================
-   4. Unified Headings - All main headings in green with Oswald font
-   ============================================================ */
+.mp-project-card--v2 .wp-block-post-excerpt__excerpt {
+  color: #a0a09c;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.mp-project-card--v2 .wp-block-post-excerpt__more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #008b1d ;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.mp-project-card--v2 .wp-block-post-excerpt__more-link:hover {
+  color: #a3e635;
+}
+
+@media (max-width: 781px) {
+  .mp-project-grid--v2 .wp-block-post-template.is-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 782px) and (max-width: 1024px) {
+  .mp-project-grid--v2 .wp-block-post-template.is-layout-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+/* Unified Headings - All main headings in green with Oswald font */
 .mpw-source-about__content h1,
 .mpw-source-section-heading h1,
 .mpw-source-section-heading h2,
 main h1,
 main h2 {
-  color: #05aa00 !important;
+  color: #008b1d !important;
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-weight: 700 !important;
   font-size: 3.2rem !important;
@@ -171,9 +304,16 @@ main h2 {
   font-size: 4rem !important;
   line-height: 0.95 !important;
 }
+/* Keep footer headings smaller and white */
+.mpw-source-footer h2 {
+  color: #008b1d !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
 
 /* ============================================================
-   5. Category Cards v2 - Override old card styles for new layout
+   5. Category Cards v2 - Cards with badge, title below image
    ============================================================ */
 .mpw-source-category-grid--v2 {
   display: grid;
@@ -190,15 +330,13 @@ main h2 {
     grid-template-columns: 1fr;
   }
 }
-.mpw-source-category-card.mpw-source-category-card--v2 {
-  height: auto !important;
-  position: relative !important;
-  display: flex !important;
-  flex-direction: column !important;
+.mpw-source-category-card--v2 {
   background: #1a1a18;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .mpw-source-category-card--v2:hover {
@@ -206,20 +344,79 @@ main h2 {
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
   border-color: #05aa00 !important;
 }
-.mpw-source-category-card.mpw-source-category-card--v2::after {
-  content: '' !important;
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 4px !important;
-  background: #05aa00 !important;
-  transform: scaleX(0) !important;
-  transform-origin: left !important;
-  transition: transform 0.3s ease !important;
+.mpw-source-category-card--v2 .mpw-source-category-card__media {
+  position: relative;
+  overflow: hidden;
 }
-.mpw-source-category-card.mpw-source-category-card--v2:hover::after {
-  transform: scaleX(1) !important;
+.mpw-source-category-card--v2 .mpw-source-category-card__media img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #05aa00;
+  color: #fff;
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body h3 {
+  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #f8f8f7 !important;
+  text-transform: uppercase !important;
+  margin: 0 0 0.6rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.02em !important;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__body p {
+  font-size: 0.88rem;
+  color: rgba(248,248,247,0.7);
+  line-height: 1.55;
+  margin: 0 0 1rem;
+  flex: 1;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #e90000 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
+  color: #ff1a1a !important;
+}
+
+/* ============================================================
+   5b. Category Cards v2 - Override old card styles
+   ============================================================ */
+.mpw-source-category-card.mpw-source-category-card--v2 {
+  height: auto !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
 }
 .mpw-source-category-card--v2 img {
   position: static !important;
@@ -267,7 +464,7 @@ main h2 {
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
-  color: #05aa00 !important;
+  color: #f8f8f7 !important;
   text-transform: uppercase !important;
   margin: 0 0 0.6rem !important;
   line-height: 1.2 !important;
@@ -280,21 +477,6 @@ main h2 {
   margin: 0 0 1rem !important;
   flex: 1 !important;
 }
-.mpw-source-category-card--v2 .mpw-source-category-card__link {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.3rem !important;
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
-  font-size: 0.82rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.04em !important;
-  color: #e90000 !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-}
-.mpw-source-category-card--v2 .mpw-source-category-card__link:hover {
-  color: #ff1a1a !important;
-}
 
 /* Red accent text in headings */
 main h1 span,
@@ -305,18 +487,127 @@ main h2 span,
 .mpw-source-section-heading h2 span {
   color: rgb(233, 0, 0) !important;
 }
-
 /* Header brand colors: MP WOODWORKING green, SELFMADE HANDMADE red */
 .mpw-source-brand__text strong {
-  color: #05aa00 !important;
+  color: #008b1d !important;
 }
 .mpw-source-brand__text small {
   color: rgb(233, 0, 0) !important;
 }
+/* Green bottom stripe on hover for category cards */
+.mpw-source-category-card.mpw-source-category-card--v2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 4px !important;
+  background: #05aa00 !important;
+  transform: scaleX(0) !important;
+  transform-origin: left !important;
+  transition: transform 0.3s ease !important;
+}
+.mpw-source-category-card.mpw-source-category-card--v2:hover::after {
+  transform: scaleX(1) !important;
+}
 
-/* ============================================================
-   6. Font Alignment to Source (Bebas Neue + Roboto Slab)
-   ============================================================ */
+/* ============================================
+   FONT ALIGNMENT - Angleichung an Quellseite
+   mpwoodshop-6vp8qcx8.manus.space
+   Bebas Neue (Headings) + Roboto Slab (Body)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+/* Body / Paragraphs: Roboto Slab, 20px, 400 */
+body,
+p,
+.mpw-hero-text p,
+.mpw-about-text p,
+.mpw-category-card-v2 p,
+.mpw-contact-section p,
+.mpw-gallery-section p,
+.mpw-products-section p {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  line-height: 1.625 !important;
+}
+
+/* Hero H1: Bebas Neue, 96px, letter-spacing 4.8px */
+.mpw-hero-section h1,
+h1.mpw-hero-title {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 96px !important;
+  font-weight: 400 !important;
+  letter-spacing: 4.8px !important;
+  text-transform: uppercase !important;
+}
+
+/* Sektion H1/H2: Bebas Neue, 48px, letter-spacing 2.4px */
+.mpw-about-section h1,
+.mpw-products-section h1,
+.mpw-gallery-section h2,
+.mpw-contact-section h2 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 48px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2.4px !important;
+  text-transform: uppercase !important;
+}
+
+/* Kategoriekarten H3: Bebas Neue, 24px, letter-spacing 1.2px */
+.mpw-category-card-v2 h3 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+}
+
+/* Navigation: Roboto Slab, 16px, 400, keine Großbuchstaben */
+#mpw-source-nav a {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+/* Sektion-Labels: Roboto Slab, 14px, 600, letter-spacing 2.8px, uppercase */
+.mpw-section-label {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2.8px !important;
+  text-transform: uppercase !important;
+}
+
+/* Buttons: Roboto Slab, 16px, 600 */
+.mpw-btn,
+.mpw-btn-primary,
+.mpw-btn-outline,
+.mpw-hero-section a.mpw-btn,
+.mpw-products-section a.mpw-btn {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+/* Header Brand: Bebas Neue */
+.mpw-brand-name {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+/* Kontakt-Sektion H3: Bebas Neue, 20px */
+.mpw-contact-section h3 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+
+/* === Font Alignment to Source (Bebas Neue + Roboto Slab) === */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
 
 /* Hero H1 */
@@ -365,7 +656,7 @@ p,
 .mpw-source-hero__inner p,
 .mpw-source-category-card__body p {
   font-family: "Roboto Slab", serif !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 300 !important;
   line-height: 1.625 !important;
 }
@@ -374,7 +665,7 @@ p,
 #mpw-source-nav a,
 .mpw-source-nav a {
   font-family: "Roboto Slab", serif !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-weight: 400 !important;
   text-transform: none !important;
 }
@@ -382,7 +673,7 @@ p,
 /* Brand name */
 .mpw-source-brand__name {
   font-family: "Bebas Neue", sans-serif !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400 !important;
   letter-spacing: 1px !important;
 }
@@ -404,12 +695,13 @@ p,
   font-weight: 600 !important;
   letter-spacing: 2.8px !important;
 }
+/* === END Font Alignment === */
 
 /* Category Cards - Style matching source site */
 #products {
   background-color: #0a0705 !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 14v12M14 20h12' stroke='rgba(255,255,255,0.06)' stroke-width='1' fill='none'/%3E%3C/svg%3E") !important;
-  background-size: 40px 40px !important;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2322C55E' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+  opacity: 1 !important;
 }
 .mpw-source-category-card {
   background: #0c0806 !important;
