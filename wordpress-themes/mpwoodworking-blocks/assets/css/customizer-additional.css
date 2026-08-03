@@ -406,8 +406,10 @@ p,
 }
 
 /* Category Cards - Style matching source site */
-.mpw-source-products {
-  background: rgba(12, 8, 6, 0.3) !important;
+#products {
+  background-color: #0a0705 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 14v12M14 20h12' stroke='rgba(255,255,255,0.06)' stroke-width='1' fill='none'/%3E%3C/svg%3E") !important;
+  background-size: 40px 40px !important;
 }
 .mpw-source-category-card {
   background: #0c0806 !important;
