@@ -191,7 +191,7 @@
   border: 1px solid var(--wp--preset--color--border, #05aa00);
   background: rgba(17, 17, 15, 0.85);
   color: #a3e635;
-  font-family: var(--wp--preset--font-family--body);
+  font-family: "Open Sans", sans-serif;
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -285,14 +285,14 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-/* Unified Headings - All main headings in green with Oswald font */
+/* Unified Headings - All main headings in green with Montserrat font */
 .mpw-source-about__content h1,
 .mpw-source-section-heading h1,
 .mpw-source-section-heading h2,
 main h1,
 main h2 {
   color: #008b1d !important;
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  font-family: "Bebas Neue", sans-serif !important;
   font-weight: 700 !important;
   font-size: 3.2rem !important;
   line-height: 1.05 !important;
@@ -360,7 +360,7 @@ main h2 {
   right: 12px;
   background: #05aa00;
   color: #fff;
-  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-family: "Bebas Neue", sans-serif ;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -376,7 +376,7 @@ main h2 {
   flex: 1;
 }
 .mpw-source-category-card--v2 .mpw-source-category-card__body h3 {
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   color: #f8f8f7 !important;
@@ -396,11 +396,11 @@ main h2 {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
-  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-family: "Montserrat", sans-serif ;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #e90000 !important;
+  color: #d40924 !important;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.2s;
@@ -445,7 +445,7 @@ main h2 {
   right: 12px !important;
   background: #05aa00 !important;
   color: #fff !important;
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  
   font-size: 0.72rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.05em !important;
@@ -461,7 +461,7 @@ main h2 {
   flex: 1 !important;
 }
 .mpw-source-category-card--v2 .mpw-source-category-card__body h3 {
-  font-family: Oswald, "Arial Narrow", sans-serif !important;
+  
   font-size: 1.2rem !important;
   font-weight: 700 !important;
   color: #f8f8f7 !important;
@@ -485,14 +485,20 @@ main h2 span,
 .mpw-source-about__content h1 span,
 .mpw-source-section-heading h1 span,
 .mpw-source-section-heading h2 span {
-  color: rgb(233, 0, 0) !important;
+  color: rgb(212, 9, 36) !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: -0.02em !important;
+  text-transform: inherit !important;
 }
 /* Header brand colors: MP WOODWORKING green, SELFMADE HANDMADE red */
 .mpw-source-brand__text strong {
   color: #008b1d !important;
 }
 .mpw-source-brand__text small {
-  color: rgb(233, 0, 0) !important;
+  color: rgb(212, 9, 36) !important;
 }
 /* Green bottom stripe on hover for category cards */
 .mpw-source-category-card.mpw-source-category-card--v2::after {
@@ -511,191 +517,7 @@ main h2 span,
   transform: scaleX(1) !important;
 }
 
-/* ============================================
-   FONT ALIGNMENT - Angleichung an Quellseite
-   mpwoodshop-6vp8qcx8.manus.space
-   Bebas Neue (Headings) + Roboto Slab (Body)
-   ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
-
-/* Body / Paragraphs: Roboto Slab, 20px, 400 */
-body,
-p,
-.mpw-hero-text p,
-.mpw-about-text p,
-.mpw-category-card-v2 p,
-.mpw-contact-section p,
-.mpw-gallery-section p,
-.mpw-products-section p {
-  font-family: 'Roboto Slab', serif !important;
-  font-size: 18px !important;
-  font-weight: 300 !important;
-  line-height: 1.625 !important;
-}
-
-/* Hero H1: Bebas Neue, 96px, letter-spacing 4.8px */
-.mpw-hero-section h1,
-h1.mpw-hero-title {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 96px !important;
-  font-weight: 400 !important;
-  letter-spacing: 4.8px !important;
-  text-transform: uppercase !important;
-}
-
-/* Sektion H1/H2: Bebas Neue, 48px, letter-spacing 2.4px */
-.mpw-about-section h1,
-.mpw-products-section h1,
-.mpw-gallery-section h2,
-.mpw-contact-section h2 {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 48px !important;
-  font-weight: 400 !important;
-  letter-spacing: 2.4px !important;
-  text-transform: uppercase !important;
-}
-
-/* Kategoriekarten H3: Bebas Neue, 24px, letter-spacing 1.2px */
-.mpw-category-card-v2 h3 {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 400 !important;
-  letter-spacing: 1.2px !important;
-  text-transform: uppercase !important;
-}
-
-/* Navigation: Roboto Slab, 16px, 400, keine Großbuchstaben */
-#mpw-source-nav a {
-  font-family: 'Roboto Slab', serif !important;
-  font-size: 16px !important;
-  font-weight: 400 !important;
-  letter-spacing: normal !important;
-  text-transform: none !important;
-}
-
-/* Sektion-Labels: Roboto Slab, 14px, 600, letter-spacing 2.8px, uppercase */
-.mpw-section-label {
-  font-family: 'Roboto Slab', serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 2.8px !important;
-  text-transform: uppercase !important;
-}
-
-/* Buttons: Roboto Slab, 16px, 600 */
-.mpw-btn,
-.mpw-btn-primary,
-.mpw-btn-outline,
-.mpw-hero-section a.mpw-btn,
-.mpw-products-section a.mpw-btn {
-  font-family: 'Roboto Slab', serif !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-}
-
-/* Header Brand: Bebas Neue */
-.mpw-brand-name {
-  font-family: 'Bebas Neue', sans-serif !important;
-}
-
-/* Kontakt-Sektion H3: Bebas Neue, 20px */
-.mpw-contact-section h3 {
-  font-family: 'Bebas Neue', sans-serif !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  letter-spacing: 1px !important;
-}
-
-/* === Font Alignment to Source (Bebas Neue + Roboto Slab) === */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
-
-/* Hero H1 */
-#mpw-source-hero-title {
-  font-family: "Bebas Neue", sans-serif !important;
-  font-size: 96px !important;
-  font-weight: 400 !important;
-  letter-spacing: 4.8px !important;
-  text-transform: none !important;
-}
-
-/* Section Headings H1/H2 */
-#mpw-source-about-title,
-#mpw-source-products-title,
-.mpw-source-section-heading h1,
-.mpw-source-section-heading h2 {
-  font-family: "Bebas Neue", sans-serif !important;
-  font-size: 48px !important;
-  font-weight: 400 !important;
-  letter-spacing: 2.4px !important;
-  text-transform: none !important;
-}
-
-/* Category Card H3 */
-.mpw-source-category-card__body h3 {
-  font-family: "Bebas Neue", sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 400 !important;
-  letter-spacing: 1.2px !important;
-  text-transform: none !important;
-}
-
-/* Contact/Footer H3 */
-.mpw-source-contact__info h3,
-.mpw-source-footer__contact h3 {
-  font-family: "Bebas Neue", sans-serif !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  letter-spacing: 1px !important;
-}
-
-/* Body text */
-body,
-p,
-.mpw-source-about__content p,
-.mpw-source-hero__inner p,
-.mpw-source-category-card__body p {
-  font-family: "Roboto Slab", serif !important;
-  font-size: 18px !important;
-  font-weight: 300 !important;
-  line-height: 1.625 !important;
-}
-
-/* Navigation */
-#mpw-source-nav a,
-.mpw-source-nav a {
-  font-family: "Roboto Slab", serif !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  text-transform: none !important;
-}
-
-/* Brand name */
-.mpw-source-brand__name {
-  font-family: "Bebas Neue", sans-serif !important;
-  font-size: 18px !important;
-  font-weight: 400 !important;
-  letter-spacing: 1px !important;
-}
-
-/* Buttons */
-.mpw-source-btn,
-.mpw-source-btn--primary,
-.mpw-source-btn--outline {
-  font-family: "Roboto Slab", serif !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-}
-
-/* Section labels (Über mich, Produktkategorien, etc.) */
-.mpw-source-section-heading span,
-.mpw-source-hero__inner > span {
-  font-family: "Roboto Slab", serif !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 2.8px !important;
-}
-/* === END Font Alignment === */
 
 /* Category Cards - Style matching source site */
 #products {
@@ -716,9 +538,588 @@ p,
   color: #e8e4dd !important;
 }
 .mpw-source-category-card__body p {
-  font-family: "Roboto Slab", serif !important;
+  
   font-size: 14px !important;
   font-weight: 400 !important;
   color: #978e82 !important;
   line-height: 20px !important;
+}
+
+
+/* ============================================================
+   TYPOGRAFIE – Montserrat + Open Sans (DSGVO-konform, lokal)
+   Montserrat: Überschriften, Navigation, Buttons (600–700)
+   Open Sans: Fließtext, Absätze, Listen (400–500)
+   Grundschriftgröße: 17px | Zeilenhöhe: 1.6
+   ============================================================ */
+
+/* --- Globale Basis-Typografie --- */
+html {
+  font-size: 17px !important;
+}
+
+body,
+.mpw-source-home,
+.mpw-source-header,
+.mpw-source-footer {
+  
+  font-size: 17px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+/* --- Fließtext: Open Sans 400–500 --- */
+p,
+li,
+td,
+th,
+dd,
+dt,
+blockquote,
+.mpw-hero-text p,
+.mpw-about-text p,
+.mpw-category-card-v2 p,
+.mpw-contact-section p,
+.mpw-gallery-section p,
+.mpw-products-section p,
+.mpw-source-about__content p,
+.mpw-source-hero__inner p,
+.mpw-source-category-card__body p,
+.mpw-source-footer__contact-address,
+.mpw-source-footer__contact-item,
+.wp-block-post-excerpt__excerpt,
+.woocommerce-product-details__short-description,
+.woocommerce-Tabs-panel p {
+  
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+/* --- Überschriften: Montserrat 600–700 --- */
+h1, h2, h3, h4, h5, h6,
+.mpw-source-about__content h1,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+.mpw-source-hero__inner h1,
+.mpw-source-contact__info h3,
+.mpw-source-footer__contact h3,
+.mpw-source-category-card__body h3,
+.mpw-source-category-card--v2 .mpw-source-category-card__body h3,
+.mpw-source-footer h2,
+main h1,
+main h2,
+main h3,
+main h4,
+.wp-block-post-title,
+.wp-block-post-title a,
+.woocommerce-loop-product__title,
+.product_title {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Hero H1: größer */
+.mpw-source-hero__inner h1,
+.mpw-hero-section h1,
+h1.mpw-hero-title {
+  font-size: clamp(3rem, 8vw, 5.5rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  text-transform: uppercase !important;
+}
+
+/* Sektion H1/H2 */
+.mpw-source-about__content h1,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+.mpw-about-section h1,
+.mpw-products-section h1,
+.mpw-gallery-section h2,
+.mpw-contact-section h2,
+main h1,
+main h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+/* H3 (Kategoriekarten, Kontakt) */
+.mpw-source-category-card__body h3,
+.mpw-source-category-card--v2 .mpw-source-category-card__body h3,
+.mpw-source-contact__info h3,
+.mpw-source-footer__contact h3,
+main h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem) !important;
+  font-weight: 600 !important;
+}
+
+/* H4–H6 */
+h4, h5, h6 {
+  font-weight: 600 !important;
+}
+
+/* --- Navigation: Montserrat 500–600 --- */
+.mpw-source-nav > a,
+.mpw-source-nav a,
+#mpw-source-nav a,
+.wp-block-navigation a,
+.wp-block-navigation-item__content,
+.wp-block-navigation__responsive-container-content a {
+  
+  font-weight: 600 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+/* --- Buttons: Montserrat 500–600 --- */
+.wp-block-button__link,
+.wp-element-button,
+.wc-block-components-button,
+.mpw-btn,
+.mpw-btn-primary,
+.mpw-btn-outline,
+.mpw-source-btn,
+.mpw-source-btn--primary,
+.mpw-source-btn--outline,
+.mpw-source-nav .mpw-source-nav__cta,
+.mpw-hero-section a.mpw-btn,
+.mpw-products-section a.mpw-btn,
+button[type="submit"] {
+  
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* --- Brand/Logo-Text: Montserrat --- */
+.mpw-source-brand__text strong,
+.mpw-source-brand__name,
+.mpw-brand-name,
+.mpw-source-footer__logo-text strong {
+  
+  font-weight: 700 !important;
+}
+
+.mpw-source-brand__text small,
+.mpw-source-footer__logo-text span {
+  
+  font-weight: 600 !important;
+}
+
+/* --- Sektion-Labels (Eyebrow): Montserrat 500 --- */
+.mpw-section-label,
+.mpw-source-eyebrow,
+.mpw-source-hero__inner > span {
+  
+  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+/* --- Kategorie-Card Badges: Montserrat --- */
+.mpw-source-category-card--v2 .mpw-source-category-card__badge,
+.mp-project-card__badge {
+  
+  font-weight: 600 !important;
+}
+
+/* --- Kategorie-Card Links: Montserrat --- */
+.mpw-source-category-card--v2 .mpw-source-category-card__link,
+.mp-project-card--v2 .wp-block-post-excerpt__more-link {
+  
+  font-weight: 600 !important;
+}
+
+/* --- WooCommerce Preise: Montserrat --- */
+.wc-block-components-product-price,
+.price,
+.woocommerce-Price-amount {
+  
+  font-weight: 600 !important;
+}
+
+/* --- Footer-Überschriften: Montserrat --- */
+.mpw-source-footer h2 {
+  
+  font-weight: 600 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* --- Formulare & Inputs: Open Sans --- */
+input,
+textarea,
+select,
+.wc-block-components-text-input input,
+.wc-block-components-textarea textarea {
+  
+  font-weight: 400 !important;
+}
+
+/* --- Spans in Überschriften: gleiche Schrift erben --- */
+h1 span, h2 span, h3 span,
+main h1 span, main h2 span,
+.mpw-source-hero__inner h1 span,
+.mpw-source-about__content h1 span,
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  display: block !important;
+}
+
+/* --- Farben beibehalten --- */
+/* Grüne Überschriften */
+.mpw-source-about__content h1,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+main h1,
+main h2 {
+  color: #008b1d !important;
+}
+
+/* Rote Spans in Überschriften */
+main h1 span,
+main h2 span,
+.mpw-source-hero__inner h1 span,
+.mpw-source-about__content h1 span,
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span {
+  color: #d40924 !important;
+}
+
+/* Header Brand-Farben */
+.mpw-source-brand__text strong {
+  color: #008b1d !important;
+}
+.mpw-source-brand__text small {
+  color: #d40924 !important;
+}
+
+/* Footer-Überschriften grün */
+.mpw-source-footer h2 {
+  color: #008b1d !important;
+}
+
+/* --- Fix: Hero-Buttons (mpw-source-button) auf Montserrat --- */
+.mpw-source-button,
+.mpw-source-button--primary,
+.mpw-source-button--outline,
+a.mpw-source-button,
+a.mpw-source-button--primary,
+a.mpw-source-button--outline {
+  
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* --- Fix: Eyebrow-Labels (.mpw-source-eyebrow) auf Montserrat --- */
+.mpw-source-eyebrow,
+p.mpw-source-eyebrow,
+.mpw-source-hero__inner .mpw-source-eyebrow {
+  
+  font-weight: 500 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #008b1d !important;
+}
+
+/* === TYPOGRAFIE: Exakt wie Quellseite (Bebas Neue + Roboto Slab) === */
+
+/* --- 1. Grundeinstellungen (Body) --- */
+html {
+  font-size: 16px !important;
+}
+body,
+.editor-styles-wrapper {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+/* --- 2. Überschriften: Bebas Neue 400 --- */
+h1, h2, h3, h4, h5, h6,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+.mpw-source-about__content h1,
+.mpw-source-hero__inner h1,
+.mpw-source-contact__info h3,
+.mpw-source-footer__contact h3,
+.mpw-source-category-card__body h3,
+.mpw-source-category-card--v2 .mpw-source-category-card__body h3,
+.mpw-source-footer h2,
+main h1, main h2, main h3, main h4,
+.wp-block-post-title,
+.wp-block-post-title a,
+.woocommerce-loop-product__title,
+.product_title {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Hero H1: 96px */
+.mpw-source-hero__inner h1 {
+  font-size: clamp(48px, 8vw, 96px) !important;
+  line-height: 1 !important;
+}
+
+/* H2 Sektionen: 48px */
+.mpw-source-section-heading h2,
+.mpw-source-about__content h1,
+main h2,
+.mpw-source-section-heading h1 {
+  font-size: clamp(36px, 5vw, 48px) !important;
+  line-height: 1 !important;
+}
+
+/* H3: 18px */
+h3,
+.mpw-source-category-card__body h3 {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+
+/* Spans in Überschriften (grün/rot) erben Font und Größe */
+h1 span, h2 span, h3 span,
+main h1 span, main h2 span,
+.mpw-source-hero__inner h1 span,
+.mpw-source-about__content h1 span,
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* Farben */
+h1, h2,
+.mpw-source-section-heading h1,
+.mpw-source-section-heading h2,
+.mpw-source-hero__inner h1,
+main h1, main h2 {
+  color: #008b1d !important;
+}
+h1 span[style*="color"],
+h2 span[style*="color"],
+.mpw-source-hero__inner h1 span,
+.mpw-source-about__content h1 span,
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span {
+  color: rgb(212, 9, 36) !important;
+}
+
+/* --- 3. Navigation: Roboto Slab 500, 14px --- */
+#mpw-source-nav a,
+.mpw-source-nav > a,
+.mpw-source-nav a,
+.wp-block-navigation a,
+.wp-block-navigation-item__content,
+.wp-block-navigation__responsive-container-content a {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* --- 4. Buttons: Bebas Neue 500, 18px, letter-spacing 0.9px --- */
+.mpw-source-button,
+.mpw-source-button--primary,
+.mpw-source-button--outline,
+a.mpw-source-button,
+a.mpw-source-button--primary,
+a.mpw-source-button--outline,
+.wp-block-button__link,
+.wp-element-button,
+.wc-block-components-button,
+button[type="submit"] {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  text-transform: none !important;
+  letter-spacing: 0.9px !important;
+}
+
+/* --- 5. Eyebrow-Labels: Roboto Slab 500, 14px --- */
+.mpw-source-eyebrow,
+p.mpw-source-eyebrow,
+.mpw-source-hero__eyebrow,
+.mpw-source-section-heading .mpw-source-eyebrow {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+}
+
+/* --- 6. Fließtext / Absätze: Roboto Slab 400, 20px (Hero), 16px (Rest) --- */
+.mpw-source-hero__inner p,
+.mpw-source-hero__content p {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 1.625 !important;
+  opacity: 0.7 !important;
+}
+
+p, li, td, th,
+.mpw-source-about__content p,
+.mpw-source-category-card__body p,
+.mpw-source-section-heading p:not(.mpw-source-eyebrow) {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 1.625 !important;
+}
+
+/* --- 7. Statistik-Zahlen (15+, 100%, 10+): Bebas Neue --- */
+.mpw-source-stats__number,
+.mpw-source-hero__stats strong,
+.mpw-source-stats strong {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* --- 8. Footer-Links: Roboto Slab --- */
+footer a,
+.mpw-source-footer a,
+.mpw-source-footer__nav a,
+.mpw-source-footer__links a {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+}
+
+/* --- Fix: Hero-Paragraph 20px und Eyebrow 14px (Override source-match.css) --- */
+body .mpw-source-hero__inner p:not(.mpw-source-eyebrow) {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 1.625 !important;
+  opacity: 0.7 !important;
+}
+body .mpw-source-container p.mpw-source-eyebrow,
+body .mpw-source-hero__inner p.mpw-source-eyebrow,
+body .mpw-source-container .mpw-source-eyebrow,
+body p.mpw-source-eyebrow.mpw-source-eyebrow--light,
+body p.mpw-source-eyebrow {
+  font-family: "Roboto Slab", serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* About Page – Badge Pill, Bicolor Title, Centered Kicker */
+.mp-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(163, 230, 53, 0.3);
+  border-radius: 9999px;
+  background: rgba(163, 230, 53, 0.1);
+  color: #a3e635;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.mp-badge-pill::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #a3e635;
+  animation: mp-pulse 2s ease-in-out infinite;
+}
+@keyframes mp-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.mp-title-bicolor { max-width: none; }
+.mp-title-green { display: block; color: #a3e635; }
+.mp-title-red { display: block; color: #dc2626; }
+.mp-kicker-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #a3e635;
+  font-family: var(--wp--preset--font-family--body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.mp-kicker-centered::before,
+.mp-kicker-centered::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: #a3e635;
+}
+/* === Über-mich-Seite: Titel-Farben (hohe Spezifität) === */
+body main h1 span.mp-title-green,
+body main h2 span.mp-title-green,
+body main h1 span.mp-title-green2,
+body main h2 span.mp-title-green2 {
+    color: #05aa00 !important;
+}
+/* WIE ALLES BEGANN und WAS MICH ANTREIBT rot */
+body main h2.wp-block-heading.has-text-color[style*="color:#dc2626"] {
+    color: #dc2626 !important;
+}
+/* DER ORT DES GESCHEHENS grün */
+body main h2.wp-block-heading.has-text-color[style*="color:#05aa00"] {
+    color: #05aa00 !important;
+}
+/* CTA-Überschrift weiß */
+body main h2.wp-block-heading.has-text-color[style*="color:#f8f8f7"] {
+    color: #f8f8f7 !important;
+}
+/* Text breiter auf Über-mich-Seite */
+.page-id-23 .wp-block-group.has-global-padding > .wp-block-columns {
+    max-width: 1200px;
+}
+.page-id-23 .mp-section .wp-block-column p {
+    max-width: 100%;
+}
+
+/* Heading spans inline - same line as rest of heading */
+h1 span,
+h2 span,
+h3 span,
+.mpw-source-hero__inner h1 span,
+.mpw-source-section h1 span,
+.mpw-source-section h2 span {
+  display: inline !important;
+}
+
+
+/* Letter-spacing - match source site */
+.mpw-source-hero__inner h1,
+.mpw-source-hero__inner h1 span {
+  letter-spacing: 0.05em !important;
+}
+/* Override source-match.css .mpw-source-section-heading span (0.18em !important) */
+/* Specificity: class+element+element (0,1,2) > class+element (0,1,1) */
+.mpw-source-section-heading h1 span,
+.mpw-source-section-heading h2 span,
+.mpw-source-about__content h1 span,
+main h1 span,
+main h2 span {
+  letter-spacing: -0.02em !important;
 }
