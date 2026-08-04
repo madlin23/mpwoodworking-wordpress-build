@@ -1123,3 +1123,26 @@ main h1 span,
 main h2 span {
   letter-spacing: -0.02em !important;
 }
+
+/* Category card hover - h3 turns green */
+.mpw-source-category-card h3 {
+  transition: color 0.3s ease;
+}
+.mpw-source-category-card--v2.mpw-source-category-card:hover h3 {
+  color: #05aa00 !important;
+}
+
+/* Remove border-top from Weitere Kategorien */
+.mpw-source-more-categories {
+  border-top: none !important;
+}
+
+/* Badge text color - black on green */
+.mpw-source-category-card--v2 .mpw-source-category-card__badge {
+  color: #000000 !important;
+}/* manus-h1-size-fix */.mp-page-title{max-width:22ch !important;font-size:clamp(2rem, 4vw, 3.25rem) !important;line-height:0.95 !important;}
+:root :where(.wp-block-woocommerce-product-price .wc-block-components-product-price){color: #d40924;font-family: var(--wp--preset--font-family--display);font-size: clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.86), 1.5rem);font-weight: 400;letter-spacing: 0.04em;}
+:root :where(.wp-block-button.wc-block-components-product-button .wc-block-components-product-button__button){font-family: var(--wp--preset--font-family--body);font-size: 0.75rem;font-weight: 700;letter-spacing: 0.1em;text-transform: uppercase;}
+:root :where(.wc-block-components-product-title){font-family: var(--wp--preset--font-family--display);font-size: clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem);font-weight: 400;letter-spacing: 0.04em;text-transform: uppercase;}
+:root :where(.wp-block-woocommerce-breadcrumbs){font-size: var(--wp--preset--font-size--custom-1);font-style: normal;font-weight: 400;}
+/*# sourceURL=global-styles-inline-css */
