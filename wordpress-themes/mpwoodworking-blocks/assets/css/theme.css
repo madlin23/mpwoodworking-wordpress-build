@@ -2566,6 +2566,28 @@ input[type="submit"]:hover {
 	margin-top: 29px !important;
 }
 
+/* CTA-Buttons im Hero. Das Markup nutzt dieselben Klassen wie die
+   Startseite (.mpw-source-button aus source-match.css); hier stehen nur
+   die Maße, die dort an .mpw-source-hero gebunden sind. Der Abstand von
+   34px entsteht aus dem margin-bottom des Einleitungstextes und wird
+   hier gespiegelt, damit die Ränder auf denselben Wert kollabieren. */
+.mp-hero .mpw-source-actions {
+	margin-top: 34px;
+}
+
+.mp-hero .mpw-source-button {
+	height: 54px;
+	padding-block: 0;
+}
+
+.mp-hero .mpw-source-button--primary {
+	min-width: 205px;
+}
+
+.mp-hero .mpw-source-button--outline {
+	min-width: 128px;
+}
+
 @media (max-width: 1023px) {
 	.mp-hero.mp-hero > .wp-block-cover.wp-block-cover.alignfull {
 		min-height: 760px !important;
