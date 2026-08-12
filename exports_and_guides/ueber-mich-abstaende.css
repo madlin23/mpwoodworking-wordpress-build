@@ -1,0 +1,48 @@
+/* ═══════════════════════════════════════════════════════════════
+   Über mich (page-id-23) – Abstände kompakter
+   Vorher: Section-Padding 112px oben/unten + 24px Block-Abstand,
+   im Block "Wie alles begann" zusätzlich 110px Innenabstand
+   → bis zu 358px Leerraum zwischen zwei Abschnitten.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* 1. Zusätzlicher 24-px-Abstand zwischen den Sections entfällt
+      (jede Section bringt ihr eigenes Padding mit) */
+body.page-id-23 .entry-content > * {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 2. Vertikales Padding aller Sections reduzieren (vorher bis 112px) */
+body.page-id-23 .entry-content > .mp-section {
+  padding-top: clamp(2.25rem, 3.5vw, 3.5rem) !important;
+  padding-bottom: clamp(2.25rem, 3.5vw, 3.5rem) !important;
+}
+
+/* 3. "Wie alles begann": doppeltes Padding (Section + .mpw-about) entfernen
+      – nur oben/unten, die seitlichen Abstände bleiben unverändert */
+body.page-id-23 .mpw-about {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* 4. Abstände innerhalb der Sections (Kicker → Headline → Inhalt) */
+body.page-id-23 .mp-section > .mp-kicker-centered {
+  margin-bottom: 12px !important;
+}
+body.page-id-23 .mp-section > h2.wp-block-heading {
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* 5. Werkstatt-Text rückt näher an das Bild */
+body.page-id-23 .mp-section .wp-block-image + .wp-block-group {
+  padding-top: 1.5rem !important;
+}
+
+/* 6. Mobil noch etwas kompakter */
+@media (max-width: 780px) {
+  body.page-id-23 .entry-content > .mp-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
