@@ -1865,3 +1865,178 @@ header.wp-block-template-part {
 		transition-duration: .01ms !important;
 	}
 }
+
+/* ============================================================
+   Galerie: kuratiertes Werkstückraster
+   Ausschließlich für den FileBird-Galerieblock auf /galerie/.
+   Header, Hero, Navigation, CTA und Footer bleiben unberührt.
+   ============================================================ */
+.mpw-gal-page {
+	background: #0b0b0a;
+	padding: clamp(32px, 5vw, 76px) clamp(16px, 4vw, 48px);
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery {
+	display: grid !important;
+	gap: clamp(10px, 1.2vw, 16px) !important;
+	grid-auto-flow: dense;
+	grid-auto-rows: clamp(84px, 8.8vw, 128px);
+	grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+	list-style: none;
+	margin: 0 auto !important;
+	max-width: 1280px;
+	padding: 0 !important;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item {
+	background: #151513;
+	box-sizing: border-box;
+	display: block !important;
+	grid-column: span 3;
+	grid-row: span 3;
+	margin: 0 !important;
+	overflow: hidden;
+	position: relative;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(1) {
+	grid-column: span 6;
+	grid-row: span 4;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(2),
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(8),
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(15) {
+	grid-column: span 3;
+	grid-row: span 4;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(5),
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(10),
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(17) {
+	grid-column: span 6;
+	grid-row: span 3;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item figure,
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item a,
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item img {
+	display: block;
+	height: 100% !important;
+	margin: 0 !important;
+	width: 100% !important;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item img {
+	filter: saturate(.9) contrast(1.03);
+	object-fit: cover;
+	transition: filter .35s ease, transform .55s cubic-bezier(.2, .7, .2, 1);
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item figure::after {
+	background: linear-gradient(0deg, rgba(0, 0, 0, .24), transparent 48%);
+	content: "";
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
+	transition: background .35s ease;
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:hover img,
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:focus-within img {
+	filter: saturate(1.04) contrast(1.05);
+	transform: scale(1.055);
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:hover figure::after,
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:focus-within figure::after {
+	background: linear-gradient(0deg, rgba(0, 0, 0, .42), transparent 54%);
+}
+
+.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item a:focus-visible {
+	outline: 2px solid #c7a76e;
+	outline-offset: -5px;
+}
+
+@media (max-width: 900px) {
+	.mpw-gal-page .filebird-block-filebird-gallery {
+		grid-auto-rows: clamp(92px, 15vw, 130px);
+		grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item,
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(3n + 1),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(3n + 2),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(3n + 3) {
+		grid-column: span 3;
+		grid-row: span 3;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(1),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(5),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(10),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(17) {
+		grid-column: span 6;
+		grid-row: span 3;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(2),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(8),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(15) {
+		grid-column: span 3;
+		grid-row: span 4;
+	}
+}
+
+@media (max-width: 560px) {
+	.mpw-gal-page {
+		padding: 22px 10px;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery {
+		gap: 8px !important;
+		grid-auto-rows: 110px;
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item,
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(n) {
+		grid-column: span 1;
+		grid-row: span 2;
+	}
+
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(1),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(5),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(10),
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item:nth-child(17) {
+		grid-column: span 2;
+		grid-row: span 3;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item img,
+	.mpw-gal-page .filebird-block-filebird-gallery .blocks-gallery-item figure::after {
+		transition: none;
+	}
+}
+
+/* MPW_GALLERY_SCOPE_FIX_2026: Hero bleibt unverändert; Gestaltung ausschließlich für das Bildraster */
+.mpw-gal-page {
+	background: transparent;
+	padding: 0;
+}
+
+.mpw-gal-page > .filebird-block-filebird-gallery {
+	background: #0b0b0a;
+	box-sizing: border-box;
+	margin: 0 !important;
+	max-width: none;
+	padding: clamp(32px, 5vw, 76px) clamp(16px, 4vw, 48px) !important;
+}
+
+@media (max-width: 560px) {
+	.mpw-gal-page > .filebird-block-filebird-gallery {
+		padding: 22px 10px !important;
+	}
+}
