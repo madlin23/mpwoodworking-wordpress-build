@@ -2040,3 +2040,16 @@ header.wp-block-template-part {
 		padding: 22px 10px !important;
 	}
 }
+
+
+/* MPW_GALLERY_GREEN_FRAME_2026: grüner Rahmen ausschließlich für Galeriebilder */
+.mpw-gal-page > .filebird-block-filebird-gallery .blocks-gallery-item {
+	border: 2px solid #12a852;
+}
+
+@media (hover: hover) {
+	.mpw-gal-page > .filebird-block-filebird-gallery .blocks-gallery-item:hover,
+	.mpw-gal-page > .filebird-block-filebird-gallery .blocks-gallery-item:focus-within {
+		border-color: #52d67d;
+	}
+}

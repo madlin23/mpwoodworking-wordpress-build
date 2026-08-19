@@ -48,3 +48,7 @@ Die Produktions-CSS vor und nach der Anpassung liegen als Rückfallkopien unter 
 ## Versionsstand
 
 Die lokale Theme-Quelle wurde mit Commit `1cca101` unter dem Titel `style: refine gallery layout without changing hero` in den Branch `main` übertragen. Der finale Livecheck bestätigte den unveränderten Header und Hero sowie das neue asymmetrische Bildraster unterhalb des Hero-Bereichs.
+
+## Grüner Bilderrahmen
+
+Auf Wunsch wurde ein **2 px starker grüner Rahmen** (`#12a852`) ausschließlich an den 21 Galeriekacheln ergänzt. Bei Hover oder Tastaturfokus wird der Rahmen auf ein helleres Grün (`#52d67d`) angehoben. Die Umsetzung verwendet `box-sizing: border-box`, sodass sich weder Rastermaße noch Bildausschnitte verschieben. Der öffentliche Livecheck bestätigte einheitlich `2px rgb(18, 168, 82)` für alle Galeriekacheln; Header und Hero sind weiterhin vorhanden und unverändert.
