@@ -178,7 +178,7 @@ function mpwoodworking_register_block_patterns() {
 <div class="wp-block-group has-black-background-color has-background" style="padding-top:4rem;padding-right:2rem;padding-bottom:4rem;padding-left:2rem;border:1px solid #2a2a28;position:relative">
     
     <!-- Grüner Akzentpunkt oben links -->
-    <div style="position:absolute;top:20px;left:20px;width:8px;height:8px;background-color:#a3e635;border-radius:50%;box-shadow:0 0 8px #a3e635;"></div>
+    <div style="position:absolute;top:20px;left:20px;width:8px;height:8px;background-color:#008b1d;border-radius:50%;box-shadow:0 0 8px #008b1d;"></div>
 
     <!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"900"}},"textColor":"text","fontSize":"xx-large"} -->
     <h2 class="wp-block-heading has-text-color has-xx-large-font-size" style="font-weight:900;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:0.5rem">UNSERE MÄRKISCHEN EDELHÖLZER</h2>
@@ -195,7 +195,7 @@ function mpwoodworking_register_block_patterns() {
         <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
             
             <!-- Vertikale grüne Akzentlinie links -->
-            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#008b1d;"></div>
 
             <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
             <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">DIE SELTENE EIBE</h3>
@@ -216,7 +216,7 @@ function mpwoodworking_register_block_patterns() {
         <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
             
             <!-- Vertikale grüne Akzentlinie links -->
-            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#008b1d;"></div>
 
             <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
             <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">EDLER WALNUSSBAUM</h3>
@@ -237,7 +237,7 @@ function mpwoodworking_register_block_patterns() {
         <div class="wp-block-column has-surface-background-color has-background" style="border-style:solid;border-width:1px;border-color:#2a2a28;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;position:relative;transition:all 0.3s ease;">
             
             <!-- Vertikale grüne Akzentlinie links -->
-            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#a3e635;"></div>
+            <div style="position:absolute;left:0;top:2rem;bottom:2rem;width:3px;background-color:#008b1d;"></div>
 
             <!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700"}},"textColor":"text","fontSize":"large"} -->
             <h3 class="wp-block-heading has-text-color has-large-font-size" style="font-weight:700;color:#f8f8f7;font-family:\'Bebas Neue\',sans-serif;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.25rem">DIE WILDE ROBINIE</h3>
@@ -445,7 +445,7 @@ endif;
 
 /**
  * WooCommerce Transaktions-E-Mails an das dunkel-kontraststarke Handwerks-Design anpassen.
- * Integriert die neuen leuchtend Lime-Grünen Akzente (#a3e635) und das klassische Rot (#d40924).
+ * Integriert die neuen leuchtend Markengrünen Akzente (#008b1d) und das klassische Rot (#d40924).
  */
 function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
     // Dunkel-kontraststarke Farben definieren
@@ -454,7 +454,7 @@ function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
     $text_color    = '#f8f8f7'; // Text
     $muted_color   = '#a8a8a3'; // Text Muted
     $accent_red    = '#d40924'; // Accent Rot
-    $accent_lime   = '#a3e635'; // Accent Lime-Grün
+    $accent_lime   = '#008b1d'; // Accent Lime-Grün
     $border_color  = '#2a2a28'; // Border
 
     $custom_css = "
@@ -467,7 +467,7 @@ function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
             background-color: {$surface_color} !important;
             border: 1px solid {$border_color} !important;
             border-top: 4px solid {$accent_red} !important;
-            box-shadow: 0 0 15px rgba(163, 230, 53, 0.05) !important;
+            box-shadow: 0 0 15px rgba(0, 139, 29, 0.05) !important;
             border-radius: 0px !important;
         }
         #template_header {
@@ -485,7 +485,7 @@ function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
             letter-spacing: 0.05em !important;
             line-height: 120% !important;
             margin: 0 !important;
-            text-shadow: 0 0 8px rgba(163, 230, 53, 0.1) !important;
+            text-shadow: 0 0 8px rgba(0, 139, 29, 0.1) !important;
         }
         #template_header h1::after {
             content: ' •';
@@ -635,8 +635,8 @@ function mpwoodworking_custom_woocommerce_email_styles( $css, $email ) {
         }
         a.button:hover {
             background-color: #ef1a35 !important;
-            box-shadow: 0 0 10px rgba(163, 230, 53, 0.3) !important;
-            border-color: rgba(163, 230, 53, 0.3) !important;
+            box-shadow: 0 0 10px rgba(0, 139, 29, 0.3) !important;
+            border-color: rgba(0, 139, 29, 0.3) !important;
         }
         
         /* Footer */

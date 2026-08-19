@@ -123,8 +123,8 @@ export default function FileUpload({
           relative border-2 border-dashed rounded-none p-8 text-center cursor-pointer
           transition-all duration-200
           ${dragActive
-            ? "border-[#a3e635] bg-[#a3e635]/5"
-            : "border-[#2a2a28] hover:border-[#a3e635]/50 bg-[#11110f]"
+            ? "border-[#008b1d] bg-[#008b1d]/5"
+            : "border-[#2a2a28] hover:border-[#008b1d]/50 bg-[#11110f]"
           }
         `}
       >
@@ -139,7 +139,7 @@ export default function FileUpload({
 
         <div className="flex flex-col items-center space-y-3">
           {uploading ? (
-            <Loader2 className="w-8 h-8 text-[#a3e635] animate-spin" />
+            <Loader2 className="w-8 h-8 text-[#008b1d] animate-spin" />
           ) : (
             <Upload className="w-8 h-8 text-[#a8a8a3]" />
           )}
@@ -165,7 +165,7 @@ export default function FileUpload({
               className="flex items-center justify-between p-3 bg-[#1a1a19] border border-[#2a2a28] rounded-none"
             >
               <div className="flex items-center space-x-3">
-                <CheckCircle className="w-4 h-4 text-[#a3e635]" />
+                <CheckCircle className="w-4 h-4 text-[#008b1d]" />
                 <div>
                   <p className="text-xs text-[#f8f8f7] font-sans">
                     {file.fileName}

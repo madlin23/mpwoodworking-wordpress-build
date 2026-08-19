@@ -42,12 +42,12 @@ export default function Contact() {
       {/* Kontakt Header */}
       <section className="bg-[#11110f] border-b border-[#2a2a28] py-16 relative">
         {/* Feine grüne Akzentlinie am Header-Boden */}
-        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#a3e635]/30" />
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#008b1d]/30" />
         
         <div className="container">
           <div className="max-w-2xl flex flex-col space-y-4 relative pl-4">
             {/* Feine grüne vertikale Linie links neben der Hauptüberschrift */}
-            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]" />
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]" />
             
             <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">
               IN VERBINDUNG TRETEN
@@ -68,12 +68,12 @@ export default function Contact() {
           {/* Kontaktdaten */}
           <div className="lg:col-span-5 flex flex-col space-y-10 relative pl-6">
             {/* Feine grüne vertikale Akzentlinie links neben dem Info-Block */}
-            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#a3e635] opacity-60" />
+            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#008b1d] opacity-60" />
 
             <div className="flex flex-col space-y-3">
               <span className="text-xs tracking-widest uppercase font-bold font-serif text-[#d40924] flex items-center gap-1.5">
                 ATELIER MARCO PAUL
-                <span className="w-1 h-1 rounded-full bg-[#a3e635] inline-block shadow-[0_0_4px_#a3e635]" />
+                <span className="w-1 h-1 rounded-full bg-[#008b1d] inline-block shadow-[0_0_4px_#008b1d]" />
               </span>
               <h2 className="text-3xl font-serif font-black uppercase text-[#f8f8f7]">DIE WERKSTATT IN KÖPENICK</h2>
               <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans font-light">
@@ -84,7 +84,7 @@ export default function Contact() {
             {/* Daten-Liste */}
             <div className="flex flex-col space-y-6 font-sans text-xs text-[#a8a8a3]">
               <div className="flex items-start space-x-4 group">
-                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#a3e635]/40 mt-1 text-[#d40924] group-hover:text-[#a3e635] transition-colors">
+                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#008b1d]/40 mt-1 text-[#d40924] group-hover:text-[#008b1d] transition-colors">
                   <MapPin className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#a3e635]/40 mt-1 text-[#d40924] group-hover:text-[#a3e635] transition-colors">
+                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#008b1d]/40 mt-1 text-[#d40924] group-hover:text-[#008b1d] transition-colors">
                   <Mail className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#a3e635]/40 mt-1 text-[#d40924] group-hover:text-[#a3e635] transition-colors">
+                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#008b1d]/40 mt-1 text-[#d40924] group-hover:text-[#008b1d] transition-colors">
                   <Phone className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -114,7 +114,7 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#a3e635]/40 mt-1 text-[#d40924] group-hover:text-[#a3e635] transition-colors">
+                <div className="p-3 bg-[#11110f] border border-[#2a2a28] group-hover:border-[#008b1d]/40 mt-1 text-[#d40924] group-hover:text-[#008b1d] transition-colors">
                   <Clock className="w-4 h-4 stroke-[1.5]" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -126,9 +126,9 @@ export default function Contact() {
           </div>
 
           {/* Kontaktformular */}
-          <div className="lg:col-span-7 bg-[#11110f] border border-[#2a2a28] hover:border-[#a3e635]/20 p-8 lg:p-12 relative transition-colors group">
+          <div className="lg:col-span-7 bg-[#11110f] border border-[#2a2a28] hover:border-[#008b1d]/20 p-8 lg:p-12 relative transition-colors group">
             {/* Feine grüne Akzentlinie am Tabellen-Panel */}
-            <div className="absolute top-0 left-6 right-6 h-[1px] bg-[#a3e635]/20" />
+            <div className="absolute top-0 left-6 right-6 h-[1px] bg-[#008b1d]/20" />
             
             <h3 className="font-serif text-3xl font-black uppercase text-[#f8f8f7] mb-6">Nachricht senden</h3>
 
@@ -143,7 +143,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#a3e635] focus:outline-none rounded-none transition-colors"
+                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#008b1d] focus:outline-none rounded-none transition-colors"
                     placeholder="z.B. Marco Paul"
                   />
                 </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#a3e635] focus:outline-none rounded-none transition-colors"
+                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#008b1d] focus:outline-none rounded-none transition-colors"
                     placeholder="z.B. name@beispiel.de"
                   />
                 </div>
@@ -169,7 +169,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#a3e635] focus:outline-none cursor-pointer rounded-none transition-colors"
+                  className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#008b1d] focus:outline-none cursor-pointer rounded-none transition-colors"
                 >
                   <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
                   <option value="Preisanfrage Maßanfertigung">Preisanfrage Maßanfertigung (Tisch, Möbel)</option>
@@ -186,7 +186,7 @@ export default function Contact() {
                     name="woodType"
                     value={formData.woodType}
                     onChange={handleChange}
-                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#a3e635] focus:outline-none cursor-pointer rounded-none transition-colors"
+                    className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#008b1d] focus:outline-none cursor-pointer rounded-none transition-colors"
                   >
                     <option value="Eiche">Märkische Eiche</option>
                     <option value="Walnuss">Edle Walnuss</option>
@@ -205,7 +205,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#a3e635] focus:outline-none resize-none rounded-none transition-colors"
+                  className="border border-[#2a2a28] p-3 bg-[#010101] text-[#f8f8f7] focus:border-[#008b1d] focus:outline-none resize-none rounded-none transition-colors"
                   placeholder="Beschreiben Sie Ihre Wünsche oder Fragen so detailliert wie möglich..."
                 />
               </div>
@@ -213,7 +213,7 @@ export default function Contact() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] border border-transparent font-sans uppercase tracking-wider text-xs py-6 rounded-none cursor-pointer flex items-center justify-center space-x-2 font-bold transition-all hover:shadow-[0_0_15px_rgba(163,230,53,0.3)] hover:border-[#a3e635]/40"
+                className="w-full bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] border border-transparent font-sans uppercase tracking-wider text-xs py-6 rounded-none cursor-pointer flex items-center justify-center space-x-2 font-bold transition-all hover:shadow-[0_0_15px_rgba(0, 139, 29, 0.3)] hover:border-[#008b1d]/40"
               >
                 <Hammer className="w-4 h-4" />
                 <span>{isSubmitting ? "Wird gesendet..." : "Anfrage senden"}</span>

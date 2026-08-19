@@ -23,7 +23,7 @@
         { "name": "Text Gedämpft", "slug": "muted", "color": "#a8a8a3" },
         { "name": "Rahmen", "slug": "border", "color": "#2a2a28" },
         { "name": "Signalrot", "slug": "accent", "color": "#d40924" },
-        { "name": "Lime", "slug": "lime", "color": "#a3e635" }
+        { "name": "Lime", "slug": "lime", "color": "#008b1d" }
       ]
     },
     "dimensions": {
@@ -35,7 +35,7 @@
     "shadow": {
       "defaultPresets": false,
       "presets": [
-        { "name": "Lime Glimmen", "slug": "lime-glow", "shadow": "0 0 16px rgba(163, 230, 53, 0.24)" },
+        { "name": "Lime Glimmen", "slug": "lime-glow", "shadow": "0 0 16px rgba(0, 139, 29, 0.24)" },
         { "name": "Rot Glimmen", "slug": "red-glow", "shadow": "0 0 18px rgba(212, 9, 36, 0.28)" }
       ]
     },

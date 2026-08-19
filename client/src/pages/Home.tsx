@@ -34,7 +34,7 @@ export default function Home() {
             <span className="text-[#d40924] relative inline-block">
               IN FORM GEDREHT.
               {/* Dezenter, hochwertiger grüner Glow unter der wichtigsten Überschrift */}
-              <span className="absolute bottom-1 left-0 w-full h-[2px] bg-[#a3e635] shadow-[0_0_12px_#a3e635] opacity-80" />
+              <span className="absolute bottom-1 left-0 w-full h-[2px] bg-[#008b1d] shadow-[0_0_12px_#008b1d] opacity-80" />
             </span>
           </h1>
           <p className="text-sm md:text-base text-[#a8a8a3] leading-relaxed max-w-2xl font-sans font-light">
@@ -42,12 +42,12 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full justify-center">
             <Link href="/shop" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer border border-transparent font-bold transition-all hover:shadow-[0_0_15px_rgba(163,230,53,0.3)] hover:border-[#a3e635]/40">
+              <Button className="w-full sm:w-auto bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer border border-transparent font-bold transition-all hover:shadow-[0_0_15px_rgba(0, 139, 29, 0.3)] hover:border-[#008b1d]/40">
                 Unikate entdecken
               </Button>
             </Link>
             <Link href="/kontakt" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto bg-transparent hover:bg-[#1a1a19] text-[#f8f8f7] border border-[#2a2a28] hover:border-[#a3e635]/40 font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer font-bold transition-all">
+              <Button className="w-full sm:w-auto bg-transparent hover:bg-[#1a1a19] text-[#f8f8f7] border border-[#2a2a28] hover:border-[#008b1d]/40 font-sans uppercase tracking-widest text-xs py-6 px-10 rounded-none cursor-pointer font-bold transition-all">
                 Maßanfertigungen
               </Button>
             </Link>
@@ -59,12 +59,12 @@ export default function Home() {
       <section className="py-20 bg-[#11110f] border-b border-[#2a2a28]">
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Spalte 1: 100% Handarbeit */}
-          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#a3e635]/30 transition-colors group relative">
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#008b1d]/30 transition-colors group relative">
             {/* Feine grüne Akzentlinie links neben dem Textblock */}
-            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#a3e635] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#008b1d] opacity-60 group-hover:opacity-100 transition-opacity" />
             
             {/* Icon mit grünem Akzent-Rahmen */}
-            <div className="p-3 bg-[#d40924]/10 border border-[#a3e635]/30 group-hover:border-[#a3e635] w-fit text-[#d40924] transition-colors">
+            <div className="p-3 bg-[#d40924]/10 border border-[#008b1d]/30 group-hover:border-[#008b1d] w-fit text-[#d40924] transition-colors">
               <Hammer className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">100% Handarbeit</h3>
@@ -74,12 +74,12 @@ export default function Home() {
           </div>
 
           {/* Spalte 2: Märkische Edelhölzer */}
-          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#a3e635]/30 transition-colors group relative">
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#008b1d]/30 transition-colors group relative">
             {/* Feine grüne Akzentlinie links neben dem Textblock */}
-            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#a3e635] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#008b1d] opacity-60 group-hover:opacity-100 transition-opacity" />
             
             {/* Icon mit grünem Akzent-Rahmen */}
-            <div className="p-3 bg-[#d40924]/10 border border-[#a3e635]/30 group-hover:border-[#a3e635] w-fit text-[#d40924] transition-colors">
+            <div className="p-3 bg-[#d40924]/10 border border-[#008b1d]/30 group-hover:border-[#008b1d] w-fit text-[#d40924] transition-colors">
               <Flame className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">Märkische Edelhölzer</h3>
@@ -89,12 +89,12 @@ export default function Home() {
           </div>
 
           {/* Spalte 3: Für Generationen */}
-          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#a3e635]/30 transition-colors group relative">
+          <div className="flex flex-col space-y-4 p-8 bg-[#1a1a19] border border-[#2a2a28] hover:border-[#008b1d]/30 transition-colors group relative">
             {/* Feine grüne Akzentlinie links neben dem Textblock */}
-            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#a3e635] opacity-60 group-hover:opacity-100 transition-opacity" />
+            <div className="absolute left-0 top-8 bottom-8 w-[2px] bg-[#008b1d] opacity-60 group-hover:opacity-100 transition-opacity" />
             
             {/* Icon mit grünem Akzent-Rahmen */}
-            <div className="p-3 bg-[#d40924]/10 border border-[#a3e635]/30 group-hover:border-[#a3e635] w-fit text-[#d40924] transition-colors">
+            <div className="p-3 bg-[#d40924]/10 border border-[#008b1d]/30 group-hover:border-[#008b1d] w-fit text-[#d40924] transition-colors">
               <Star className="w-6 h-6 stroke-[1.5]" />
             </div>
             <h3 className="font-serif text-2xl font-bold uppercase tracking-wider text-[#f8f8f7]">Für Generationen</h3>
@@ -111,14 +111,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
             <div className="flex flex-col space-y-3 relative pl-4">
               {/* Feine grüne vertikale Linie links neben der Hauptüberschrift */}
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]" />
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]" />
               <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">EXKLUSIVE EINZELSTÜCKE</span>
               <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7]">
                 FRISCH AUS DER WERKSTATT
               </h2>
             </div>
             <Link href="/shop">
-              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#a3e635] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#a3e635]">
+              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#008b1d] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#008b1d]">
                 <span>Alle Unikate ansehen</span>
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -129,7 +129,7 @@ export default function Home() {
             {products.slice(0, 3).map((product) => (
               <div
                 key={product.id}
-                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#a3e635]/40 transition-colors"
+                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#008b1d]/40 transition-colors"
               >
                 <div className="aspect-square w-full overflow-hidden bg-[#1a1a19] relative">
                   <img
@@ -148,14 +148,14 @@ export default function Home() {
                     {product.woodType}
                   </span>
                   <Link href={`/produkt/${product.slug}`}>
-                    <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] hover:text-[#a3e635] cursor-pointer transition-colors">
+                    <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] hover:text-[#008b1d] cursor-pointer transition-colors">
                       {product.title}
                     </h3>
                   </Link>
                   {/* Preisangabe mit kleinem grünen Punkt */}
                   <span className="font-serif text-xl font-bold text-[#d40924] pt-1 flex items-center gap-1.5">
                     {product.price.toFixed(2)} €
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block shadow-[0_0_6px_#a3e635]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#008b1d] inline-block shadow-[0_0_6px_#008b1d]" />
                   </span>
                 </div>
                 <Button
@@ -163,7 +163,7 @@ export default function Home() {
                     addToCart(product);
                     toast.success(`${product.title} zum Warenkorb hinzugefügt.`);
                   }}
-                  className="w-full bg-[#1a1a19] hover:bg-[#d40924] text-[#f8f8f7] border border-[#2a2a28] hover:border-transparent font-sans uppercase tracking-widest text-[10px] py-4 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(163,230,53,0.2)]"
+                  className="w-full bg-[#1a1a19] hover:bg-[#d40924] text-[#f8f8f7] border border-[#2a2a28] hover:border-transparent font-sans uppercase tracking-widest text-[10px] py-4 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(0, 139, 29, 0.2)]"
                 >
                   In den Warenkorb
                 </Button>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="container grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-6 aspect-[4/5] overflow-hidden bg-[#1a1a19] border border-[#2a2a28] relative group">
             {/* Dünner grüner Rahmen um das Porträt-Bild */}
-            <div className="absolute inset-0 border border-transparent group-hover:border-[#a3e635]/40 transition-colors z-20 pointer-events-none" />
+            <div className="absolute inset-0 border border-transparent group-hover:border-[#008b1d]/40 transition-colors z-20 pointer-events-none" />
             <img
               src="/manus-storage/about_marco_bb26a810.png"
               alt="Marco Paul in seiner Holzwerkstatt"
@@ -189,7 +189,7 @@ export default function Home() {
 
           <div className="lg:col-span-6 flex flex-col space-y-6 relative pl-6">
             {/* Feine grüne Akzentlinie links neben dem Portrait-Textblock */}
-            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#a3e635] opacity-70" />
+            <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#008b1d] opacity-70" />
             
             <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">DER KOPF DAHINTER</span>
             <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7] leading-none">
@@ -203,7 +203,7 @@ export default function Home() {
             </p>
             <div className="pt-4">
               <Link href="/kontakt">
-                <Button className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-5 px-8 rounded-none cursor-pointer border border-transparent font-bold transition-all hover:shadow-[0_0_15px_rgba(163,230,53,0.3)] hover:border-[#a3e635]/40">
+                <Button className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-widest text-xs py-5 px-8 rounded-none cursor-pointer border border-transparent font-bold transition-all hover:shadow-[0_0_15px_rgba(0, 139, 29, 0.3)] hover:border-[#008b1d]/40">
                   Besuchen Sie das Atelier
                 </Button>
               </Link>
@@ -218,14 +218,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-6">
             <div className="flex flex-col space-y-3 relative pl-4">
               {/* Feine grüne vertikale Linie links neben der Projekt-Überschrift */}
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]" />
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]" />
               <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">HANDWERKS-CHRONIK</span>
               <h2 className="font-serif text-4xl md:text-5xl font-black uppercase text-[#f8f8f7]">
                 MASSANFERTIGUNGEN & PROJEKTE
               </h2>
             </div>
             <Link href="/projekte">
-              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#a3e635] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#a3e635]">
+              <span className="inline-flex items-center space-x-2 text-xs tracking-widest uppercase font-bold text-[#f8f8f7] hover:text-[#008b1d] cursor-pointer transition-colors pb-1 border-b border-transparent hover:border-[#008b1d]">
                 <span>Alle Projekte ansehen</span>
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -236,7 +236,7 @@ export default function Home() {
             {projects.slice(0, 2).map((project) => (
               <div
                 key={project.id}
-                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#a3e635]/40 transition-colors"
+                className="group flex flex-col space-y-4 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#008b1d]/40 transition-colors"
               >
                 <div className="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] relative">
                   <img
@@ -249,14 +249,14 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="flex flex-col space-y-2 pt-2">
-                  <h3 className="font-serif text-3xl font-black uppercase text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors">
+                  <h3 className="font-serif text-3xl font-black uppercase text-[#f8f8f7] group-hover:text-[#008b1d] transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-xs text-[#a8a8a3] leading-relaxed font-sans line-clamp-2">
                     {project.description}
                   </p>
                   <Link href={`/projekt/${project.slug}`}>
-                    <span className="text-[10px] tracking-widest uppercase font-bold text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors pt-2 block cursor-pointer">
+                    <span className="text-[10px] tracking-widest uppercase font-bold text-[#f8f8f7] group-hover:text-[#008b1d] transition-colors pt-2 block cursor-pointer">
                       Entstehungsgeschichte &rarr;
                     </span>
                   </Link>

@@ -10,7 +10,7 @@
 .mp-checkout-page .wc-block-components-form .wc-block-components-text-input input[type="tel"],
 .mp-checkout-page select,
 .mp-checkout-page textarea {
-  border: 1px solid #05aa00 !important;
+  border: 1px solid #008b1d !important;
   border-radius: 0 !important;
   background: #11110f !important;
   color: #f8f8f7 !important;
@@ -24,7 +24,7 @@
 .mp-checkout-page .wc-block-components-combobox input:focus {
   background: #1a1a19 !important;
   color: #f8f8f7 !important;
-  box-shadow: 0 0 0 1px #05aa00 !important;
+  box-shadow: 0 0 0 1px #008b1d !important;
 }
 /* Order Summary Fix - Override Germanized inline CSS */
 .wc-gzd-checkout .wc-block-components-order-summary,
@@ -79,7 +79,7 @@
   transition: border-color 0.3s ease !important;
 }
 .mpw-source-footer .mpw-source-socials a:hover {
-  border-color: #05aa00 !important;
+  border-color: #008b1d !important;
 }
 .mpw-source-footer .mpw-source-socials a svg {
   width: 16px !important;
@@ -97,7 +97,7 @@
 .mpw-source-footer__contact-item svg {
   width: 16px !important;
   height: 16px !important;
-  fill: #05aa00 !important;
+  fill: #008b1d !important;
   flex-shrink: 0 !important;
   margin-top: 3px !important;
 }
@@ -157,7 +157,7 @@
 }
 
 .mp-project-card--v2:hover {
-  border-color: rgba(5, 170, 0, 0.5);
+  border-color: rgba(0, 139, 29, 0.5);
 }
 
 .mp-project-card__image-wrap {
@@ -188,9 +188,9 @@
   z-index: 2;
   display: inline-block;
   padding: 0.35rem 0.7rem;
-  border: 1px solid var(--wp--preset--color--border, #05aa00);
+  border: 1px solid var(--wp--preset--color--border, #008b1d);
   background: rgba(17, 17, 15, 0.85);
-  color: #a3e635;
+  color: #008b1d;
   font-family: var(--wp--preset--font-family--body);
   font-size: 0.65rem;
   font-weight: 700;
@@ -250,7 +250,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #05aa00;
+  background: #008b1d;
 }
 
 .mp-project-card--v2 .wp-block-post-excerpt__excerpt {
@@ -271,7 +271,7 @@
 }
 
 .mp-project-card--v2 .wp-block-post-excerpt__more-link:hover {
-  color: #a3e635;
+  color: #008b1d;
 }
 
 @media (max-width: 781px) {
@@ -342,7 +342,7 @@ main h2 {
 .mpw-source-category-card--v2:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
-  border-color: #05aa00 !important;
+  border-color: #008b1d !important;
 }
 .mpw-source-category-card--v2 .mpw-source-category-card__media {
   position: relative;
@@ -358,7 +358,7 @@ main h2 {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #05aa00;
+  background: #008b1d;
   color: #fff;
   font-family: Oswald, "Arial Narrow", sans-serif;
   font-size: 0.72rem;
@@ -443,7 +443,7 @@ main h2 {
   position: absolute !important;
   top: 12px !important;
   right: 12px !important;
-  background: #05aa00 !important;
+  background: #008b1d !important;
   color: #fff !important;
   font-family: Oswald, "Arial Narrow", sans-serif !important;
   font-size: 0.72rem !important;
@@ -502,7 +502,7 @@ main h2 span,
   left: 0 !important;
   width: 100% !important;
   height: 4px !important;
-  background: #05aa00 !important;
+  background: #008b1d !important;
   transform: scaleX(0) !important;
   transform-origin: left !important;
   transition: transform 0.3s ease !important;

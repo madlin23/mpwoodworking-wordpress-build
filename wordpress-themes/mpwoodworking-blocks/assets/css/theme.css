@@ -7,7 +7,7 @@
 	margin: 0;
 	min-width: 320px;
 	background:
-		radial-gradient(circle at 92% 6%, rgba(163, 230, 53, 0.045), transparent 20rem),
+		radial-gradient(circle at 92% 6%, rgba(0, 139, 29, 0.045), transparent 20rem),
 		#010101;
 }
 
@@ -181,7 +181,7 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 	font-size: 1.25rem;
 	letter-spacing: 0.06em;
 	line-height: 1;
-	box-shadow: inset 0 0 12px rgba(163, 230, 53, 0.08);
+	box-shadow: inset 0 0 12px rgba(0, 139, 29, 0.08);
 }
 
 .mp-wordmark .wp-block-site-title {
@@ -216,9 +216,9 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 	bottom: 0;
 	width: min(34vw, 34rem);
 	height: 62%;
-	border-inline: 1px solid rgba(163, 230, 53, 0.2);
+	border-inline: 1px solid rgba(0, 139, 29, 0.2);
 	background:
-		linear-gradient(180deg, transparent, rgba(163, 230, 53, 0.06)),
+		linear-gradient(180deg, transparent, rgba(0, 139, 29, 0.06)),
 		repeating-linear-gradient(92deg, transparent 0 2.8rem, rgba(248, 248, 247, 0.05) 2.8rem calc(2.8rem + 1px));
 	clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -239,7 +239,7 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 .mp-hero__title strong {
 	color: var(--wp--preset--color--lime);
 	font-weight: inherit;
-	text-shadow: 0 0 28px rgba(163, 230, 53, 0.16);
+	text-shadow: 0 0 28px rgba(0, 139, 29, 0.16);
 }
 
 .mp-hero__copy {
@@ -270,7 +270,7 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 }
 
 .mp-card:hover {
-	border-color: rgba(163, 230, 53, 0.5);
+	border-color: rgba(0, 139, 29, 0.5);
 	transform: translateY(-2px);
 }
 
@@ -315,7 +315,7 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 
 .mp-media-placeholder::after {
 	content: "MP";
-	color: rgba(163, 230, 53, 0.2);
+	color: rgba(0, 139, 29, 0.2);
 	font-family: var(--wp--preset--font-family--display);
 	font-size: clamp(8rem, 22vw, 20rem);
 	line-height: 0.8;
@@ -333,7 +333,7 @@ body:not(.home) .mp-site-main > .alignfull.mp-page-hero:not(.mp-project-hero) {
 	content: "";
 	position: absolute;
 	inset: 0;
-	border: 1px solid rgba(163, 230, 53, 0.2);
+	border: 1px solid rgba(0, 139, 29, 0.2);
 	pointer-events: none;
 }
 
@@ -477,7 +477,7 @@ input[type="submit"]:hover {
 }
 
 .mp-product-card:hover {
-	border-color: rgba(163, 230, 53, 0.5);
+	border-color: rgba(0, 139, 29, 0.5);
 }
 
 .mp-product-card__image {
@@ -697,7 +697,7 @@ input[type="submit"]:hover {
 	padding: clamp(1.25rem, 3vw, 2rem);
 	border: 1px solid var(--wp--preset--color--border);
 	background:
-		linear-gradient(120deg, rgba(163, 230, 53, 0.05), transparent 38%),
+		linear-gradient(120deg, rgba(0, 139, 29, 0.05), transparent 38%),
 		var(--wp--preset--color--surface);
 }
 
@@ -764,8 +764,8 @@ input[type="submit"]:hover {
 	gap: 0.5rem;
 	width: fit-content;
 	padding: 0.45rem 0.65rem;
-	border: 1px solid rgba(163, 230, 53, 0.45);
-	background: rgba(163, 230, 53, 0.08);
+	border: 1px solid rgba(0, 139, 29, 0.45);
+	background: rgba(0, 139, 29, 0.08);
 	color: var(--wp--preset--color--lime);
 	font-size: 0.68rem;
 	font-weight: 700;
@@ -912,7 +912,7 @@ input[type="submit"]:hover {
 .mp-shop-main {
 	overflow: clip;
 	background:
-		radial-gradient(circle at 85% 18%, rgba(163, 230, 53, 0.045), transparent 26rem),
+		radial-gradient(circle at 85% 18%, rgba(0, 139, 29, 0.045), transparent 26rem),
 		var(--wp--preset--color--background);
 }
 
@@ -934,7 +934,7 @@ input[type="submit"]:hover {
 	position: absolute;
 	inset: 0;
 	z-index: -1;
-	background: linear-gradient(115deg, transparent 0 52%, rgba(163, 230, 53, 0.06) 52.1% 52.5%, transparent 52.6%);
+	background: linear-gradient(115deg, transparent 0 52%, rgba(0, 139, 29, 0.06) 52.1% 52.5%, transparent 52.6%);
 	pointer-events: none;
 }
 
@@ -993,7 +993,7 @@ input[type="submit"]:hover {
 	height: 0.42rem;
 	transform: translateY(-50%);
 	background: var(--wp--preset--color--lime);
-	box-shadow: 0 0 10px rgba(163, 230, 53, 0.45);
+	box-shadow: 0 0 10px rgba(0, 139, 29, 0.45);
 }
 
 .mp-shop-section {
@@ -1227,7 +1227,7 @@ input[type="submit"]:hover {
 .mp-product-grid .mp-product-card:hover,
 .mp-product-grid .mp-product-card:focus-within {
 	transform: translateY(-3px);
-	border-color: rgba(163, 230, 53, 0.5);
+	border-color: rgba(0, 139, 29, 0.5);
 	box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3);
 }
 
@@ -1383,8 +1383,8 @@ input[type="submit"]:hover {
 	display: flex;
 	align-items: center;
 	margin-bottom: 0;
-	border: 1px solid rgba(163, 230, 53, 0.35);
-	background: rgba(163, 230, 53, 0.06);
+	border: 1px solid rgba(0, 139, 29, 0.35);
+	background: rgba(0, 139, 29, 0.06);
 	color: var(--wp--preset--color--lime);
 	font-family: var(--wp--preset--font-family--display);
 	font-size: 1rem;
@@ -1415,7 +1415,7 @@ input[type="submit"]:hover {
 .mp-shop-pagination a:focus-visible,
 .mp-shop-pagination .current {
 	border-color: var(--wp--preset--color--lime);
-	background: rgba(163, 230, 53, 0.08);
+	background: rgba(0, 139, 29, 0.08);
 	color: var(--wp--preset--color--lime);
 }
 
@@ -1631,7 +1631,7 @@ input[type="submit"]:hover {
 /* Product detail and cart alignment */
 .mp-product-main {
 	background:
-		radial-gradient(circle at 75% 12%, rgba(163, 230, 53, 0.045), transparent 25rem),
+		radial-gradient(circle at 75% 12%, rgba(0, 139, 29, 0.045), transparent 25rem),
 		var(--wp--preset--color--background);
 }
 
@@ -1821,7 +1821,7 @@ input[type="submit"]:hover {
 	width: 0.45rem;
 	height: 0.45rem;
 	background: var(--wp--preset--color--lime);
-	box-shadow: 0 0 9px rgba(163, 230, 53, 0.4);
+	box-shadow: 0 0 9px rgba(0, 139, 29, 0.4);
 }
 
 .mp-product-assurance h2 {
@@ -1904,7 +1904,7 @@ input[type="submit"]:hover {
 .mp-commerce-page {
 	padding-block: 0;
 	background:
-		radial-gradient(circle at 80% 14%, rgba(163, 230, 53, 0.035), transparent 24rem),
+		radial-gradient(circle at 80% 14%, rgba(0, 139, 29, 0.035), transparent 24rem),
 		var(--wp--preset--color--background);
 }
 
@@ -1916,7 +1916,7 @@ input[type="submit"]:hover {
 	padding-block: clamp(8rem, 13vw, 11rem) clamp(3rem, 6vw, 5rem);
 	border-bottom: 1px solid var(--wp--preset--color--border);
 	background:
-		linear-gradient(110deg, rgba(163, 230, 53, 0.05), transparent 40%),
+		linear-gradient(110deg, rgba(0, 139, 29, 0.05), transparent 40%),
 		linear-gradient(180deg, var(--wp--preset--color--background), #080808);
 }
 

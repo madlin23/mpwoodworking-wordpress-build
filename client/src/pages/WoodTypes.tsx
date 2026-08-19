@@ -9,12 +9,12 @@ export default function WoodTypes() {
       {/* Holzarten Header */}
       <section className="bg-[#11110f] border-b border-[#2a2a28] py-16 relative">
         {/* Feine grüne Akzentlinie am Header-Boden */}
-        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#a3e635]/30" />
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#008b1d]/30" />
         
         <div className="container">
           <div className="max-w-2xl flex flex-col space-y-4 relative pl-4">
             {/* Feine grüne vertikale Linie links neben der Hauptüberschrift */}
-            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]" />
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]" />
             
             <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">
               WERKSTOFF-KUNDE
@@ -44,12 +44,12 @@ export default function WoodTypes() {
                 {/* Holz-Info links/rechts */}
                 <div className={`lg:col-span-7 flex flex-col space-y-6 relative pl-6 ${isEven ? "" : "lg:order-2"}`}>
                   {/* Feine grüne vertikale Akzentlinie links neben dem Info-Block */}
-                  <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#a3e635] opacity-60" />
+                  <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#008b1d] opacity-60" />
 
                   <div className="flex flex-col space-y-2">
                     <span className="text-xs italic text-[#d40924] font-sans font-bold tracking-wider flex items-center gap-1.5">
                       {wood.scientificName}
-                      <span className="w-1 h-1 rounded-full bg-[#a3e635] inline-block shadow-[0_0_4px_#a3e635]" />
+                      <span className="w-1 h-1 rounded-full bg-[#008b1d] inline-block shadow-[0_0_4px_#008b1d]" />
                     </span>
                     <h2 className="text-3xl md:text-4xl font-serif font-black uppercase text-[#f8f8f7]">{wood.name}</h2>
                   </div>
@@ -62,7 +62,7 @@ export default function WoodTypes() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                     {wood.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center space-x-2 text-xs font-sans text-[#f8f8f7] font-bold uppercase tracking-wider group">
-                        <Sparkles className="w-4 h-4 text-[#d40924] group-hover:text-[#a3e635] stroke-[1.5] transition-colors" />
+                        <Sparkles className="w-4 h-4 text-[#d40924] group-hover:text-[#008b1d] stroke-[1.5] transition-colors" />
                         <span>{feature}</span>
                       </div>
                     ))}
@@ -72,7 +72,7 @@ export default function WoodTypes() {
                 {/* Holz-Steckbrief rechts/links */}
                 <div className={`lg:col-span-5 bg-[#11110f] p-8 border border-[#2a2a28] relative ${isEven ? "" : "lg:order-1"}`}>
                   {/* Feine grüne Akzentlinie am Tabellen-Panel */}
-                  <div className="absolute top-0 left-6 right-6 h-[1px] bg-[#a3e635]/20" />
+                  <div className="absolute top-0 left-6 right-6 h-[1px] bg-[#008b1d]/20" />
                   
                   <span className="text-xs tracking-widest uppercase font-bold font-serif block text-[#f8f8f7] border-b border-[#2a2a28] pb-4 mb-4">
                     Steckbrief: {wood.name}
@@ -82,7 +82,7 @@ export default function WoodTypes() {
                     <div className="flex flex-col space-y-1">
                       <span className="font-bold text-[#f8f8f7] uppercase tracking-wider text-[10px] font-serif flex items-center gap-1.5">
                         Farbton & Reifung
-                        <span className="w-1 h-1 rounded-full bg-[#a3e635] inline-block" />
+                        <span className="w-1 h-1 rounded-full bg-[#008b1d] inline-block" />
                       </span>
                       <p className="font-light">{wood.color}</p>
                     </div>
@@ -90,7 +90,7 @@ export default function WoodTypes() {
                     <div className="flex flex-col space-y-1">
                       <span className="font-bold text-[#f8f8f7] uppercase tracking-wider text-[10px] font-serif flex items-center gap-1.5">
                         Härte & Dichte
-                        <span className="w-1 h-1 rounded-full bg-[#a3e635] inline-block" />
+                        <span className="w-1 h-1 rounded-full bg-[#008b1d] inline-block" />
                       </span>
                       <p className="font-light">{wood.hardness}</p>
                     </div>
@@ -98,7 +98,7 @@ export default function WoodTypes() {
                     <div className="flex flex-col space-y-1">
                       <span className="font-bold text-[#f8f8f7] uppercase tracking-wider text-[10px] font-serif flex items-center gap-1.5">
                         Herkunft
-                        <span className="w-1 h-1 rounded-full bg-[#a3e635] inline-block" />
+                        <span className="w-1 h-1 rounded-full bg-[#008b1d] inline-block" />
                       </span>
                       <p className="font-light">{wood.origin}</p>
                     </div>

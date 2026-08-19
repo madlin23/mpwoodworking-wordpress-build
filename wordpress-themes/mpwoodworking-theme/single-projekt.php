@@ -2,7 +2,7 @@
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-[#010101]">
     <!-- Back-Link -->
-    <a href="<?php echo get_post_type_archive_link('projekt'); ?>" class="inline-flex items-center space-x-2 text-xs tracking-wider uppercase text-[#a8a8a3] hover:text-[#a3e635] mb-12 font-sans font-bold group transition-colors">
+    <a href="<?php echo get_post_type_archive_link('projekt'); ?>" class="inline-flex items-center space-x-2 text-xs tracking-wider uppercase text-[#a8a8a3] hover:text-[#008b1d] mb-12 font-sans font-bold group transition-colors">
         <span class="group-hover:-translate-x-1 transition-transform">&larr;</span>
         <span>Zurück zu den Projekten</span>
     </a>
@@ -11,7 +11,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <!-- Projektbilder & Galerie -->
             <div class="lg:col-span-7 flex flex-col space-y-6">
-                <div class="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] border border-[#2a2a28] hover:border-[#a3e635]/30 transition-colors">
+                <div class="aspect-[16/10] w-full overflow-hidden bg-[#1a1a19] border border-[#2a2a28] hover:border-[#008b1d]/30 transition-colors">
                     <?php if ( has_post_thumbnail() ) : ?>
                         <?php the_post_thumbnail('large', array('class' => 'w-full h-full object-cover object-center filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500')); ?>
                     <?php else : ?>
@@ -29,7 +29,7 @@
                 ?>
                     <div class="grid grid-cols-2 gap-6">
                         <?php foreach ( $gallery_attachment_ids as $id ) : ?>
-                            <div class="aspect-[16/10] overflow-hidden bg-[#1a1a19] border border-[#2a2a28] hover:border-[#a3e635]/30 transition-colors">
+                            <div class="aspect-[16/10] overflow-hidden bg-[#1a1a19] border border-[#2a2a28] hover:border-[#008b1d]/30 transition-colors">
                                 <?php echo wp_get_attachment_image( $id, 'large', false, array('class' => 'w-full h-full object-cover object-center filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500') ); ?>
                             </div>
                         <?php endforeach; ?>
@@ -40,25 +40,25 @@
             <!-- Projekt-Spezifikation (ACF Fields Integration) -->
             <div class="lg:col-span-5 flex flex-col space-y-8 relative pl-6">
                 <!-- Feine vertikale grüne Linie links neben dem gesamten Inhaltsblock -->
-                <div class="absolute left-0 top-0 bottom-0 w-[2px] bg-[#a3e635] opacity-40"></div>
+                <div class="absolute left-0 top-0 bottom-0 w-[2px] bg-[#008b1d] opacity-40"></div>
 
                 <div class="flex flex-col space-y-3">
                     <span class="text-xs tracking-[0.3em] text-[#d40924] uppercase font-bold font-sans flex items-center gap-1.5">
                         Projektchronik <?php echo get_the_date('Y'); ?>
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block shadow-[0_0_4px_#a3e635]"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#008b1d] inline-block shadow-[0_0_4px_#008b1d]"></span>
                     </span>
                     <h1 class="text-4xl md:text-5xl font-serif font-black uppercase leading-tight text-[#f8f8f7] flex items-center gap-2">
                         <?php the_title(); ?>
                     </h1>
                     <div class="h-[1px] bg-[#2a2a28] w-full pt-2 relative">
-                        <div class="absolute bottom-0 left-0 w-12 h-[1px] bg-[#a3e635]/50"></div>
+                        <div class="absolute bottom-0 left-0 w-12 h-[1px] bg-[#008b1d]/50"></div>
                     </div>
                 </div>
 
                 <div class="flex flex-col space-y-4">
                     <h3 class="text-xs tracking-widest uppercase font-bold text-[#f8f8f7] font-serif flex items-center gap-1.5">
                         Projektbeschreibung
-                        <span class="w-1 h-1 rounded-full bg-[#a3e635]/40 inline-block"></span>
+                        <span class="w-1 h-1 rounded-full bg-[#008b1d]/40 inline-block"></span>
                     </h3>
                     <div class="prose max-w-none text-xs text-[#a8a8a3] leading-relaxed font-sans font-light">
                         <?php the_content(); ?>
@@ -67,19 +67,19 @@
 
                 <!-- ACF Meta-Box (Nur anzeigen, wenn ACF aktiv ist und Felder Werte haben) -->
                 <?php if ( function_exists('get_field') ) : ?>
-                    <div class="bg-[#11110f] p-6 border border-[#2a2a28] hover:border-[#a3e635]/20 transition-colors flex flex-col space-y-6 relative group">
+                    <div class="bg-[#11110f] p-6 border border-[#2a2a28] hover:border-[#008b1d]/20 transition-colors flex flex-col space-y-6 relative group">
                         <!-- Feiner grüner Glimm-Streifen über der ACF Box im Hover -->
-                        <div class="absolute top-0 left-6 right-6 h-[1px] bg-[#a3e635]/0 group-hover:bg-[#a3e635]/30 transition-colors" />
+                        <div class="absolute top-0 left-6 right-6 h-[1px] bg-[#008b1d]/0 group-hover:bg-[#008b1d]/30 transition-colors" />
 
                         <span class="text-xs tracking-widest uppercase font-bold block text-[#f8f8f7] border-b border-[#2a2a28] pb-3 font-serif flex items-center gap-1.5">
                             Erweiterte Projekt-Details (ACF)
-                            <span class="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block shadow-[0_0_4px_#a3e635]"></span>
+                            <span class="w-1.5 h-1.5 rounded-full bg-[#008b1d] inline-block shadow-[0_0_4px_#008b1d]"></span>
                         </span>
 
                         <!-- ACF Feld: Holzart Detail -->
                         <?php if ( get_field('holzart_detail') ) : ?>
                             <div class="flex items-start space-x-3 group/item">
-                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#a3e635]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#a3e635] transition-colors">
+                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#008b1d]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#008b1d] transition-colors">
                                     <!-- Sparkles Icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 21l-.813-5.096L3 15 8.187 14.187 9 9l.813 5.187L15 15l-5.187.904ZM18.01 5.143 17.25 8.5l-.76-3.357-3.357-.76 3.357-.76.76-3.357.76 3.357 3.357.76-3.357.76ZM21.31 10.31l-.56 2.47-.56-2.47-2.47-.56 2.47-.56.56-2.47.56 2.47 2.47.56-2.47.56Z" />
@@ -95,7 +95,7 @@
                         <!-- ACF Feld: Herstellungsdauer -->
                         <?php if ( get_field('herstellungsdauer') ) : ?>
                             <div class="flex items-start space-x-3 group/item">
-                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#a3e635]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#a3e635] transition-colors">
+                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#008b1d]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#008b1d] transition-colors">
                                     <!-- Hourglass Icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -111,7 +111,7 @@
                         <!-- ACF Feld: Besonderheiten -->
                         <?php if ( get_field('besonderheiten') ) : ?>
                             <div class="flex items-start space-x-3 group/item">
-                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#a3e635]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#a3e635] transition-colors">
+                                <div class="p-2 bg-[#010101] border border-[#2a2a28] group-hover/item:border-[#008b1d]/40 mt-0.5 text-[#d40924] group-hover/item:text-[#008b1d] transition-colors">
                                     <!-- Hammer Icon -->
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A1.5 1.5 0 1 0 19.5 18.75l-5.83-5.83M11.42 15.17l2.42-2.42M11.42 15.17 5.17 8.92A1.5 1.5 0 1 0 2.92 11.17l6.25 6.25M13.84 12.75l2.42-2.42m0 0L21 5.17A1.5 1.5 0 1 0 18.75 2.92l-5.17 5.17m5.17 5.17-2.42 2.42m-9.67-9.67 2.42-2.42m0 0L11.17 2.92A1.5 1.5 0 1 0 8.92 5.17l2.42 2.42" />
@@ -138,21 +138,21 @@
         <section class="py-16 bg-[#010101] border-t border-[#2a2a28]">
             <div class="container max-w-6xl mx-auto px-4">
                 <div class="flex flex-col space-y-3 mb-10 relative pl-4">
-                    <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]"></div>
+                    <div class="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]"></div>
                     <span class="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black font-sans">AUS DEMSELBEN HOLZ</span>
                     <h2 class="font-serif text-3xl md:text-4xl font-black uppercase text-[#f8f8f7]">VERWANDTE UNIKATE</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <?php foreach ( $verknuepfte_produkte as $produkt ) : ?>
-                        <a href="<?php echo get_permalink( $produkt->ID ); ?>" class="group flex flex-col space-y-3 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#a3e635]/40 transition-colors no-underline">
+                        <a href="<?php echo get_permalink( $produkt->ID ); ?>" class="group flex flex-col space-y-3 p-4 bg-[#11110f] border border-[#2a2a28] hover:border-[#008b1d]/40 transition-colors no-underline">
                             <?php if ( has_post_thumbnail( $produkt->ID ) ) : ?>
                                 <div class="aspect-square w-full overflow-hidden bg-[#1a1a19]">
                                     <?php echo get_the_post_thumbnail( $produkt->ID, 'medium', array('class' => 'w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-110 group-hover:grayscale-0') ); ?>
                                 </div>
                             <?php endif; ?>
                             <div class="flex flex-col space-y-1">
-                                <h3 class="font-serif text-lg font-black uppercase text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors">
+                                <h3 class="font-serif text-lg font-black uppercase text-[#f8f8f7] group-hover:text-[#008b1d] transition-colors">
                                     <?php echo get_the_title( $produkt->ID ); ?>
                                 </h3>
                                 <?php
@@ -160,7 +160,7 @@
                                 if ( $product_obj ) : ?>
                                     <span class="font-serif text-base font-bold text-[#d40924] flex items-center gap-1.5">
                                         <?php echo $product_obj->get_price_html(); ?>
-                                        <span class="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block" style="box-shadow: 0 0 6px #a3e635;"></span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-[#008b1d] inline-block" style="box-shadow: 0 0 6px #008b1d;"></span>
                                     </span>
                                 <?php endif; ?>
                             </div>

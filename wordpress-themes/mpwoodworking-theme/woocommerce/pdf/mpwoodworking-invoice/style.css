@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: #a3e635;
+    color: #008b1d;
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ td.logo h1 {
 }
 
 td.logo h1 span.accent {
-    color: #a3e635; /* Lime-Grüner Punkt */
+    color: #008b1d; /* Markengrüner Punkt */
 }
 
 td.logo p.tagline {
@@ -105,7 +105,7 @@ td.address h3 {
     letter-spacing: 1px;
     margin-top: 0;
     margin-bottom: 8px;
-    border-left: 2px solid #a3e635; /* Lime-Grüne Seitenlinie */
+    border-left: 2px solid #008b1d; /* Markengrüne Seitenlinie */
     padding-left: 6px;
 }
 

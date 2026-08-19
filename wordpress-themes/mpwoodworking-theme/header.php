@@ -23,7 +23,7 @@
                         secondary: '#11110f',  // Surface
                         muted: '#a8a8a3',      // Text Muted
                         border: '#2a2a28',     // Border
-                        lime: '#a3e635',       // Leuchtendes Lime-Grün
+                        lime: '#008b1d',       // Leuchtendes Lime-Grün
                     }
                 }
             }
@@ -53,20 +53,20 @@
     
     <!-- Obere rote Fugen-Linie mit feinem grünem Schimmer -->
     <div class="h-1 bg-[#d40924] w-full relative">
-        <div class="absolute inset-0 bg-[#a3e635]/20 animate-pulse"></div>
+        <div class="absolute inset-0 bg-[#008b1d]/20 animate-pulse"></div>
     </div>
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-[#010101]/90 backdrop-blur-md border-b border-[#2a2a28] hover:border-[#a3e635]/20 transition-colors">
+    <header class="sticky top-0 z-50 bg-[#010101]/90 backdrop-blur-md border-b border-[#2a2a28] hover:border-[#008b1d]/20 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
             <!-- Logo -->
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="flex flex-col relative group">
-                <span class="font-serif text-2xl md:text-3xl font-black tracking-wider uppercase text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors">
+                <span class="font-serif text-2xl md:text-3xl font-black tracking-wider uppercase text-[#f8f8f7] group-hover:text-[#008b1d] transition-colors">
                     <?php bloginfo( 'name' ); ?>
                 </span>
                 <span class="text-[9px] tracking-[0.3em] text-[#d40924] uppercase -mt-1 pl-0.5 font-sans font-bold flex items-center gap-1">
                     <?php bloginfo( 'description' ); ?>
-                    <span class="w-1 h-1 rounded-full bg-[#a3e635] inline-block shadow-[0_0_4px_#a3e635]"></span>
+                    <span class="w-1 h-1 rounded-full bg-[#008b1d] inline-block shadow-[0_0_4px_#008b1d]"></span>
                 </span>
             </a>
 
@@ -85,12 +85,12 @@
             <!-- Warenkorb & Quick Actions -->
             <div class="flex items-center space-x-4">
                 <?php if ( class_exists( 'WooCommerce' ) ) : ?>
-                    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="relative p-2 hover:bg-[#11110f] transition-colors border border-transparent hover:border-[#a3e635]/30 text-[#f8f8f7] hover:text-[#a3e635]">
+                    <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="relative p-2 hover:bg-[#11110f] transition-colors border border-transparent hover:border-[#008b1d]/30 text-[#f8f8f7] hover:text-[#008b1d]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375 0 1 1-.75 0 .375 0 0 1 .75 0Zm7.5 0a.375 0 1 1-.75 0 .375 0 0 1 .75 0Z" />
                         </svg>
                         <?php if ( WC()->cart->get_cart_contents_count() > 0 ) : ?>
-                            <span class="absolute -top-0.5 -right-0.5 bg-[#d40924] text-[#f8f8f7] text-[10px] font-bold w-4 h-4 flex items-center justify-center border border-[#a3e635]/40 shadow-[0_0_6px_rgba(163,230,53,0.4)]">
+                            <span class="absolute -top-0.5 -right-0.5 bg-[#d40924] text-[#f8f8f7] text-[10px] font-bold w-4 h-4 flex items-center justify-center border border-[#008b1d]/40 shadow-[0_0_6px_rgba(0, 139, 29, 0.4)]">
                                 <?php echo WC()->cart->get_cart_contents_count(); ?>
                             </span>
                         <?php endif; ?>

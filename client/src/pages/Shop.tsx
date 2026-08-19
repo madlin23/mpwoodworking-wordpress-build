@@ -27,12 +27,12 @@ export default function Shop() {
       {/* Shop Header */}
       <section className="bg-[#11110f] border-b border-[#2a2a28] py-16 relative">
         {/* Feine grüne Akzentlinie am Header-Boden */}
-        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#a3e635]/30" />
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-[#008b1d]/30" />
         
         <div className="container">
           <div className="max-w-2xl flex flex-col space-y-4 relative pl-4">
             {/* Feine grüne vertikale Linie links neben der Shop-Hauptüberschrift */}
-            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#a3e635]" />
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#008b1d]" />
             
             <span className="text-xs tracking-[0.3em] text-[#d40924] uppercase font-black">
               UNIKATE DIREKT AUS BERLIN
@@ -53,7 +53,7 @@ export default function Shop() {
           {/* Sidebar Filter (Desktop) */}
           <div className="lg:col-span-3 flex flex-col space-y-8 bg-[#11110f] p-6 border border-[#2a2a28] h-fit relative">
             {/* Feine grüne vertikale Linie links neben der Filter-Sidebar */}
-            <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-[#a3e635] opacity-50" />
+            <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-[#008b1d] opacity-50" />
             
             <div className="flex items-center space-x-2 pb-4 border-b border-[#2a2a28]">
               <SlidersHorizontal className="w-4 h-4 text-[#d40924]" />
@@ -68,7 +68,7 @@ export default function Shop() {
                   <button
                     key={cat}
                     onClick={() => setSelectedCategory(cat)}
-                    className={`text-left text-sm font-sans py-1 hover:text-[#a3e635] transition-colors cursor-pointer ${
+                    className={`text-left text-sm font-sans py-1 hover:text-[#008b1d] transition-colors cursor-pointer ${
                       selectedCategory === cat ? "text-[#d40924] font-bold pl-2 border-l border-[#d40924]" : "text-[#a8a8a3]"
                     }`}
                   >
@@ -86,7 +86,7 @@ export default function Shop() {
                   <button
                     key={wood}
                     onClick={() => setSelectedWood(wood)}
-                    className={`text-left text-sm font-sans py-1 hover:text-[#a3e635] transition-colors cursor-pointer ${
+                    className={`text-left text-sm font-sans py-1 hover:text-[#008b1d] transition-colors cursor-pointer ${
                       selectedWood === wood ? "text-[#d40924] font-bold pl-2 border-l border-[#d40924]" : "text-[#a8a8a3]"
                     }`}
                   >
@@ -105,7 +105,7 @@ export default function Shop() {
                 <p className="text-xs text-[#a8a8a3] font-sans">Versuchen Sie andere Filtereinstellungen.</p>
                 <Button
                   onClick={() => { setSelectedCategory("Alle"); setSelectedWood("Alle"); }}
-                  className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-wider text-xs py-4 px-6 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(163,230,53,0.3)]"
+                  className="bg-[#d40924] hover:bg-[#ef1a35] text-[#f8f8f7] font-sans uppercase tracking-wider text-xs py-4 px-6 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(0, 139, 29, 0.3)]"
                 >
                   Filter zurücksetzen
                 </Button>
@@ -113,7 +113,7 @@ export default function Shop() {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {filteredProducts.map((product) => (
-                  <div key={product.id} className="group flex flex-col space-y-4 border border-[#2a2a28] p-4 hover:border-[#a3e635]/40 transition-colors bg-[#11110f]">
+                  <div key={product.id} className="group flex flex-col space-y-4 border border-[#2a2a28] p-4 hover:border-[#008b1d]/40 transition-colors bg-[#11110f]">
                     <div className="aspect-square w-full overflow-hidden bg-[#1a1a19] relative">
                       <img
                         src={product.image}
@@ -131,7 +131,7 @@ export default function Shop() {
                     </div>
                     <div className="flex justify-between items-start pt-2">
                       <div className="flex flex-col space-y-1">
-                        <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] group-hover:text-[#a3e635] transition-colors">
+                        <h3 className="font-serif text-2xl font-black uppercase text-[#f8f8f7] group-hover:text-[#008b1d] transition-colors">
                           {product.title}
                         </h3>
                         <p className="text-xs text-[#a8a8a3] font-sans uppercase font-bold tracking-wider">
@@ -141,7 +141,7 @@ export default function Shop() {
                       {/* Preisangabe mit kleinem grünen Punkt */}
                       <span className="font-serif text-xl font-bold text-[#d40924] flex items-center gap-1">
                         {product.price.toFixed(2)} €
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#a3e635] inline-block shadow-[0_0_6px_#a3e635]" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#008b1d] inline-block shadow-[0_0_6px_#008b1d]" />
                       </span>
                     </div>
                     <p className="text-xs text-[#a8a8a3] font-sans line-clamp-2 leading-relaxed font-light">
@@ -149,7 +149,7 @@ export default function Shop() {
                     </p>
                     <div className="pt-2">
                       <Link href={`/produkt/${product.slug}`}>
-                        <Button className="w-full bg-[#1a1a19] hover:bg-[#d40924] text-[#f8f8f7] border border-[#2a2a28] hover:border-transparent font-sans uppercase tracking-wider text-xs py-5 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(163,230,53,0.2)]">
+                        <Button className="w-full bg-[#1a1a19] hover:bg-[#d40924] text-[#f8f8f7] border border-[#2a2a28] hover:border-transparent font-sans uppercase tracking-wider text-xs py-5 rounded-none cursor-pointer font-bold transition-all hover:shadow-[0_0_12px_rgba(0, 139, 29, 0.2)]">
                           Details ansehen
                         </Button>
                       </Link>

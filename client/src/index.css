@@ -71,8 +71,8 @@
   --input: #1a1a19;
   --ring: #d40924;
   
-  /* Exakt leuchtendes Lime-Grün vom Desktop-Screenshot */
-  --lime-accent: #a3e635; 
+  /* Einheitliches Markengrün gemäß Referenz */
+  --lime-accent: #008b1d;
   
   --sidebar: #11110f;
   --sidebar-foreground: #f8f8f7;

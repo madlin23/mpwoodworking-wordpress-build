@@ -43,8 +43,8 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
 .woocommerce-checkout .form-row input.input-text:focus,
 .woocommerce-checkout .form-row textarea:focus,
 .woocommerce-checkout .form-row select:focus {
-    border-color: #a3e635 !important; /* Lime-Grüner Fokus-Rahmen */
-    box-shadow: 0 0 8px rgba(163, 230, 53, 0.2) !important;
+    border-color: #008b1d !important; /* Markengrüner Fokus-Rahmen */
+    box-shadow: 0 0 8px rgba(0, 139, 29, 0.2) !important;
     outline: none;
 }
 
@@ -86,7 +86,7 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
 }
 
 #order_review #payment ul.payment_methods li input[type="radio"]:checked {
-    border-color: #a3e635; /* Lime-Grüner aktiver Rahmen */
+    border-color: #008b1d; /* Markengrüner aktiver Rahmen */
     background-color: #010101;
 }
 
@@ -94,13 +94,13 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
     content: '';
     width: 6px;
     height: 6px;
-    background-color: #a3e635; /* Lime-Grüner Punkt im Radio-Button */
+    background-color: #008b1d; /* Markengrüner Punkt im Radio-Button */
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 6px #a3e635;
+    box-shadow: 0 0 6px #008b1d;
 }
 
 /* Label der Zahlungsart */
@@ -160,8 +160,8 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
 
 .wc-stripe-elements-field.focused,
 #stripe-card-element.focused {
-    border-color: #a3e635 !important;
-    box-shadow: 0 0 8px rgba(163, 230, 53, 0.2) !important;
+    border-color: #008b1d !important;
+    box-shadow: 0 0 8px rgba(0, 139, 29, 0.2) !important;
 }
 
 /* PayPal Smart Buttons Container */
@@ -191,8 +191,8 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
 
 #order_review #payment #place_order:hover {
     background-color: #ef1a35 !important;
-    box-shadow: 0 0 15px rgba(163, 230, 53, 0.3) !important; /* Lime-Grüner Glow-Effekt bei Hover */
-    border-color: rgba(163, 230, 53, 0.3) !important;
+    box-shadow: 0 0 15px rgba(0, 139, 29, 0.3) !important; /* Markengrüner Glow-Effekt bei Hover */
+    border-color: rgba(0, 139, 29, 0.3) !important;
 }
 
 /* Nutzungsbedingungen / AGB Checkbox */
@@ -223,18 +223,18 @@ Tags: custom-menu, featured-images, flexible-header, translation-ready, woocomme
 }
 
 .woocommerce-checkout input[type="checkbox"]:checked {
-    border-color: #a3e635;
+    border-color: #008b1d;
     background-color: #11110f;
 }
 
 .woocommerce-checkout input[type="checkbox"]:checked::after {
     content: '\2713'; /* Haken-Symbol */
     font-size: 10px;
-    color: #a3e635;
+    color: #008b1d;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    text-shadow: 0 0 4px #a3e635;
+    text-shadow: 0 0 4px #008b1d;
 }
