@@ -44,3 +44,7 @@ Die endgültige CSS-Anpassung wurde direkt in `assets/css/source-match.css` des 
 | Cache | Normaler LiteSpeed-Seitencache geleert |
 
 Die Produktions-CSS vor und nach der Anpassung liegen als Rückfallkopien unter `backups/`. Der direkte mobile Headless-Prüfaufruf wurde durch eine vorgeschaltete Browserprüfung geblockt; die mobile Rasterregel selbst ist gezielt auf 390 px ausgelegt und der Desktop-Livecheck wurde visuell bestanden.
+
+## Versionsstand
+
+Die lokale Theme-Quelle wurde mit Commit `1cca101` unter dem Titel `style: refine gallery layout without changing hero` in den Branch `main` übertragen. Der finale Livecheck bestätigte den unveränderten Header und Hero sowie das neue asymmetrische Bildraster unterhalb des Hero-Bereichs.
