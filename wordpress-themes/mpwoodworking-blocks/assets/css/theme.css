@@ -2430,3 +2430,184 @@ input[type="submit"]:hover {
 		transition: none;
 	}
 }
+
+/* ═══════════════════════════════════════════════════════
+   About Page – Hero Badge, Bicolor Title, Centered Kicker
+   ═══════════════════════════════════════════════════════ */
+
+/* Badge Pill (grüner Punkt + Text) */
+.mp-badge-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.375rem 1rem;
+	margin-bottom: 2rem;
+	border: 1px solid rgba(163, 230, 53, 0.3);
+	border-radius: 9999px;
+	background: rgba(163, 230, 53, 0.1);
+	color: var(--wp--preset--color--lime);
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.mp-badge-pill .mp-badge-dot,
+.mp-badge-pill::before {
+	content: "";
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: var(--wp--preset--color--lime);
+	animation: mp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes mp-pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.4; }
+}
+
+/* Bicolor Title */
+.mp-title-bicolor {
+	max-width: none;
+}
+
+.mp-title-green {
+	display: block;
+	color: var(--wp--preset--color--lime);
+}
+
+.mp-title-red {
+	display: block;
+	color: var(--wp--preset--color--accent);
+}
+
+/* Centered Section Kicker (mit Linien links und rechts) */
+.mp-kicker-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	color: var(--wp--preset--color--lime);
+	font-family: var(--wp--preset--font-family--body);
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+.mp-kicker-centered::before,
+.mp-kicker-centered::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 1px;
+	background: var(--wp--preset--color--lime);
+}
+
+/* ═══════════════════════════════════════════════════════
+   Unterseiten-Hero (Cover-Block in .mp-hero) –
+   Abstände identisch zum Startseiten-Hero
+
+   Referenz ist .mpw-source-hero / .mpw-source-container aus
+   assets/css/source-match.css:
+
+     Breite    Hero-Höhe   Oberkante Inhalt   Innenbreite   Absatz nach H1
+     ≥ 1024px  790 px      167–181 px         1280 px/24    29 px
+     ≤ 1023px  760 px      150 px             100 %/24      29 px
+     ≤  700px  790 px       95–129 px         100 %/20      23 px
+
+   Auf der Startseite ergibt sich die Oberkante des Inhalts aus der
+   vertikalen Zentrierung eines Blocks, der zusätzlich zwei Buttons
+   enthält. Der Unterseiten-Hero hat diese Buttons nicht, deshalb wird
+   der Inhalt hier oben ausgerichtet und der gemessene Startseitenwert
+   direkt als padding-top gesetzt. Die clamp()-Werte bilden nach, dass
+   die Startseiten-H1 fluid skaliert (clamp(58px, 5vw, 72px)) und die
+   Oberkante dadurch mit der Viewportbreite wandert.
+
+   Maße und Ausrichtung stehen als Inline-Style im Block-Markup und
+   werden zusätzlich von seiten-ID-gebundenen Regeln der Live-
+   Installation gesetzt. Die wiederholten Klassen erhöhen die
+   Spezifität gerade so weit, dass diese Datei die maßgebliche
+   Quelle der Hero-Abstände bleibt.
+   ═══════════════════════════════════════════════════════ */
+.mp-hero.mp-hero > .wp-block-cover.wp-block-cover.alignfull {
+	align-items: flex-start;
+	min-height: 790px !important;
+	padding-top: clamp(167px, 213px - 3.2vw, 181px) !important;
+	padding-bottom: 150px !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* Inhaltsspalte wie .mpw-source-container: 1280 px zentriert, 24 px Gutter.
+   Dadurch beginnt die Überschrift auf derselben Rasterlinie wie Logo,
+   Navigation und die Startseiten-Überschrift. */
+.mp-hero .wp-block-cover__inner-container {
+	width: 100%;
+	max-width: 1280px;
+	margin-inline: auto;
+	padding-inline: 24px;
+}
+
+.mp-hero .wp-block-cover__inner-container > .wp-block-group {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Badge-Pille auf die Höhe der Startseiten-Pille (41 px) bringen. */
+.mp-hero .wp-block-cover .mp-badge-pill {
+	padding-block: 0.5rem !important;
+	margin-bottom: 32px !important;
+}
+
+/* Abstand Überschrift → Einleitungstext wie auf der Startseite. */
+.mp-hero .wp-block-cover .mp-lead {
+	margin-top: 29px !important;
+}
+
+/* CTA-Buttons im Hero. Das Markup nutzt dieselben Klassen wie die
+   Startseite (.mpw-source-button aus source-match.css); hier stehen nur
+   die Maße, die dort an .mpw-source-hero gebunden sind. Der Abstand von
+   34px entsteht aus dem margin-bottom des Einleitungstextes und wird
+   hier gespiegelt, damit die Ränder auf denselben Wert kollabieren. */
+.mp-hero .mpw-source-actions {
+	margin-top: 34px;
+}
+
+.mp-hero .mpw-source-button {
+	height: 54px;
+	padding-block: 0;
+}
+
+.mp-hero .mpw-source-button--primary {
+	min-width: 205px;
+}
+
+.mp-hero .mpw-source-button--outline {
+	min-width: 128px;
+}
+
+@media (max-width: 1023px) {
+	.mp-hero.mp-hero > .wp-block-cover.wp-block-cover.alignfull {
+		min-height: 760px !important;
+		padding-top: 150px !important;
+		padding-bottom: 155px !important;
+	}
+}
+
+@media (max-width: 700px) {
+	.mp-hero.mp-hero > .wp-block-cover.wp-block-cover.alignfull {
+		min-height: 790px !important;
+		padding-top: clamp(95px, 59px + 10vw, 129px) !important;
+		padding-bottom: 205px !important;
+	}
+
+	.mp-hero .wp-block-cover__inner-container {
+		padding-inline: 20px;
+	}
+
+	.mp-hero .wp-block-cover .mp-lead {
+		margin-top: 23px !important;
+	}
+}
