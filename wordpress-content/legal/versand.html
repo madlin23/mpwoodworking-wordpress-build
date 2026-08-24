@@ -1,0 +1,171 @@
+<!--
+  Versand & Lieferung – MP Woodworking – Stand: August 2026
+  Korrigierte Fassung. Geprüft gegen den Live-Stand von mp-woodworking.de (August 2026).
+
+  WICHTIG – AUF WELCHE SEITE GEHÖRT DIESER TEXT?
+  Es gibt derzeit zwei Seiten: /versand/ (mit Inhalt, im Footer verlinkt) und /versandarten/
+  (leer, enthält nur die Überschrift). Der gesetzlich erforderliche Preishinweis
+  "zzgl. Versandkosten" in Warenkorb und Kasse verlinkt auf die LEERE Seite /versandarten/.
+
+  Empfohlene Lösung – eine Seite statt zwei:
+  1. Diesen Inhalt auf /versand/ einfügen.
+  2. In WooCommerce Germanized unter WooCommerce → Einstellungen → Germanized → Allgemein
+     die "Seite für Versandkosten" auf /versand/ umstellen.
+  3. /versandarten/ löschen und per Weiterleitung auf /versand/ umleiten, damit alte Links
+     nicht ins Leere laufen.
+  Alternativ diesen Inhalt auf /versandarten/ einfügen und /versand/ dorthin weiterleiten.
+  Entscheidend ist nur: Die im Shop verlinkte Seite darf nicht leer sein.
+
+  EINFÜGEN IN WORDPRESS:
+  Zielseite öffnen → Block "Individuelles HTML" (Custom HTML) einfügen →
+  diesen Code ohne den Kommentarkopf hineinkopieren.
+
+  VOR DER VERÖFFENTLICHUNG: die mit [PRÜFEN] markierten Kommentare abarbeiten.
+-->
+
+<h2>Versand &amp; Lieferung</h2>
+
+<p><strong>MP Woodworking – Marco Paul</strong><br>
+Dahmestraße 59<br>
+12526 Berlin<br>
+E-Mail: <a href="mailto:info@mp-woodworking.de">info@mp-woodworking.de</a></p>
+
+<p>Stand: August 2026</p>
+
+<h3>Versandkosten</h3>
+
+<p>Die Versandkosten für Ihre Bestellung werden Ihnen im Warenkorb und im Bestellvorgang vor Abgabe
+der Bestellung angezeigt. Es gelten folgende Pauschalen:</p>
+
+<table>
+  <thead>
+    <tr><th>Sendung</th><th>Versandkosten innerhalb Deutschlands</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Paket bis 5 kg</td><td>9,50 €</td></tr>
+    <tr><td>Paket über 5 kg</td><td>auf Anfrage – wir nennen Ihnen die Kosten vor Vertragsschluss</td></tr>
+    <tr><td>Speditionsversand (große oder sperrige Stücke)</td><td>nach Aufwand, individuelle Kalkulation</td></tr>
+    <tr><td>Selbstabholung in Berlin</td><td>kostenlos</td></tr>
+  </tbody>
+</table>
+
+<p>Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG weisen wir keine Umsatzsteuer aus. Die
+genannten Beträge sind Endpreise.</p>
+
+<!-- [PRÜFEN – WICHTIG] Diese Tabelle muss exakt den in WooCommerce hinterlegten Versandzonen und
+     Versandarten entsprechen. Der Wert 9,50 € bis 5 kg stammt aus der bisherigen Seite und ließ
+     sich ohne aktive Warenkorb-Sitzung nicht gegenprüfen.
+
+     Bitte unter WooCommerce → Einstellungen → Versand die tatsächlichen Kosten ablesen und hier
+     eintragen. Für Sendungen über 5 kg sollte ein konkreter Preis stehen statt "auf Anfrage" –
+     nach der Preisangabenverordnung müssen Versandkosten vor der Bestellung bezifferbar sein.
+     "Auf Anfrage" ist nur zulässig, wenn die Kosten sich vorher wirklich nicht berechnen lassen,
+     etwa beim Speditionsversand von Einzelstücken. -->
+
+<h3>Lieferzeiten</h3>
+
+<p><strong>Vorrätige Produkte</strong></p>
+
+<ul>
+  <li>Bearbeitungszeit: 1–2 Werktage</li>
+  <li>Versanddauer: 1–3 Werktage nach Übergabe an den Versanddienstleister</li>
+  <li>Gesamtlieferzeit: in der Regel 3–7 Werktage</li>
+</ul>
+
+<p><strong>Maßanfertigungen</strong></p>
+
+<ul>
+  <li>Produktionszeit: 4–12 Wochen, je nach Umfang und Auftragslage</li>
+  <li>Die verbindliche Lieferzeit teilen wir Ihnen mit der Auftragsbestätigung mit.</li>
+  <li>Während der Produktion halten wir Sie über den Stand auf dem Laufenden.</li>
+</ul>
+
+<p>Abweichende Angaben auf der jeweiligen Produktseite gehen diesen Werten vor. Bei Zahlung per
+Vorauskasse beginnt die Lieferzeit mit dem Zahlungseingang.</p>
+
+<!-- [PRÜFEN] Lieferzeiten sollten zusätzlich an den einzelnen Produkten gepflegt sein
+     (WooCommerce Germanized bietet dafür pro Produkt das Feld "Lieferzeit"). Derzeit ist dieses
+     Feld an den Produkten leer, sodass auf den Produktseiten keine Lieferzeit erscheint. -->
+
+<h3>Liefergebiet</h3>
+
+<p>Wir liefern innerhalb Deutschlands. Lieferungen auf deutsche Inseln und ins europäische Ausland
+sind nach vorheriger Absprache möglich – schreiben Sie uns dazu einfach an
+<a href="mailto:info@mp-woodworking.de">info@mp-woodworking.de</a>. Wir nennen Ihnen dann die
+Versandkosten und die voraussichtliche Lieferzeit, bevor Sie bestellen.</p>
+
+<!-- [PRÜFEN] Die tatsächlich freigeschalteten Versandzonen in WooCommerce prüfen. Wenn im Checkout
+     mehr Länder als Deutschland auswählbar sind, muss dieser Abschnitt angepasst werden – und
+     ebenso § 6 der AGB. -->
+
+<h3>Versanddienstleister</h3>
+
+<p>Je nach Größe und Gewicht Ihrer Bestellung versenden wir mit DHL, DPD oder Hermes. Große oder
+sperrige Stücke gehen per Spedition. Welchen Dienstleister wir einsetzen, entscheiden wir nach der
+Beschaffenheit der Sendung; einen Anspruch auf einen bestimmten Anbieter gibt es nicht. Wenn Sie
+einen Wunsch haben, sprechen Sie uns gern vor der Bestellung an – wir prüfen, ob wir ihn
+berücksichtigen können.</p>
+
+<h3>Sendungsverfolgung</h3>
+
+<p>Sobald Ihre Bestellung unser Haus verlassen hat, erhalten Sie eine E-Mail mit der
+Sendungsnummer des jeweiligen Dienstleisters. Damit können Sie den Status Ihrer Lieferung online
+verfolgen.</p>
+
+<h3>Speditionslieferung</h3>
+
+<p>Bei Speditionsversand kündigen wir den Liefertermin vorab an und stimmen ihn mit Ihnen ab. Die
+Anlieferung erfolgt bis zur Bordsteinkante oder – nach Absprache und gegen Aufpreis – bis zur
+Verwendungsstelle. Bitte prüfen Sie vorab, ob Zufahrt und Zugang für ein Speditionsfahrzeug
+geeignet sind.</p>
+
+<!-- [PRÜFEN] Diesen Abschnitt nur behalten, wenn tatsächlich Speditionsware angeboten wird.
+     Im Shop sind derzeit ausschließlich Kleinteile gelistet. -->
+
+<h3>Selbstabholung</h3>
+
+<p>Sie können Ihre Bestellung nach vorheriger Terminabsprache auch selbst abholen:</p>
+
+<p><strong>MP Woodworking</strong><br>
+Dahmestraße 59<br>
+12526 Berlin</p>
+
+<p>Bitte vereinbaren Sie vorab einen Termin unter
+<a href="mailto:info@mp-woodworking.de">info@mp-woodworking.de</a> oder
+<a href="tel:+493094047482">+49 30 94047482</a>. Für die Selbstabholung berechnen wir keine
+Versandkosten.</p>
+
+<h3>Verpackung</h3>
+
+<p>Wir verpacken jedes Stück sorgfältig und verwenden dafür überwiegend Karton und Papier.
+Wo möglich, nutzen wir Verpackungsmaterial wieder. Bitte haben Sie Verständnis, wenn ein Karton
+nicht neuwertig aussieht – das spart Material.</p>
+
+<h3>Transportschäden</h3>
+
+<p>Sollte eine Sendung sichtbar beschädigt bei Ihnen ankommen, hilft uns Folgendes bei der Klärung
+mit dem Versanddienstleister:</p>
+
+<ul>
+  <li>Nehmen Sie die Sendung nach Möglichkeit unter Vorbehalt an und lassen Sie sich den Schaden
+      vom Zusteller bestätigen.</li>
+  <li>Fotografieren Sie die Verpackung und die Ware.</li>
+  <li>Melden Sie sich möglichst zeitnah bei uns unter
+      <a href="mailto:info@mp-woodworking.de">info@mp-woodworking.de</a>.</li>
+</ul>
+
+<p>Diese Schritte sind eine Bitte, keine Bedingung: <strong>Ihre gesetzlichen Rechte bleiben
+unberührt, auch wenn Sie den Schaden nicht sofort melden.</strong> Als Verbraucher tragen Sie das
+Transportrisiko nicht – geht die Ware auf dem Versandweg verloren oder wird sie beschädigt, ist das
+unsere Sache und wir finden eine Lösung.</p>
+
+<h3>Widerruf und Rücksendung</h3>
+
+<p>Ihr Widerrufsrecht und die Einzelheiten zur Rücksendung finden Sie in unserer
+<a href="/widerrufsbelehrung/">Widerrufsbelehrung</a>. Die unmittelbaren Kosten der Rücksendung
+tragen Sie.</p>
+
+<h3>Fragen zum Versand?</h3>
+
+<p>Schreiben Sie uns an <a href="mailto:info@mp-woodworking.de">info@mp-woodworking.de</a> – wir
+antworten in der Regel innerhalb eines Werktages.</p>
